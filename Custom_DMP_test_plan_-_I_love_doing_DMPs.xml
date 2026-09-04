@@ -1,0 +1,3513 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<plan>
+	<id>b24681df-2e28-451c-9d7c-27ded5513d37</id>
+	<description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam euismod justo nisi. Sed maximus dolor et tellus interdum semper. Vivamus et dolor sed nisi lacinia tincidunt eget nec elit. Suspendisse suscipit auctor mi, in mattis ipsum luctus a. Nulla viverra nisi et mollis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec orci ac nunc egestas varius.</description>
+	<title>Custom DMP test plan - I love doing DMPs</title>
+	<language>la</language>
+	<access>Public</access>
+	<status>
+		<id>cb3ced76-9807-4829-82da-75777de1bc78</id>
+		<name>Draft</name>
+	</status>
+	<version>1</version>
+	<contacts>
+		<contact>
+			<firstName>Raul</firstName>
+			<lastName>Palma</lastName>
+			<email>rpalma@man.poznan.pl</email>
+		</contact>
+		<contact>
+			<firstName>Someone</firstName>
+			<lastName>WithoutName</lastName>
+			<email>s@name.com</email>
+		</contact>
+	</contacts>
+	<users>
+		<user>
+			<id>dd3d1ad0-3d74-44e0-8b98-786e3c55bbc9</id>
+			<name>Adam Rynkiewicz</name>
+			<role>Owner</role>
+		</user>
+		<user>
+			<id>9b03c41a-f69b-410b-a4fb-c795a55d17da</id>
+			<name>Raul Palma</name>
+			<role>Owner</role>
+		</user>
+	</users>
+	<blueprint>
+		<id>87e411fc-dc55-447d-94bb-ab19a3ee0a82</id>
+		<label>DEFAULT-JULY-PP</label>
+		<code>default copy</code>
+		<definition>
+			<sections>
+				<section hasTemplates="false" prefillingSourcesEnabled="false">
+					<id>c75d8d5c-df93-46d0-971b-92ed737c31ab</id>
+					<label>Main Info</label>
+					<description></description>
+					<ordinal>1</ordinal>
+					<systemFields>
+						<systemField ordinal="1" required="true">
+							<id>bd9d175c-061b-4acf-ae51-e609667b6add</id>
+							<type>Title</type>
+							<label>Title of DMP</label>
+							<placeholder>Title of DMP</placeholder>
+							<description></description>
+							<semantics>rda.dmp.title</semantics>
+						</systemField>
+						<systemField ordinal="2" required="true">
+							<id>b51b6924-691e-4fb3-9a10-81d3cfe30d5a</id>
+							<type>Description</type>
+							<label>Description</label>
+							<placeholder>Fill with description</placeholder>
+							<description>Briefly describe the context and purpose of the DMP</description>
+							<semantics>rda.dmp.description</semantics>
+						</systemField>
+						<systemField ordinal="4" required="true">
+							<id>0d295c9d-b9e1-4a80-81dc-57d70228a2de</id>
+							<type>Language</type>
+							<label>Language</label>
+							<placeholder>Language</placeholder>
+							<description>Select the language of your DMP</description>
+							<semantics>rda.dmp.language</semantics>
+						</systemField>
+						<systemField ordinal="5" required="true">
+							<id>2e97fa40-45e4-4d1b-9c65-eca5f54a80ab</id>
+							<type>Contact</type>
+							<label>Contact</label>
+							<placeholder>Contact</placeholder>
+							<description></description>
+							<semantics>rda.dmp.contact</semantics>
+						</systemField>
+					</systemFields>
+					<extraFields/>
+					<referenceFields>
+						<referenceField ordinal="3" required="false">
+							<id>93b52c1a-93fa-4c6d-8cf5-43410a834272</id>
+							<referenceTypeId>5a2112e7-ea99-4cfe-98a1-68665e26726e</referenceTypeId>
+							<referenceTypeCode>researchers</referenceTypeCode>
+							<label>Researchers</label>
+							<placeholder>Select researchers</placeholder>
+							<description>Add here the names of people that have produced, processed, analysed the data described in the DMP.</description>
+							<semantics>rda.dataset.creator</semantics>
+							<multipleSelect>true</multipleSelect>
+						</referenceField>
+						<referenceField ordinal="6" required="true">
+							<id>7a7a006c-b2e0-6a72-5cc4-efca3c835d0f</id>
+							<referenceTypeId>1429ea6e-ffaf-479c-8a33-8076abf1ce01</referenceTypeId>
+							<referenceTypeCode>dmp-status</referenceTypeCode>
+							<label>DMP status</label>
+							<semantics>rda.dmp.version</semantics>
+							<multipleSelect>false</multipleSelect>
+						</referenceField>
+					</referenceFields>
+					<uploadFields/>
+					<descriptionTemplates/>
+					<prefillingSources/>
+				</section>
+				<section hasTemplates="false" prefillingSourcesEnabled="false">
+					<id>d0894385-f5aa-4db1-a794-4ce2b3b67121</id>
+					<label>Funding</label>
+					<description></description>
+					<ordinal>2</ordinal>
+					<systemFields/>
+					<extraFields>
+						<extraField ordinal="2" required="false">
+							<id>a0dbf076-684c-e780-90c8-457edd02fcdb</id>
+							<type>Number</type>
+							<label>Project number</label>
+							<placeholder></placeholder>
+							<semantics>rda.dmp.project.funding.grant_id</semantics>
+						</extraField>
+						<extraField ordinal="3" required="false">
+							<id>d1a3914d-0706-d3c2-5057-627c14bc0210</id>
+							<type>Text</type>
+							<label>Funding program</label>
+							<placeholder>e.g. OPUS, PRELUDIUM</placeholder>
+							<semantics>rda.dmp.project.funding</semantics>
+						</extraField>
+					</extraFields>
+					<referenceFields>
+						<referenceField ordinal="1" required="true">
+							<id>acb74bdf-3b94-4042-bab8-c37b0f4e5a44</id>
+							<referenceTypeId>538928bb-c7c6-452e-b66d-08e539f5f082</referenceTypeId>
+							<referenceTypeCode>funders</referenceTypeCode>
+							<label>Funding organizations</label>
+							<placeholder>Funder</placeholder>
+							<description>Select a funder of your research or add new</description>
+							<semantics>rda.dmp.project.funding</semantics>
+							<multipleSelect>false</multipleSelect>
+						</referenceField>
+						<referenceField ordinal="4" required="true">
+							<id>33f061f9-a6fc-af89-8c22-11e86fb66d1c</id>
+							<referenceTypeId>29f5f7a2-8d97-441f-a7db-b6cc5dee7d2b</referenceTypeId>
+							<referenceTypeCode>funding-status</referenceTypeCode>
+							<label>Funding status</label>
+							<semantics>rda.dmp.project.funding.funding_status</semantics>
+							<multipleSelect>false</multipleSelect>
+						</referenceField>
+					</referenceFields>
+					<uploadFields/>
+					<descriptionTemplates/>
+					<prefillingSources/>
+				</section>
+				<section hasTemplates="false" prefillingSourcesEnabled="false">
+					<id>dd17a2d9-351a-47c4-9e77-4927d3e04120</id>
+					<label>License</label>
+					<description></description>
+					<ordinal>3</ordinal>
+					<systemFields>
+						<systemField ordinal="2" required="true">
+							<id>17f304f4-f6be-4ca7-b49e-7d8324b8d069</id>
+							<type>AccessRights</type>
+							<label>Access Rights</label>
+							<placeholder>Access Rights</placeholder>
+							<description>Choose how the DMP is displayed after is published on Zenodo. By choosing Open Access, the DMP will be open on Zenodo after the Publication Date. By choosing Restricted Access, the DMP will be restricted after the publication is made.</description>
+						</systemField>
+					</systemFields>
+					<extraFields/>
+					<referenceFields>
+						<referenceField ordinal="1" required="false">
+							<id>fa89f220-22cc-424b-ba60-f3e19b0ada34</id>
+							<referenceTypeId>2baab1e8-561f-4c15-84c3-571b811c52f6</referenceTypeId>
+							<referenceTypeCode>licenses</referenceTypeCode>
+							<label>License</label>
+							<placeholder>License</placeholder>
+							<description>Assign a license to your DMP by selecting the most appropriate from the list.</description>
+							<semantics>rda.dataset.distribution.license</semantics>
+							<multipleSelect>true</multipleSelect>
+						</referenceField>
+					</referenceFields>
+					<uploadFields/>
+					<descriptionTemplates/>
+					<prefillingSources/>
+				</section>
+				<section hasTemplates="true" prefillingSourcesEnabled="true" canEditDescriptionTemplates="true">
+					<id>cfc0e16b-edc4-4ed8-a894-b2f5560bc0f1</id>
+					<label>Templates</label>
+					<description></description>
+					<ordinal>4</ordinal>
+					<systemFields/>
+					<extraFields/>
+					<referenceFields/>
+					<uploadFields/>
+					<descriptionTemplates/>
+					<prefillingSources/>
+				</section>
+			</sections>
+			<pluginConfigurations>
+				<pluginConfiguration pluginCode="docx-file-transformer" pluginType="FileTransformer">
+					<fields>
+						<field code="plan-docx-template-id"/>
+					</fields>
+				</pluginConfiguration>
+			</pluginConfigurations>
+			<planCreationConsent>
+				<enabled>false</enabled>
+			</planCreationConsent>
+		</definition>
+		<type/>
+		<groupId>467295f2-0f6d-440e-afab-bb47cfbfe6df</groupId>
+	</blueprint>
+	<blueprintValues>
+		<blueprintValue>
+			<fieldId>a0dbf076-684c-e780-90c8-457edd02fcdb</fieldId>
+			<numberValue>9.08108283848498E14</numberValue>
+		</blueprintValue>
+		<blueprintValue>
+			<fieldId>d1a3914d-0706-d3c2-5057-627c14bc0210</fieldId>
+			<value>OPUS</value>
+		</blueprintValue>
+	</blueprintValues>
+	<descriptionTemplates>
+		<descriptionTemplate>
+			<descriptionTemplateGroupId>f1c2d7dc-ca3c-41da-a2ea-3b4913a1c1b5</descriptionTemplateGroupId>
+			<descriptionTemplateCode>Kopia NCN</descriptionTemplateCode>
+			<sectionId>cfc0e16b-edc4-4ed8-a894-b2f5560bc0f1</sectionId>
+		</descriptionTemplate>
+	</descriptionTemplates>
+	<references>
+		<reference>
+			<id>321b9ef8-02ba-475c-9bed-3d422e8ae91c</id>
+			<label>Ruchika Bajpai (0000-0003-4610-094X)</label>
+			<reference>0000-0003-4610-094X</reference>
+			<fieldId>93b52c1a-93fa-4c6d-8cf5-43410a834272</fieldId>
+			<type>
+				<id>5a2112e7-ea99-4cfe-98a1-68665e26726e</id>
+				<name>Researchers</name>
+				<code>researchers</code>
+			</type>
+			<source>orcid</source>
+			<sourceType>External</sourceType>
+			<fields>
+				<field code="firstName" dataType="Text" value="Ruchika"/>
+				<field code="lastName" dataType="Text" value="Bajpai"/>
+				<field code="referenceType" dataType="Text" value="Researchers"/>
+				<field code="key" dataType="Text" value="orcid"/>
+			</fields>
+		</reference>
+		<reference>
+			<id>190da1b6-b951-481a-93cb-78e5283bbfe8</id>
+			<label>ALFREDO POZO (0000-0001-6590-3794)</label>
+			<reference>org.opencdmp.filetransformer.rda.model.rda.ContributorId@1ad92872</reference>
+			<fieldId>93b52c1a-93fa-4c6d-8cf5-43410a834272</fieldId>
+			<type>
+				<id>5a2112e7-ea99-4cfe-98a1-68665e26726e</id>
+				<name>Researchers</name>
+				<code>researchers</code>
+			</type>
+			<source>internal</source>
+			<sourceType>Internal</sourceType>
+		</reference>
+		<reference>
+			<id>99157e6c-a669-48c1-9755-9ec671821efa</id>
+			<label>Dimi Apostolopoulos (0000-0003-1269-7653)</label>
+			<reference>org.opencdmp.filetransformer.rda.model.rda.ContributorId@3a4357c9</reference>
+			<fieldId>93b52c1a-93fa-4c6d-8cf5-43410a834272</fieldId>
+			<type>
+				<id>5a2112e7-ea99-4cfe-98a1-68665e26726e</id>
+				<name>Researchers</name>
+				<code>researchers</code>
+			</type>
+			<source>internal</source>
+			<sourceType>Internal</sourceType>
+		</reference>
+		<reference>
+			<id>6e3f598a-a956-4e1e-bfda-511818f572f4</id>
+			<label>Initial</label>
+			<reference>Initial</reference>
+			<fieldId>7a7a006c-b2e0-6a72-5cc4-efca3c835d0f</fieldId>
+			<type>
+				<id>1429ea6e-ffaf-479c-8a33-8076abf1ce01</id>
+				<name>DMP status</name>
+				<code>dmp-status</code>
+			</type>
+			<source>Status</source>
+			<sourceType>External</sourceType>
+			<fields>
+				<field code="dmp-status" dataType="Text" value="Initial"/>
+				<field code="referenceType" dataType="Text" value="DMP status"/>
+				<field code="key" dataType="Text" value="Status"/>
+			</fields>
+		</reference>
+		<reference>
+			<id>fb6147df-c0d8-4fdc-a378-031e0f2c8a6f</id>
+			<label>ADAPT - Centre for Digital Content Technology</label>
+			<reference>501100014826::501100014826||ADAPT - Centre for Digital Content Technology</reference>
+			<fieldId>acb74bdf-3b94-4042-bab8-c37b0f4e5a44</fieldId>
+			<type>
+				<id>538928bb-c7c6-452e-b66d-08e539f5f082</id>
+				<name>Funders</name>
+				<code>funders</code>
+			</type>
+			<source>openaire</source>
+			<sourceType>External</sourceType>
+			<fields>
+				<field code="referenceType" dataType="Text" value="Funders"/>
+				<field code="key" dataType="Text" value="openaire"/>
+			</fields>
+		</reference>
+		<reference>
+			<id>564292f9-dd62-48b2-8178-69367f59d032</id>
+			<label>Granted</label>
+			<reference>Granted</reference>
+			<fieldId>33f061f9-a6fc-af89-8c22-11e86fb66d1c</fieldId>
+			<type>
+				<id>29f5f7a2-8d97-441f-a7db-b6cc5dee7d2b</id>
+				<name>Funding status</name>
+				<code>funding-status</code>
+			</type>
+			<source>Funding status</source>
+			<sourceType>External</sourceType>
+			<fields>
+				<field code="referenceType" dataType="Text" value="Funding status"/>
+				<field code="key" dataType="Text" value="Funding status"/>
+			</fields>
+		</reference>
+		<reference>
+			<id>aa0e950d-ec07-4bb0-88e4-bbc1a0a8c2da</id>
+			<label>Academic Free License 3.0</label>
+			<reference>AFL-3.0</reference>
+			<fieldId>fa89f220-22cc-424b-ba60-f3e19b0ada34</fieldId>
+			<type>
+				<id>2baab1e8-561f-4c15-84c3-571b811c52f6</id>
+				<name>Licenses</name>
+				<code>licenses</code>
+			</type>
+			<source>opendefinition</source>
+			<sourceType>External</sourceType>
+			<fields>
+				<field code="referenceType" dataType="Text"/>
+				<field code="uri" dataType="Text"/>
+				<field code="key" dataType="Text"/>
+			</fields>
+		</reference>
+	</references>
+	<descriptions>
+		<description>
+			<id>43fbc30e-1c51-4839-ab96-f41db6462e22</id>
+			<description>Nam id magna sed diam molestie convallis in vel nisi. Nam vitae pulvinar leo. Vivamus efficitur sem risus, sed tristique ipsum auctor ut. Etiam scelerisque dignissim semper. Etiam vel odio molestie tellus faucibus dictum nec ut mi. Curabitur volutpat gravida eros, sit amet suscipit neque consequat non. Integer sodales velit velit. In fringilla lacus vel tellus molestie sagittis. Pellentesque laoreet tellus imperdiet mi condimentum, non imperdiet nunc mattis.</description>
+			<label>NCN-JULY-PROPER-PREDICATES - best dataset - this is the final version, I hope</label>
+			<status>
+				<id>978e6ff6-b5e9-4cee-86cb-bc7401ec4059</id>
+				<name>Draft</name>
+			</status>
+			<sectionId>cfc0e16b-edc4-4ed8-a894-b2f5560bc0f1</sectionId>
+			<tags>
+				<tag>CDC</tag>
+				<tag>Data Catalogue</tag>
+				<tag>110319 Psychiatry (incl. Psychotherapy)</tag>
+			</tags>
+			<descriptionTemplate>
+				<id>31fa1c92-49a1-4994-bf16-551d5dc11bad</id>
+				<label>NCN-JULY-PROPER-PREDICATES</label>
+				<code>Kopia NCN</code>
+				<description>National Science Centre Poland</description>
+				<language>en</language>
+				<type>
+					<id>709a8400-10ca-11ee-be56-0242ac120002</id>
+					<code>dataset</code>
+					<name>Dataset</name>
+				</type>
+				<version>6</version>
+				<groupId>f1c2d7dc-ca3c-41da-a2ea-3b4913a1c1b5</groupId>
+				<pages>
+					<page>
+						<id>fccc5fb6-2fb5-47be-9fe4-f9d9179784dd</id>
+						<ordinal>0</ordinal>
+						<title>Data description and collection or re-use of existing data </title>
+						<sections>
+							<section>
+								<id>67303fc7-30d4-05bc-8527-b6a8c8fbd403</id>
+								<ordinal>0</ordinal>
+								<fieldSets>
+									<fieldSet>
+										<id>a01fdc85-127d-02eb-ea8d-172dfffe0cff</id>
+										<ordinal>0</ordinal>
+										<fields>
+											<field>
+												<id>cef95df3-09c7-4f23-97d2-c3926f571766</id>
+												<ordinal>0</ordinal>
+												<validations>
+													<validation>Required</validation>
+												</validations>
+												<defaultValue/>
+												<visibilityRules/>
+												<labelData>
+													<label></label>
+													<fieldType>TEXT_AREA</fieldType>
+												</labelData>
+												<semantics>
+													<semantic>http://purl.org/dc/terms/description</semantic>
+													<semantic>rda.dataset.description</semantic>
+												</semantics>
+												<includeInExport>true</includeInExport>
+											</field>
+										</fields>
+										<title>Data overview</title>
+										<description>A general overview of research data in this project or an explanation if no data will be collected or generated.</description>
+										<hasMultiplicity>false</hasMultiplicity>
+										<hasCommentField>false</hasCommentField>
+									</fieldSet>
+								</fieldSets>
+								<title>Data overview</title>
+								<sections/>
+							</section>
+							<section>
+								<id>8ea60aaa-e308-4abf-a20c-478937d6d6b4</id>
+								<ordinal>1</ordinal>
+								<fieldSets>
+									<fieldSet>
+										<id>7b6b9ebd-815b-e346-b27a-d65123e31698</id>
+										<ordinal>0</ordinal>
+										<fields>
+											<field>
+												<id>1ffd0ef1-4125-06e3-49b6-9933678e5f9f</id>
+												<ordinal>0</ordinal>
+												<validations/>
+												<defaultValue/>
+												<visibilityRules>
+													<visibilityRule>
+														<target>62ac50ea-1d96-427f-92a8-80df1f3dfbb9</target>
+														<booleanValue>true</booleanValue>
+													</visibilityRule>
+													<visibilityRule>
+														<target>98634bd9-e0d2-4070-a32a-f197f91e4ae2</target>
+														<booleanValue>true</booleanValue>
+													</visibilityRule>
+												</visibilityRules>
+												<labelData>
+													<label>New data will be collected or generated in this project</label>
+													<fieldType>CHECK_BOX</fieldType>
+												</labelData>
+												<semantics>
+													<semantic>hasDataCollection</semantic>
+													<semantic>isDataCollectedOrProduced</semantic>
+													<semantic>rda.dataset.type</semantic>
+												</semantics>
+												<includeInExport>true</includeInExport>
+											</field>
+										</fields>
+										<title>New data collected or generated</title>
+										<hasMultiplicity>false</hasMultiplicity>
+										<hasCommentField>false</hasCommentField>
+									</fieldSet>
+									<fieldSet>
+										<id>98634bd9-e0d2-4070-a32a-f197f91e4ae2</id>
+										<ordinal>1</ordinal>
+										<fields>
+											<field>
+												<id>a8f007bf-81b8-4630-b5fc-22e34b759705</id>
+												<ordinal>0</ordinal>
+												<validations/>
+												<defaultValue/>
+												<visibilityRules/>
+												<labelData>
+													<label>Standard/methodology/software</label>
+													<fieldType>TEXT_AREA</fieldType>
+												</labelData>
+												<semantics>
+													<semantic>hasDataCollectionMethodology</semantic>
+													<semantic>rda.dataset.methodology</semantic>
+												</semantics>
+												<includeInExport>true</includeInExport>
+											</field>
+											<field>
+												<id>a2373d72-5f4b-7c22-07e8-e624395a9ce8</id>
+												<ordinal>1</ordinal>
+												<validations/>
+												<defaultValue/>
+												<visibilityRules/>
+												<labelData>
+													<label>Description</label>
+													<fieldType>TEXT_AREA</fieldType>
+												</labelData>
+												<semantics>
+													<semantic>hasDataCollectionMethodologyDescription</semantic>
+													<semantic>rda.dataset.methodology</semantic>
+												</semantics>
+												<includeInExport>true</includeInExport>
+											</field>
+										</fields>
+										<title>What standards, methodologies or software will be used to produce or collect new data?</title>
+										<multiplicity min="0" max="20">
+											<placeholder></placeholder>
+											<tableView>true</tableView>
+										</multiplicity>
+										<hasMultiplicity>true</hasMultiplicity>
+										<hasCommentField>false</hasCommentField>
+									</fieldSet>
+									<fieldSet>
+										<id>62ac50ea-1d96-427f-92a8-80df1f3dfbb9</id>
+										<ordinal>2</ordinal>
+										<fields>
+											<field>
+												<id>138bf6f9-e619-4352-b7ec-044a5e30cd07</id>
+												<ordinal>0</ordinal>
+												<validations/>
+												<defaultValue/>
+												<visibilityRules/>
+												<labelData>
+													<label>Data type</label>
+													<fieldType>FREE_TEXT</fieldType>
+												</labelData>
+												<semantics>
+													<semantic>hasDataCollection</semantic>
+													<semantic>http://purl.org/dc/terms/type</semantic>
+													<semantic>rda.dataset.type</semantic>
+												</semantics>
+												<includeInExport>true</includeInExport>
+											</field>
+											<field>
+												<id>3d93fb8d-6162-4125-b8bb-91518e11a616</id>
+												<ordinal>1</ordinal>
+												<validations/>
+												<defaultValue/>
+												<visibilityRules/>
+												<labelData>
+													<label>File format</label>
+													<fieldType>TEXT_AREA</fieldType>
+												</labelData>
+												<semantics>
+													<semantic>hasDataCollection</semantic>
+													<semantic>http://purl.org/dc/terms/format</semantic>
+													<semantic>rda.dataset.distribution.format</semantic>
+												</semantics>
+												<includeInExport>true</includeInExport>
+											</field>
+											<field>
+												<id>da847fbb-7da8-4fef-afd7-964f8ac18ab5</id>
+												<ordinal>2</ordinal>
+												<validations/>
+												<defaultValue/>
+												<visibilityRules/>
+												<labelData>
+													<label>Size</label>
+													<fieldType>FREE_TEXT</fieldType>
+												</labelData>
+												<semantics>
+													<semantic>hasDataCollection</semantic>
+													<semantic>http://www.w3.org/ns/dcat#byteSize</semantic>
+													<semantic>rda.dataset.distribution.byte_size</semantic>
+												</semantics>
+												<includeInExport>true</includeInExport>
+											</field>
+										</fields>
+										<title>What type, format and volume of data will you collect or generate?</title>
+										<description>Describe the type, format and estimation of the volume for each file group.</description>
+										<multiplicity min="0" max="25">
+											<placeholder></placeholder>
+											<tableView>true</tableView>
+										</multiplicity>
+										<hasMultiplicity>true</hasMultiplicity>
+										<hasCommentField>false</hasCommentField>
+									</fieldSet>
+								</fieldSets>
+								<description></description>
+								<title>Data collection and generation</title>
+								<sections/>
+							</section>
+							<section>
+								<id>b3b0ec53-a666-9be1-a994-a407806ab8e3</id>
+								<ordinal>2</ordinal>
+								<fieldSets>
+									<fieldSet>
+										<id>328d9596-a90a-40c4-bf99-f184b5907233</id>
+										<ordinal>0</ordinal>
+										<fields>
+											<field>
+												<id>5b7c3861-b137-43a7-99bd-056c4cdf1f1d</id>
+												<ordinal>0</ordinal>
+												<validations/>
+												<defaultValue/>
+												<visibilityRules>
+													<visibilityRule>
+														<target>1d4b832f-c131-4727-e75d-1e8a382f47d6</target>
+														<booleanValue>true</booleanValue>
+													</visibilityRule>
+													<visibilityRule>
+														<target>e709e0dd-f00d-86e5-8ef2-2fc4ca91b35d</target>
+														<booleanValue>true</booleanValue>
+													</visibilityRule>
+													<visibilityRule>
+														<target>199cbb8a-63b4-721d-2067-6bc2e8eacbb6</target>
+														<booleanValue>true</booleanValue>
+													</visibilityRule>
+													<visibilityRule>
+														<target>11f64378-511b-44cc-b8d0-643053aa0f85</target>
+														<booleanValue>true</booleanValue>
+													</visibilityRule>
+													<visibilityRule>
+														<target>2fba660c-72af-6fbe-a8df-7e54a6492000</target>
+														<booleanValue>false</booleanValue>
+													</visibilityRule>
+												</visibilityRules>
+												<labelData>
+													<label>Existing data will be re-used in this project</label>
+													<fieldType>CHECK_BOX</fieldType>
+												</labelData>
+												<semantics>
+													<semantic>https://w3id.org/dcso/ns/core#hasDataset</semantic>
+													<semantic>http://www.ontologydesignpatterns.org/ont/dul/IOLite.owl#reuses</semantic>
+													<semantic>rda.dataset.is_reused</semantic>
+												</semantics>
+												<includeInExport>true</includeInExport>
+											</field>
+										</fields>
+										<title>Data re-used</title>
+										<hasMultiplicity>false</hasMultiplicity>
+										<hasCommentField>false</hasCommentField>
+									</fieldSet>
+									<fieldSet>
+										<id>1d4b832f-c131-4727-e75d-1e8a382f47d6</id>
+										<ordinal>1</ordinal>
+										<fields>
+											<field>
+												<id>deba9546-220f-9820-a31d-c8d121841e3f</id>
+												<ordinal>0</ordinal>
+												<validations/>
+												<defaultValue/>
+												<visibilityRules/>
+												<labelData>
+													<label>Data identifier/URL</label>
+													<fieldType>DATASET_IDENTIFIER</fieldType>
+												</labelData>
+												<semantics>
+													<semantic>https://w3id.org/dcso/ns/core#hasDataset</semantic>
+													<semantic>http://purl.org/dc/terms/identifier</semantic>
+													<semantic>rda.dataset.dataset_id.identifier</semantic>
+												</semantics>
+												<includeInExport>true</includeInExport>
+											</field>
+											<field>
+												<id>d553763b-6af1-11e6-9a3d-49d9837c817c</id>
+												<ordinal>1</ordinal>
+												<validations/>
+												<defaultValue/>
+												<visibilityRules/>
+												<labelData>
+													<label>Data type</label>
+													<fieldType>TEXT_AREA</fieldType>
+												</labelData>
+												<semantics>
+													<semantic>https://w3id.org/dcso/ns/core#hasDataset</semantic>
+													<semantic>http://purl.org/ontology/dvia#datasetDescription</semantic>
+													<semantic>rda.dataset.type</semantic>
+												</semantics>
+												<includeInExport>true</includeInExport>
+											</field>
+										</fields>
+										<title>What existing data will be re-used?</title>
+										<multiplicity min="0" max="20">
+											<placeholder></placeholder>
+											<tableView>true</tableView>
+										</multiplicity>
+										<hasMultiplicity>true</hasMultiplicity>
+										<hasCommentField>false</hasCommentField>
+									</fieldSet>
+									<fieldSet>
+										<id>199cbb8a-63b4-721d-2067-6bc2e8eacbb6</id>
+										<ordinal>2</ordinal>
+										<fields>
+											<field>
+												<id>cfce0c2a-d474-e411-7309-3585b72669d9</id>
+												<ordinal>0</ordinal>
+												<validations/>
+												<defaultValue/>
+												<visibilityRules/>
+												<labelData>
+													<label>Standard/methodology/software</label>
+													<fieldType>TEXT_AREA</fieldType>
+												</labelData>
+												<semantics>
+													<semantic>hasDataReuseMethodology</semantic>
+													<semantic>rda.dataset.methodology</semantic>
+												</semantics>
+												<includeInExport>true</includeInExport>
+											</field>
+											<field>
+												<id>90faedb2-e1a7-6657-f9ea-1e9a479fa21b</id>
+												<ordinal>1</ordinal>
+												<validations/>
+												<defaultValue/>
+												<visibilityRules/>
+												<labelData>
+													<label>Description</label>
+													<fieldType>TEXT_AREA</fieldType>
+												</labelData>
+												<semantics>
+													<semantic>hasDataReuseMethodologyDescription</semantic>
+													<semantic>rda.dataset.methodology</semantic>
+												</semantics>
+												<includeInExport>true</includeInExport>
+											</field>
+										</fields>
+										<title>What standards, methodologies or software will be used to process existing data?</title>
+										<multiplicity min="0" max="20">
+											<placeholder></placeholder>
+											<tableView>true</tableView>
+										</multiplicity>
+										<hasMultiplicity>true</hasMultiplicity>
+										<hasCommentField>false</hasCommentField>
+									</fieldSet>
+									<fieldSet>
+										<id>e709e0dd-f00d-86e5-8ef2-2fc4ca91b35d</id>
+										<ordinal>3</ordinal>
+										<fields>
+											<field>
+												<id>2fda5971-ebd3-b99d-81ad-4a634b5da7cc</id>
+												<ordinal>0</ordinal>
+												<validations/>
+												<defaultValue/>
+												<visibilityRules/>
+												<labelData>
+													<label>Data type</label>
+													<fieldType>FREE_TEXT</fieldType>
+												</labelData>
+												<semantics>
+													<semantic>hasDataReuse</semantic>
+													<semantic>http://purl.org/dc/terms/type</semantic>
+													<semantic>rda.dataset.type</semantic>
+												</semantics>
+												<includeInExport>true</includeInExport>
+											</field>
+											<field>
+												<id>17d84e0a-7a67-ed71-f84a-dec73dc28b5e</id>
+												<ordinal>1</ordinal>
+												<validations/>
+												<defaultValue/>
+												<visibilityRules/>
+												<labelData>
+													<label>File format</label>
+													<fieldType>TEXT_AREA</fieldType>
+												</labelData>
+												<semantics>
+													<semantic>hasDataReuse</semantic>
+													<semantic>http://purl.org/dc/terms/format</semantic>
+													<semantic>rda.dataset.distribution.format</semantic>
+												</semantics>
+												<includeInExport>true</includeInExport>
+											</field>
+											<field>
+												<id>466db583-9925-b1f7-5d88-3b4747998868</id>
+												<ordinal>2</ordinal>
+												<validations/>
+												<defaultValue/>
+												<visibilityRules/>
+												<labelData>
+													<label>Size</label>
+													<fieldType>FREE_TEXT</fieldType>
+												</labelData>
+												<semantics>
+													<semantic>hasDataReuse</semantic>
+													<semantic>http://www.w3.org/ns/dcat#byteSize</semantic>
+													<semantic>rda.dataset.distribution.byte_size</semantic>
+												</semantics>
+												<includeInExport>true</includeInExport>
+											</field>
+										</fields>
+										<title>What type, format and volume of data will you re-use?</title>
+										<description>Describe the type, format and estimation of the volume for each file group.</description>
+										<multiplicity min="0" max="25">
+											<placeholder></placeholder>
+											<tableView>true</tableView>
+										</multiplicity>
+										<hasMultiplicity>true</hasMultiplicity>
+										<hasCommentField>false</hasCommentField>
+									</fieldSet>
+								</fieldSets>
+								<title>Data reused</title>
+								<sections/>
+							</section>
+						</sections>
+					</page>
+					<page>
+						<id>6b13a467-2b9a-472f-a0f1-1fd68a4f1a15</id>
+						<ordinal>1</ordinal>
+						<title>Documentation and data quality</title>
+						<sections>
+							<section>
+								<id>0eccc650-dae0-44f0-9c93-ac7ca716d441</id>
+								<ordinal>0</ordinal>
+								<fieldSets>
+									<fieldSet>
+										<id>6e66f911-6cbb-4ba5-888d-f53e50d2deff</id>
+										<ordinal>0</ordinal>
+										<fields>
+											<field>
+												<id>04d372a9-8bee-e7f6-6561-5b6481704933</id>
+												<ordinal>0</ordinal>
+												<validations/>
+												<defaultValue/>
+												<visibilityRules/>
+												<referenceTypeData multipleSelect="true">
+													<label>Standard</label>
+													<fieldType>REFERENCE_TYPES</fieldType>
+													<referenceTypeId>2beacaad-3223-43ad-ad99-1e5f21328e7b</referenceTypeId>
+													<referenceTypeName>Registries</referenceTypeName>
+													<referenceTypeCode>registries</referenceTypeCode>
+												</referenceTypeData>
+												<semantics>
+													<semantic>https://w3id.org/dcso/ns/core#hasMetadata</semantic>
+													<semantic>http://purl.org/dc/terms/identifier</semantic>
+													<semantic>rda.dataset.metadata.metadata_standard_id.identifier</semantic>
+													<semantic>rda.dataset.metadata.metadata_standard_id.type</semantic>
+												</semantics>
+												<includeInExport>true</includeInExport>
+											</field>
+											<field>
+												<id>2360e954-a06c-909b-fc6e-20e9077a22bd</id>
+												<ordinal>1</ordinal>
+												<validations/>
+												<defaultValue/>
+												<visibilityRules/>
+												<referenceTypeData multipleSelect="true">
+													<label>Language</label>
+													<fieldType>REFERENCE_TYPES</fieldType>
+													<referenceTypeId>90c9acbd-2d93-4870-bf76-4d9d7c572a55</referenceTypeId>
+													<referenceTypeName>Languages</referenceTypeName>
+													<referenceTypeCode>languages</referenceTypeCode>
+												</referenceTypeData>
+												<semantics>
+													<semantic>https://w3id.org/dcso/ns/core#hasMetadata</semantic>
+													<semantic>http://purl.org/dc/terms/language</semantic>
+													<semantic>rda.dataset.metadata.language</semantic>
+												</semantics>
+												<includeInExport>true</includeInExport>
+											</field>
+											<field>
+												<id>8e684fee-c25a-66d3-3b03-9742a9325701</id>
+												<ordinal>2</ordinal>
+												<validations/>
+												<defaultValue/>
+												<visibilityRules/>
+												<labelData>
+													<label>Description</label>
+													<fieldType>TEXT_AREA</fieldType>
+												</labelData>
+												<semantics>
+													<semantic>https://w3id.org/dcso/ns/core#hasMetadata</semantic>
+													<semantic>http://purl.org/dc/terms/description</semantic>
+													<semantic>rda.dataset.metadata.description</semantic>
+												</semantics>
+												<includeInExport>true</includeInExport>
+											</field>
+										</fields>
+										<title>What metadata will accompany data? What standards will be used?</title>
+										<description>Outline the metadata that will accompany the data, with reference to good practice in the community (such as metadata standards where they exist).</description>
+										<multiplicity min="0" max="20">
+											<placeholder></placeholder>
+											<tableView>true</tableView>
+										</multiplicity>
+										<hasMultiplicity>true</hasMultiplicity>
+										<hasCommentField>false</hasCommentField>
+									</fieldSet>
+									<fieldSet>
+										<id>7fc85b40-3efb-4ea6-a3af-70dff80fe6d2</id>
+										<ordinal>1</ordinal>
+										<fields>
+											<field>
+												<id>515cbb72-ff71-5065-a99f-a3a078e820d7</id>
+												<ordinal>0</ordinal>
+												<validations/>
+												<defaultValue/>
+												<visibilityRules/>
+												<labelData>
+													<label>Document type</label>
+													<fieldType>TEXT_AREA</fieldType>
+												</labelData>
+												<semantics>
+													<semantic>hasDocumentation</semantic>
+													<semantic>http://purl.org/dc/terms/type</semantic>
+													<semantic>rda.dataset.documentation.type</semantic>
+												</semantics>
+												<includeInExport>true</includeInExport>
+											</field>
+											<field>
+												<id>f67c0256-6a08-0c09-c543-bc982f23def5</id>
+												<ordinal>1</ordinal>
+												<validations/>
+												<defaultValue/>
+												<visibilityRules/>
+												<referenceTypeData multipleSelect="false">
+													<label>Language</label>
+													<fieldType>REFERENCE_TYPES</fieldType>
+													<referenceTypeId>90c9acbd-2d93-4870-bf76-4d9d7c572a55</referenceTypeId>
+													<referenceTypeName>Languages</referenceTypeName>
+													<referenceTypeCode>languages</referenceTypeCode>
+												</referenceTypeData>
+												<semantics>
+													<semantic>rda.dataset.documentation</semantic>
+													<semantic>http://purl.org/dc/terms/language</semantic>
+													<semantic>rda.dataset.documentation.language</semantic>
+												</semantics>
+												<includeInExport>true</includeInExport>
+											</field>
+											<field>
+												<id>f0f96ff7-7312-49c1-b2b8-be25bc6f4086</id>
+												<ordinal>2</ordinal>
+												<validations/>
+												<defaultValue/>
+												<visibilityRules/>
+												<labelData>
+													<label>Description</label>
+													<fieldType>TEXT_AREA</fieldType>
+												</labelData>
+												<semantics>
+													<semantic>rda.dataset.documentation</semantic>
+													<semantic>http://purl.org/dc/terms/description</semantic>
+													<semantic>rda.dataset.documentation.description</semantic>
+												</semantics>
+												<includeInExport>true</includeInExport>
+											</field>
+										</fields>
+										<title>What documentation will accompany data?</title>
+										<description>Outline the documentation needed to enable data re-use: state what kind of information will be recorded and where (for example, a &amp;#8216;readme&amp;#8217; text file, code books, lab notebooks, field notes), indicate how data provenance will be documented.</description>
+										<multiplicity min="0" max="20">
+											<placeholder></placeholder>
+											<tableView>true</tableView>
+										</multiplicity>
+										<hasMultiplicity>true</hasMultiplicity>
+										<hasCommentField>false</hasCommentField>
+									</fieldSet>
+								</fieldSets>
+								<description></description>
+								<title>Metadata and documentation</title>
+								<sections/>
+							</section>
+							<section>
+								<id>42a4397f-f88b-45bd-9df8-23277430e6a9</id>
+								<ordinal>1</ordinal>
+								<fieldSets>
+									<fieldSet>
+										<id>2ced82d1-cf03-e32a-6333-ae08d71e2b1f</id>
+										<ordinal>0</ordinal>
+										<fields>
+											<field>
+												<id>0526c739-8e18-9b34-11c0-c3307669c73b</id>
+												<ordinal>0</ordinal>
+												<validations/>
+												<defaultValue/>
+												<visibilityRules/>
+												<labelData>
+													<label>Project specific quality control measures</label>
+													<fieldType>TEXT_AREA</fieldType>
+												</labelData>
+												<semantics>
+													<semantic>https://w3id.org/dcso/ns/core#dataQualityAssurance</semantic>
+													<semantic>rda.dataset.data_quality_assurance</semantic>
+												</semantics>
+												<includeInExport>true</includeInExport>
+											</field>
+											<field>
+												<id>4470dbaa-0fd6-2183-e2c3-5a1a5575f5cd</id>
+												<ordinal>1</ordinal>
+												<validations/>
+												<defaultValue/>
+												<visibilityRules/>
+												<labelData>
+													<label>File organization, folder structure</label>
+													<fieldType>TEXT_AREA</fieldType>
+												</labelData>
+												<semantics>
+													<semantic>fileOrganization</semantic>
+												</semantics>
+												<includeInExport>true</includeInExport>
+											</field>
+											<field>
+												<id>81fb1e57-d8fb-b112-dca6-c40cce2f519c</id>
+												<ordinal>2</ordinal>
+												<validations/>
+												<defaultValue/>
+												<visibilityRules/>
+												<labelData>
+													<label>File naming convention</label>
+													<fieldType>TEXT_AREA</fieldType>
+												</labelData>
+												<semantics>
+													<semantic>fileNamingConvention</semantic>
+												</semantics>
+												<includeInExport>true</includeInExport>
+											</field>
+											<field>
+												<id>15829e90-ef1f-4e5d-4d05-84c3ecddfa52</id>
+												<ordinal>3</ordinal>
+												<validations/>
+												<defaultValue/>
+												<visibilityRules/>
+												<labelData>
+													<label>File versioning strategy</label>
+													<fieldType>TEXT_AREA</fieldType>
+												</labelData>
+												<semantics>
+													<semantic>fileVersioning</semantic>
+												</semantics>
+												<includeInExport>true</includeInExport>
+											</field>
+										</fields>
+										<title>Quality control measures</title>
+										<description>Indicate how the data will be organised during the project, describe the approach to ensure and document quality control in the collection of data during the lifetime of the project.&lt;div&gt;Quality measures may include: equipment calibration, measurement replication, pilot testing, data cross-verification.&lt;/div&gt;</description>
+										<hasMultiplicity>false</hasMultiplicity>
+										<hasCommentField>false</hasCommentField>
+									</fieldSet>
+								</fieldSets>
+								<description></description>
+								<title>Quality control</title>
+								<sections/>
+							</section>
+						</sections>
+					</page>
+					<page>
+						<id>ab2154ed-8ef9-425d-b7ff-11acbae29d57</id>
+						<ordinal>2</ordinal>
+						<title>Storage and backup during the research process</title>
+						<sections>
+							<section>
+								<id>1c31d3f4-27e2-4751-b3e4-fecf879ba275</id>
+								<ordinal>0</ordinal>
+								<fieldSets>
+									<fieldSet>
+										<id>a71c684a-aa8a-4cb2-b51d-c3836c1cff7d</id>
+										<ordinal>0</ordinal>
+										<fields>
+											<field>
+												<id>b82b5f92-0c10-42da-8af3-dcf1a4a1b421</id>
+												<ordinal>0</ordinal>
+												<validations/>
+												<defaultValue/>
+												<visibilityRules/>
+												<labelData>
+													<label>Storage type</label>
+													<fieldType>FREE_TEXT</fieldType>
+												</labelData>
+												<semantics>
+													<semantic>https://w3id.org/dcso/ns/core#hasHost</semantic>
+													<semantic>https://w3id.org/dcso/ns/core#storageType</semantic>
+													<semantic>rda.dataset.distribution.host.storage_type</semantic>
+												</semantics>
+												<includeInExport>true</includeInExport>
+											</field>
+											<field>
+												<id>a70bf404-0fc8-bf7b-3ab0-21394f873710</id>
+												<ordinal>1</ordinal>
+												<validations/>
+												<defaultValue/>
+												<visibilityRules/>
+												<selectData multipleSelect="false">
+													<label>Backup method</label>
+													<fieldType>SELECT</fieldType>
+													<options>
+														<options label="Automatic" value="Automatic"/>
+														<options label="Manual" value="Manual"/></options>
+												</selectData>
+												<semantics>
+													<semantic>https://w3id.org/dcso/ns/core#hasHost</semantic>
+													<semantic>https://w3id.org/dcso/ns/core#backupType</semantic>
+													<semantic>rda.dataset.distribution.host.backup_type</semantic>
+												</semantics>
+												<includeInExport>true</includeInExport>
+											</field>
+											<field>
+												<id>130d6ea8-e4b8-cbb5-108d-4dab8cfc82bf</id>
+												<ordinal>2</ordinal>
+												<validations/>
+												<defaultValue/>
+												<visibilityRules/>
+												<selectData multipleSelect="false">
+													<label>Backup frequency</label>
+													<fieldType>SELECT</fieldType>
+													<options>
+														<options label="Daily" value="Daily"/>
+														<options label="Weekly" value="Weekly"/>
+														<options label="On demand" value="On demand"/></options>
+												</selectData>
+												<semantics>
+													<semantic>https://w3id.org/dcso/ns/core#hasHost</semantic>
+													<semantic>https://w3id.org/dcso/ns/core#backupFrequency</semantic>
+													<semantic>rda.dataset.distribution.host.backup_frequency</semantic>
+												</semantics>
+												<includeInExport>true</includeInExport>
+											</field>
+											<field>
+												<id>1f0f55cf-0d0d-e613-f03b-4927657b14f7</id>
+												<ordinal>3</ordinal>
+												<validations/>
+												<defaultValue/>
+												<visibilityRules/>
+												<selectData multipleSelect="false">
+													<label>Supports versioning</label>
+													<fieldType>SELECT</fieldType>
+													<options>
+														<options label="Yes" value="Yes"/>
+														<options label="No" value="No"/>
+														<options label="Unknown" value="Unknown"/></options>
+												</selectData>
+												<semantics>
+													<semantic>https://w3id.org/dcso/ns/core#hasHost</semantic>
+													<semantic>https://w3id.org/dcso/ns/core#supportVersioning</semantic>
+													<semantic>rda.dataset.distribution.host.support_versioning</semantic>
+												</semantics>
+												<includeInExport>true</includeInExport>
+											</field>
+										</fields>
+										<title>Where and how will the data be stored during research? </title>
+										<description></description>
+										<multiplicity min="0" max="25">
+											<placeholder></placeholder>
+											<tableView>true</tableView>
+										</multiplicity>
+										<hasMultiplicity>true</hasMultiplicity>
+										<hasCommentField>false</hasCommentField>
+									</fieldSet>
+									<fieldSet>
+										<id>97a8aeea-4227-2a48-54c5-8bf15f7e46c5</id>
+										<ordinal>1</ordinal>
+										<fields>
+											<field>
+												<id>e20e44f2-f3c3-9ead-4ff8-d052e4aa7174</id>
+												<ordinal>0</ordinal>
+												<validations/>
+												<defaultValue/>
+												<visibilityRules/>
+												<labelData>
+													<label></label>
+													<fieldType>TEXT_AREA</fieldType>
+												</labelData>
+												<semantics>
+													<semantic>https://w3id.org/dcso/ns/core#hasHost</semantic>
+													<semantic>hasRecoveryPlan</semantic>
+													<semantic>rda.dataset.distribution.host.recovery_plan</semantic>
+												</semantics>
+												<includeInExport>true</includeInExport>
+											</field>
+										</fields>
+										<title>Data recovery plan</title>
+										<hasMultiplicity>false</hasMultiplicity>
+										<hasCommentField>false</hasCommentField>
+									</fieldSet>
+								</fieldSets>
+								<description></description>
+								<title>Storage and back up during research</title>
+								<sections/>
+							</section>
+							<section>
+								<id>e60b3606-b65f-699f-0ccf-42d75ba82d1b</id>
+								<ordinal>1</ordinal>
+								<fieldSets>
+									<fieldSet>
+										<id>f27f77b8-fe3b-4a13-8619-f2073880c582</id>
+										<ordinal>0</ordinal>
+										<fields>
+											<field>
+												<id>f58b092e-f399-ce4e-f052-8c8a0d91fe4d</id>
+												<ordinal>0</ordinal>
+												<validations/>
+												<defaultValue/>
+												<visibilityRules/>
+												<labelData>
+													<label>Who will have the rights to control access to the data?</label>
+													<fieldType>TEXT_AREA</fieldType>
+												</labelData>
+												<semantics>
+													<semantic>http://purl.org/dc/terms/rights</semantic>
+													<semantic>rda.dataset.rights</semantic>
+												</semantics>
+												<includeInExport>true</includeInExport>
+											</field>
+											<field>
+												<id>058f91cb-2dd2-c6cc-2fac-90994f8086d3</id>
+												<ordinal>1</ordinal>
+												<validations/>
+												<defaultValue/>
+												<visibilityRules/>
+												<labelData>
+													<label>Description of specific data security measures, e.g. access control, secure data transfer</label>
+													<fieldType>TEXT_AREA</fieldType>
+												</labelData>
+												<semantics>
+													<semantic>https://w3id.org/dcso/ns/core#hasSecurityPrivacy</semantic>
+													<semantic>http://purl.org/dc/terms/description</semantic>
+													<semantic>rda.dataset.security_and_privacy.description</semantic>
+												</semantics>
+												<includeInExport>true</includeInExport>
+											</field>
+										</fields>
+										<title>How will data security be taken care of during the research?</title>
+										<description></description>
+										<hasMultiplicity>false</hasMultiplicity>
+										<hasCommentField>false</hasCommentField>
+									</fieldSet>
+								</fieldSets>
+								<title>Data security during research</title>
+								<sections/>
+							</section>
+						</sections>
+					</page>
+					<page>
+						<id>3c006c12-a962-4ae3-b148-6ff07b047e88</id>
+						<ordinal>3</ordinal>
+						<title>Legal and ethical requirements</title>
+						<sections>
+							<section>
+								<id>36882269-d3b3-4d9b-8891-d6c336e8fe43</id>
+								<ordinal>0</ordinal>
+								<fieldSets>
+									<fieldSet>
+										<id>7ac1f42b-9aad-4efb-b653-1716b29f1139</id>
+										<ordinal>0</ordinal>
+										<fields>
+											<field>
+												<id>1639ee74-792a-4fab-9aa0-83cecd5f0dbb</id>
+												<ordinal>0</ordinal>
+												<validations/>
+												<defaultValue/>
+												<visibilityRules>
+													<visibilityRule>
+														<target>ff5c9063-84c5-4620-a4b4-23b4bec57a45</target>
+														<booleanValue>true</booleanValue>
+													</visibilityRule>
+												</visibilityRules>
+												<labelData>
+													<label></label>
+													<fieldType>BOOLEAN_DECISION</fieldType>
+												</labelData>
+												<semantics>
+													<semantic>https://w3id.org/dcso/ns/core#personalData</semantic>
+													<semantic>rda.dataset.personal_data</semantic>
+												</semantics>
+												<includeInExport>true</includeInExport>
+											</field>
+										</fields>
+										<title>Will personal data be processed?</title>
+										<description></description>
+										<hasMultiplicity>false</hasMultiplicity>
+										<hasCommentField>false</hasCommentField>
+									</fieldSet>
+									<fieldSet>
+										<id>b686eec3-07d4-ea91-a58e-6265766bdc0f</id>
+										<ordinal>1</ordinal>
+										<fields>
+											<field>
+												<id>306add59-f03b-2931-b5a4-8adf52328a58</id>
+												<ordinal>0</ordinal>
+												<validations/>
+												<defaultValue/>
+												<visibilityRules>
+													<visibilityRule>
+														<target>ff5c9063-84c5-4620-a4b4-23b4bec57a45</target>
+														<booleanValue>true</booleanValue>
+													</visibilityRule>
+												</visibilityRules>
+												<labelData>
+													<label></label>
+													<fieldType>BOOLEAN_DECISION</fieldType>
+												</labelData>
+												<semantics>
+													<semantic>https://w3id.org/dcso/ns/core#sensitiveData</semantic>
+													<semantic>rda.dataset.sensitive_data</semantic>
+												</semantics>
+												<includeInExport>true</includeInExport>
+											</field>
+										</fields>
+										<title>Will sensitive data or information be processed?</title>
+										<description></description>
+										<hasMultiplicity>false</hasMultiplicity>
+										<hasCommentField>false</hasCommentField>
+									</fieldSet>
+									<fieldSet>
+										<id>a2368620-fcd8-9bbd-6dbf-46e0536213d7</id>
+										<ordinal>2</ordinal>
+										<fields>
+											<field>
+												<id>c608799d-07d8-9909-9695-e573adfe5f3d</id>
+												<ordinal>0</ordinal>
+												<validations/>
+												<defaultValue/>
+												<visibilityRules>
+													<visibilityRule>
+														<target>ff5c9063-84c5-4620-a4b4-23b4bec57a45</target>
+														<booleanValue>true</booleanValue>
+													</visibilityRule>
+												</visibilityRules>
+												<labelData>
+													<label></label>
+													<fieldType>BOOLEAN_DECISION</fieldType>
+												</labelData>
+												<semantics>
+													<semantic>https://w3id.org/dcso/ns/core#ethicalIssuesExist</semantic>
+													<semantic>rda.dmp.ethical_issues_exist</semantic>
+												</semantics>
+												<includeInExport>true</includeInExport>
+											</field>
+										</fields>
+										<title>Will ethical approval be required?</title>
+										<description></description>
+										<hasMultiplicity>false</hasMultiplicity>
+										<hasCommentField>false</hasCommentField>
+									</fieldSet>
+									<fieldSet>
+										<id>ff5c9063-84c5-4620-a4b4-23b4bec57a45</id>
+										<ordinal>3</ordinal>
+										<fields>
+											<field>
+												<id>13d5f649-9787-4cf9-6d15-0da5af2bd2bc</id>
+												<ordinal>0</ordinal>
+												<validations/>
+												<defaultValue>
+													<value>1. Ustawa z dnia 10 maja 2018 r. o ochronie danych osobowych; 2. Rozporządzenie Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (ogólne rozporządzenie o ochronie danych) Ustawa z dnia 10 maja 2018 r. o ochronie danych osobowych </value>
+												</defaultValue>
+												<visibilityRules/>
+												<labelData>
+													<label>List relevant rules/legislation</label>
+													<fieldType>TEXT_AREA</fieldType>
+												</labelData>
+												<semantics>
+													<semantic>hasPersonalOrSensitiveRegulation</semantic>
+													<semantic>rda.dataset.security_and_privacy.title</semantic>
+												</semantics>
+												<includeInExport>true</includeInExport>
+											</field>
+											<field>
+												<id>f9fd5f01-6858-52b6-0c27-e3c073f9c37d</id>
+												<ordinal>1</ordinal>
+												<validations/>
+												<defaultValue/>
+												<visibilityRules/>
+												<labelData>
+													<label>How will compliance with applicable legislation be ensured?</label>
+													<fieldType>TEXT_AREA</fieldType>
+												</labelData>
+												<semantics>
+													<semantic>https://w3id.org/dcso/ns/core#ethicalIssueDescription</semantic>
+													<semantic>rda.dataset.security_and_privacy.description</semantic>
+													<semantic>rda.dmp.ethical_issues_description</semantic>
+												</semantics>
+												<includeInExport>true</includeInExport>
+											</field>
+										</fields>
+										<title>Relevant rules/legislation</title>
+										<description></description>
+										<hasMultiplicity>false</hasMultiplicity>
+										<hasCommentField>false</hasCommentField>
+									</fieldSet>
+									<fieldSet>
+										<id>6f14793f-c964-8c9e-ca38-458902f34fa1</id>
+										<ordinal>4</ordinal>
+										<fields>
+											<field>
+												<id>9d5b1875-33aa-ef21-f005-388e63a7cb57</id>
+												<ordinal>0</ordinal>
+												<validations/>
+												<defaultValue>
+													<booleanValue>false</booleanValue>
+												</defaultValue>
+												<visibilityRules/>
+												<labelData>
+													<label>Consent for data processing will be seeked from participants</label>
+													<fieldType>CHECK_BOX</fieldType>
+												</labelData>
+												<semantics>
+													<semantic>requiresConsentDataProcessing</semantic>
+													<semantic>rda.dataset.security_and_privacy.title</semantic>
+												</semantics>
+												<includeInExport>true</includeInExport>
+											</field>
+											<field>
+												<id>70d049ab-5891-76a6-fcbe-c9883e3bd704</id>
+												<ordinal>1</ordinal>
+												<validations/>
+												<defaultValue/>
+												<visibilityRules/>
+												<labelData>
+													<label>Explanation</label>
+													<fieldType>TEXT_AREA</fieldType>
+												</labelData>
+												<semantics>
+													<semantic>hasConsentDataProcessingDetails</semantic>
+													<semantic>rda.dataset.security_and_privacy.description</semantic>
+												</semantics>
+												<includeInExport>true</includeInExport>
+											</field>
+											<field>
+												<id>77da10f1-b059-c00c-ebde-8fdbfd9a8b27</id>
+												<ordinal>2</ordinal>
+												<validations/>
+												<defaultValue>
+													<booleanValue>false</booleanValue>
+												</defaultValue>
+												<visibilityRules/>
+												<labelData>
+													<label>Consent for data publishing will be seeked from participants</label>
+													<fieldType>CHECK_BOX</fieldType>
+												</labelData>
+												<semantics>
+													<semantic>requiresConsentDataPublishing</semantic>
+													<semantic>rda.dataset.security_and_privacy.title</semantic>
+												</semantics>
+												<includeInExport>true</includeInExport>
+											</field>
+											<field>
+												<id>7bef17b4-133b-d173-6aa6-f51380e7e751</id>
+												<ordinal>3</ordinal>
+												<validations/>
+												<defaultValue/>
+												<visibilityRules/>
+												<labelData>
+													<label>Explanation</label>
+													<fieldType>TEXT_AREA</fieldType>
+												</labelData>
+												<semantics>
+													<semantic>hasConsentDataPublishingDetails</semantic>
+													<semantic>rda.dataset.security_and_privacy.description</semantic>
+												</semantics>
+												<includeInExport>true</includeInExport>
+											</field>
+											<field>
+												<id>9d8f8807-7157-0781-7fe3-d161240e2cb5</id>
+												<ordinal>4</ordinal>
+												<validations/>
+												<defaultValue>
+													<booleanValue>false</booleanValue>
+												</defaultValue>
+												<visibilityRules/>
+												<labelData>
+													<label>Data will be anonymised/pseudonymised</label>
+													<fieldType>CHECK_BOX</fieldType>
+												</labelData>
+												<semantics>
+													<semantic>requiresDataAnonymisation</semantic>
+													<semantic>rda.dataset.security_and_privacy.title</semantic>
+												</semantics>
+												<includeInExport>true</includeInExport>
+											</field>
+											<field>
+												<id>cf3d294e-1e35-1c3b-2b54-2c23d652e2d8</id>
+												<ordinal>5</ordinal>
+												<validations/>
+												<defaultValue/>
+												<visibilityRules/>
+												<labelData>
+													<label>Explanation</label>
+													<fieldType>TEXT_AREA</fieldType>
+												</labelData>
+												<semantics>
+													<semantic>hasDataAnonymisationDetails</semantic>
+													<semantic>rda.dataset.security_and_privacy.description</semantic>
+												</semantics>
+												<includeInExport>true</includeInExport>
+											</field>
+										</fields>
+										<title>Consent and data anonymisation</title>
+										<description></description>
+										<hasMultiplicity>false</hasMultiplicity>
+										<hasCommentField>false</hasCommentField>
+									</fieldSet>
+								</fieldSets>
+								<description></description>
+								<title>Personal and sensitive data</title>
+								<sections/>
+							</section>
+							<section>
+								<id>7f963377-7d12-443a-8698-060d49603dfe</id>
+								<ordinal>1</ordinal>
+								<fieldSets>
+									<fieldSet>
+										<id>00a92d35-3c6c-4f31-b64f-78e6eaeaf687</id>
+										<ordinal>0</ordinal>
+										<fields>
+											<field>
+												<id>cb09a30f-d92a-45c2-99a1-459e695f7ec6</id>
+												<ordinal>0</ordinal>
+												<validations/>
+												<defaultValue/>
+												<visibilityRules>
+													<visibilityRule>
+														<target>54bcdd32-05cd-15d7-46b6-abf3659259b9</target>
+														<booleanValue>true</booleanValue>
+													</visibilityRule>
+												</visibilityRules>
+												<labelData>
+													<label></label>
+													<fieldType>BOOLEAN_DECISION</fieldType>
+												</labelData>
+												<semantics>
+													<semantic>isThirdPartyDataInvolved</semantic>
+													<semantic>rda.dataset.rights</semantic>
+												</semantics>
+												<includeInExport>true</includeInExport>
+											</field>
+										</fields>
+										<title>Will data from third parties be processed?</title>
+										<hasMultiplicity>false</hasMultiplicity>
+										<hasCommentField>false</hasCommentField>
+									</fieldSet>
+									<fieldSet>
+										<id>54bcdd32-05cd-15d7-46b6-abf3659259b9</id>
+										<ordinal>1</ordinal>
+										<fields>
+											<field>
+												<id>ebb9538a-9626-ea4d-3711-da1671825148</id>
+												<ordinal>0</ordinal>
+												<validations/>
+												<defaultValue/>
+												<visibilityRules/>
+												<labelData>
+													<label>Rights holder</label>
+													<fieldType>TEXT_AREA</fieldType>
+												</labelData>
+												<semantics>
+													<semantic>thirdPartyRightsHolder</semantic>
+													<semantic>rda.dataset.rights</semantic>
+												</semantics>
+												<includeInExport>true</includeInExport>
+											</field>
+											<field>
+												<id>7cbb820d-c667-c326-264e-8d3fafb92786</id>
+												<ordinal>1</ordinal>
+												<validations/>
+												<defaultValue/>
+												<visibilityRules/>
+												<referenceTypeData multipleSelect="false">
+													<label>License</label>
+													<fieldType>REFERENCE_TYPES</fieldType>
+													<referenceTypeId>2baab1e8-561f-4c15-84c3-571b811c52f6</referenceTypeId>
+													<referenceTypeName>Licenses</referenceTypeName>
+													<referenceTypeCode>licenses</referenceTypeCode>
+												</referenceTypeData>
+												<semantics>
+													<semantic>https://w3id.org/dcso/ns/core#hasLicense</semantic>
+													<semantic>http://purl.org/dc/terms/title</semantic>
+													<semantic>rda.dataset.distribution.license</semantic>
+													<semantic>rda.dataset.distribution.license.license_ref</semantic>
+												</semantics>
+												<includeInExport>true</includeInExport>
+											</field>
+											<field>
+												<id>61bdd7e6-0099-ba2c-f44e-b99f1e858f51</id>
+												<ordinal>2</ordinal>
+												<validations/>
+												<defaultValue/>
+												<visibilityRules/>
+												<labelData>
+													<label>Data description</label>
+													<fieldType>TEXT_AREA</fieldType>
+												</labelData>
+												<semantics>
+													<semantic>hasDataRightsDetails</semantic>
+													<semantic>rda.dataset.rights</semantic>
+												</semantics>
+												<includeInExport>true</includeInExport>
+											</field>
+										</fields>
+										<title>Data from third parties</title>
+										<description>Outline any legal issues regarding data owned or provided by third parties; what licenses will be applied to data? will you need to seek copyright clearance before using or sharing the data?</description>
+										<multiplicity min="0" max="20">
+											<placeholder></placeholder>
+											<tableView>true</tableView>
+										</multiplicity>
+										<hasMultiplicity>true</hasMultiplicity>
+										<hasCommentField>false</hasCommentField>
+									</fieldSet>
+								</fieldSets>
+								<description></description>
+								<title>Processing data from third parties</title>
+								<sections/>
+							</section>
+						</sections>
+					</page>
+					<page>
+						<id>5bf1de1a-ec91-4833-89a1-7f25604657b0</id>
+						<ordinal>4</ordinal>
+						<title>Data sharing and long-term preservation </title>
+						<sections>
+							<section>
+								<id>730ce381-1b24-48bc-ab89-1162fb34a12e</id>
+								<ordinal>0</ordinal>
+								<fieldSets>
+									<fieldSet>
+										<id>46fed0c5-5be6-f77f-20f7-146c651e2fcd</id>
+										<ordinal>0</ordinal>
+										<fields>
+											<field>
+												<id>fd79463a-31d3-13d3-0ba1-7dc89ca1d1fc</id>
+												<ordinal>0</ordinal>
+												<validations/>
+												<defaultValue/>
+												<visibilityRules/>
+												<labelData>
+													<label>Type of data</label>
+													<fieldType>TEXT_AREA</fieldType>
+												</labelData>
+												<semantics>
+													<semantic>hasPreservation</semantic>
+													<semantic>http://purl.org/dc/terms/type</semantic>
+													<semantic>rda.dataset.type</semantic>
+												</semantics>
+												<includeInExport>true</includeInExport>
+											</field>
+											<field>
+												<id>a2c498cb-e85d-8127-dae6-f27e77e38ac7</id>
+												<ordinal>1</ordinal>
+												<validations/>
+												<defaultValue/>
+												<visibilityRules/>
+												<selectData multipleSelect="false">
+													<label>Type of service</label>
+													<fieldType>SELECT</fieldType>
+													<options>
+														<options label="Discipline specific repository" value="Discipline specific repository"/>
+														<options label="Institutional repository" value="Institutional repository"/>
+														<options label="Generalist repository" value="Generalist repository"/>
+														<options label="Long-term institutional storage" value="Long-term institutional storage"/>
+														<options label="Other" value="Other"/></options>
+												</selectData>
+												<semantics>
+													<semantic>hasPreservation</semantic>
+													<semantic>hasServiceType</semantic>
+													<semantic>rda.dataset.distribution.host.description</semantic>
+												</semantics>
+												<includeInExport>true</includeInExport>
+											</field>
+											<field>
+												<id>edf1ae83-0bd0-f8a8-708a-e884b877a0c6</id>
+												<ordinal>2</ordinal>
+												<validations/>
+												<defaultValue/>
+												<visibilityRules/>
+												<selectData multipleSelect="false">
+													<label>Time of sharing</label>
+													<fieldType>SELECT</fieldType>
+													<options>
+														<options label="As soon as data is produced/processed" value="As soon as data is produced/processed"/>
+														<options label="With related publication " value="With related publication "/>
+														<options label="At the end of project" value="At the end of project"/>
+														<options label="As soon as intellectual property rights are secured" value="As soon as intellectual property rights are secured"/></options>
+												</selectData>
+												<semantics>
+													<semantic>hasPreservation</semantic>
+													<semantic>hasSharingTimingPolicy</semantic>
+													<semantic>rda.dataset.distribution.issued</semantic>
+												</semantics>
+												<includeInExport>true</includeInExport>
+											</field>
+											<field>
+												<id>511fd4a5-e037-dfdf-909d-8ffea84d157c</id>
+												<ordinal>3</ordinal>
+												<validations/>
+												<defaultValue/>
+												<visibilityRules/>
+												<labelData>
+													<label>Retention period</label>
+													<fieldType>TEXT_AREA</fieldType>
+												</labelData>
+												<semantics>
+													<semantic>hasPreservation</semantic>
+													<semantic>hasRetentionPeriod</semantic>
+													<semantic>rda.dataset.distribution.available_until</semantic>
+												</semantics>
+												<includeInExport>true</includeInExport>
+											</field>
+											<field>
+												<id>293d65c5-b677-9225-1f80-258322fe0816</id>
+												<ordinal>4</ordinal>
+												<validations/>
+												<defaultValue/>
+												<visibilityRules/>
+												<referenceTypeData multipleSelect="false">
+													<label>License</label>
+													<fieldType>REFERENCE_TYPES</fieldType>
+													<referenceTypeId>2baab1e8-561f-4c15-84c3-571b811c52f6</referenceTypeId>
+													<referenceTypeName>Licenses</referenceTypeName>
+													<referenceTypeCode>licenses</referenceTypeCode>
+												</referenceTypeData>
+												<semantics>
+													<semantic>hasPreservationLicense</semantic>
+													<semantic>http://purl.org/dc/terms/title</semantic>
+													<semantic>rda.dataset.distribution.license</semantic>
+													<semantic>rda.dataset.distribution.license.license_ref</semantic>
+												</semantics>
+												<includeInExport>true</includeInExport>
+											</field>
+											<field>
+												<id>7666ecbe-c5b4-1ecd-bef9-8950d77046b3</id>
+												<ordinal>5</ordinal>
+												<validations/>
+												<defaultValue>
+													<value>None</value>
+												</defaultValue>
+												<visibilityRules/>
+												<selectData multipleSelect="true">
+													<label>Access</label>
+													<fieldType>SELECT</fieldType>
+													<options>
+														<options label="Open" value="Open"/>
+														<options label="Restricted" value="Shared under conditions"/>
+														<options label="Closed" value="Closed"/></options>
+												</selectData>
+												<semantics>
+													<semantic>hasPreservation</semantic>
+													<semantic>https://w3id.org/dcso/ns/core#dataAccess</semantic>
+													<semantic>rda.dataset.distribution.data_access</semantic>
+												</semantics>
+												<includeInExport>true</includeInExport>
+											</field>
+											<field>
+												<id>bd8a6d67-01f3-63df-4332-aae912fed971</id>
+												<ordinal>6</ordinal>
+												<validations/>
+												<defaultValue/>
+												<visibilityRules/>
+												<labelData>
+													<label>Details</label>
+													<fieldType>TEXT_AREA</fieldType>
+												</labelData>
+												<semantics>
+													<semantic>hasPreservation</semantic>
+													<semantic>http://purl.org/dc/terms/description</semantic>
+													<semantic>rda.dataset.distribution.restriction_explanation</semantic>
+												</semantics>
+												<includeInExport>true</includeInExport>
+											</field>
+										</fields>
+										<title>Where and when will data be archived or made available?</title>
+										<description></description>
+										<multiplicity min="0" max="20">
+											<placeholder></placeholder>
+											<tableView>true</tableView>
+										</multiplicity>
+										<hasMultiplicity>true</hasMultiplicity>
+										<hasCommentField>false</hasCommentField>
+									</fieldSet>
+								</fieldSets>
+								<description></description>
+								<title>Data sharing and long-term preservation</title>
+								<sections/>
+							</section>
+							<section>
+								<id>c0a0071d-88c4-bbe4-f296-b038a5c80a1d</id>
+								<ordinal>1</ordinal>
+								<fieldSets>
+									<fieldSet>
+										<id>66aa1013-2ece-40d8-842e-4d8c877d61f2</id>
+										<ordinal>0</ordinal>
+										<fields>
+											<field>
+												<id>afe3b04a-a160-42e7-8003-f1c04550e41f</id>
+												<ordinal>0</ordinal>
+												<validations/>
+												<defaultValue/>
+												<visibilityRules/>
+												<labelData>
+													<label></label>
+													<fieldType>TEXT_AREA</fieldType>
+												</labelData>
+												<semantics>
+													<semantic>https://w3id.org/dcso/ns/core#preservationStatement</semantic>
+													<semantic>rda.dataset.preservation_statement</semantic>
+												</semantics>
+												<includeInExport>true</includeInExport>
+											</field>
+										</fields>
+										<title>How will data for preservation or sharing be selected?</title>
+										<hasMultiplicity>false</hasMultiplicity>
+										<hasCommentField>false</hasCommentField>
+									</fieldSet>
+									<fieldSet>
+										<id>c58ef9a9-9649-e8a8-4f59-99453e2595b1</id>
+										<ordinal>1</ordinal>
+										<fields>
+											<field>
+												<id>32f7cc2f-4f96-7857-a75e-c30b7a12c0ab</id>
+												<ordinal>0</ordinal>
+												<validations/>
+												<defaultValue/>
+												<visibilityRules/>
+												<referenceTypeData multipleSelect="false">
+													<label></label>
+													<fieldType>REFERENCE_TYPES</fieldType>
+													<referenceTypeId>21dd4aa3-4d0e-47ea-8bd7-80f5654c3ee0</referenceTypeId>
+													<referenceTypeName>Re3Data Repositories</referenceTypeName>
+													<referenceTypeCode>re3data-repositories</referenceTypeCode>
+												</referenceTypeData>
+												<semantics>
+													<semantic>https://w3id.org/dcso/ns/core#hasHost</semantic>
+													<semantic>http://purl.org/dc/terms/identifier</semantic>
+													<semantic>rda.dataset.distribution.host.title</semantic>
+													<semantic>rda.dataset.distribution.host.url</semantic>
+													<semantic>rda.dataset.distribution.host.host_id</semantic>
+													<semantic>rda.dataset.distribution.host.certified_with</semantic>
+													<semantic>rda.dataset.distribution.host.description</semantic>
+													<semantic>rda.dataset.distribution.host.geo_location</semantic>
+													<semantic>rda.dataset.distribution.host.pid_system</semantic>
+													<semantic>rda.dataset.distribution.host.support_versioning</semantic>
+												</semantics>
+												<includeInExport>true</includeInExport>
+											</field>
+										</fields>
+										<title>Which service will be used for making data openly available?</title>
+										<multiplicity min="0" max="20">
+											<placeholder></placeholder>
+											<tableView>false</tableView>
+										</multiplicity>
+										<hasMultiplicity>true</hasMultiplicity>
+										<hasCommentField>false</hasCommentField>
+									</fieldSet>
+								</fieldSets>
+								<title>Data selection for preservation and sharing</title>
+								<sections/>
+							</section>
+							<section>
+								<id>73ef76b8-7d5b-bc4c-7dd9-9e5cd202bd56</id>
+								<ordinal>2</ordinal>
+								<fieldSets>
+									<fieldSet>
+										<id>ddd155cc-75e4-bda4-b8d1-36f21ec6e5ed</id>
+										<ordinal>0</ordinal>
+										<fields>
+											<field>
+												<id>c2e85a00-16d9-46db-7625-34d4d5ef5bbe</id>
+												<ordinal>0</ordinal>
+												<validations/>
+												<defaultValue/>
+												<visibilityRules/>
+												<labelData>
+													<label>Type of data</label>
+													<fieldType>TEXT_AREA</fieldType>
+												</labelData>
+												<semantics>
+													<semantic>https://w3id.org/dcso/ns/core#hasTechnicalResource</semantic>
+													<semantic>http://purl.org/dc/terms/type</semantic>
+													<semantic>rda.dataset.type</semantic>
+												</semantics>
+												<includeInExport>true</includeInExport>
+											</field>
+											<field>
+												<id>fd5ad826-b996-1771-de1f-c4bd8928e9f9</id>
+												<ordinal>1</ordinal>
+												<validations/>
+												<defaultValue/>
+												<visibilityRules/>
+												<selectData multipleSelect="false">
+													<label>Conversion to open format needed</label>
+													<fieldType>SELECT</fieldType>
+													<options>
+														<options label="Yes" value="Yes"/>
+														<options label="No" value="No"/></options>
+												</selectData>
+												<semantics>
+													<semantic>https://w3id.org/dcso/ns/core#hasTechnicalResource</semantic>
+													<semantic>requiresConversion</semantic>
+													<semantic>rda.dataset.distribution.format_justification</semantic>
+												</semantics>
+												<includeInExport>true</includeInExport>
+											</field>
+											<field>
+												<id>4339e603-7412-9d24-54e1-a9c610eed2df</id>
+												<ordinal>2</ordinal>
+												<validations/>
+												<defaultValue/>
+												<visibilityRules/>
+												<labelData>
+													<label>Name of method, software or tool enabling access and reuse</label>
+													<fieldType>TEXT_AREA</fieldType>
+												</labelData>
+												<semantics>
+													<semantic>https://w3id.org/dcso/ns/core#hasTechnicalResource</semantic>
+													<semantic>http://purl.org/dc/terms/title</semantic>
+													<semantic>rda.dataset.technical_resource.name</semantic>
+												</semantics>
+												<includeInExport>true</includeInExport>
+											</field>
+											<field>
+												<id>98e003bc-3f91-dc04-23d6-45751f962ac0</id>
+												<ordinal>3</ordinal>
+												<validations/>
+												<defaultValue/>
+												<visibilityRules/>
+												<labelData>
+													<label>Description of method, software or tool enabling access and reuse</label>
+													<fieldType>TEXT_AREA</fieldType>
+												</labelData>
+												<semantics>
+													<semantic>https://w3id.org/dcso/ns/core#hasTechnicalResource</semantic>
+													<semantic>http://purl.org/dc/terms/description</semantic>
+													<semantic>rda.dataset.technical_resource.description</semantic>
+												</semantics>
+												<includeInExport>true</includeInExport>
+											</field>
+										</fields>
+										<title>What methods or software will be needed to access and use the data?</title>
+										<description></description>
+										<multiplicity min="0" max="20">
+											<placeholder></placeholder>
+											<tableView>true</tableView>
+										</multiplicity>
+										<hasMultiplicity>true</hasMultiplicity>
+										<hasCommentField>false</hasCommentField>
+									</fieldSet>
+								</fieldSets>
+								<title>Data access and use</title>
+								<sections/>
+							</section>
+							<section>
+								<id>ee065ba5-a308-f263-4a03-6014e6590ff3</id>
+								<ordinal>3</ordinal>
+								<fieldSets>
+									<fieldSet>
+										<id>f5ce9e4b-cd0f-bfbe-9c44-c2dd012919bc</id>
+										<ordinal>0</ordinal>
+										<fields>
+											<field>
+												<id>6f93e9bf-9e2f-b790-1916-549b049ad93a</id>
+												<ordinal>0</ordinal>
+												<validations/>
+												<defaultValue/>
+												<visibilityRules/>
+												<labelData>
+													<label>Type of data</label>
+													<fieldType>TEXT_AREA</fieldType>
+												</labelData>
+												<semantics>
+													<semantic>hasPidStrategy</semantic>
+													<semantic>http://purl.org/dc/terms/type</semantic>
+													<semantic>rda.dataset.type</semantic>
+												</semantics>
+												<includeInExport>true</includeInExport>
+											</field>
+											<field>
+												<id>9366aec8-d1d8-4543-b568-d379553f5c5c</id>
+												<ordinal>1</ordinal>
+												<validations>
+													<validation>Required</validation>
+												</validations>
+												<defaultValue/>
+												<visibilityRules/>
+												<selectData multipleSelect="true">
+													<label>PID assigned</label>
+													<fieldType>SELECT</fieldType>
+													<options>
+														<options label="Yes, will be assigend by the repository" value="Yes, by the repository"/>
+														<options label="Yes, will be assigend in another way" value="Yes, in another way"/>
+														<options label="Already assigned PID will be reused" value="Already assigned PID will be reused"/>
+														<options label="No" value="No"/></options>
+												</selectData>
+												<semantics>
+													<semantic>hasPidStrategy</semantic>
+													<semantic>http://purl.org/dc/terms/title</semantic>
+													<semantic>rda.dataset.distribution.host.pid_strategy</semantic>
+												</semantics>
+												<includeInExport>true</includeInExport>
+											</field>
+											<field>
+												<id>7d45495a-2347-e5b0-6270-da2d0f0cd764</id>
+												<ordinal>2</ordinal>
+												<validations>
+													<validation>Required</validation>
+												</validations>
+												<defaultValue/>
+												<visibilityRules/>
+												<selectData multipleSelect="false">
+													<label>PID system</label>
+													<fieldType>SELECT</fieldType>
+													<options>
+														<options label="DOI" value="DOI"/>
+														<options label="Handle" value="Handle"/>
+														<options label="Ark" value="Ark"/>
+														<options label="Arxiv" value="Arxiv"/>
+														<options label="Bibcode" value="Bibcode"/>
+														<options label="Ean13" value="Ean13"/>
+														<options label="Eissn" value="Eissn"/>
+														<options label="Igsn" value="Igsn"/>
+														<options label="Isbn" value="Isbn"/>
+														<options label="Issn" value="Issn"/>
+														<options label="Lstc" value="Lstc"/>
+														<options label="Lissn" value="Lissn"/>
+														<options label="Sid" value="Sid"/>
+														<options label="Pmid" value="Pmid"/>
+														<options label="Purl" value="Purl"/>
+														<options label="Upc" value="Upc"/>
+														<options label="Url" value="Url"/>
+														<options label="Urn" value="Urn"/>
+														<options label="Other" value="Other"/></options>
+												</selectData>
+												<semantics>
+													<semantic>hasPidStrategy</semantic>
+													<semantic>https://w3id.org/dcso/ns/core#pidSystem</semantic>
+													<semantic>rda.dataset.distribution.host.pid_system</semantic>
+												</semantics>
+												<includeInExport>true</includeInExport>
+											</field>
+											<field>
+												<id>1e814219-9e6b-5bb8-2503-b39e47a3d447</id>
+												<ordinal>3</ordinal>
+												<validations>
+													<validation>Required</validation>
+												</validations>
+												<defaultValue/>
+												<visibilityRules/>
+												<labelData>
+													<label>Details</label>
+													<fieldType>TEXT_AREA</fieldType>
+												</labelData>
+												<semantics>
+													<semantic>hasPidStrategy</semantic>
+													<semantic>http://purl.org/dc/terms/description</semantic>
+													<semantic>rda.dataset.distribution.host.pid_strategy</semantic>
+												</semantics>
+												<includeInExport>true</includeInExport>
+											</field>
+										</fields>
+										<title>Will persistent identifier be assigned to published data?</title>
+										<multiplicity min="0" max="20">
+											<placeholder></placeholder>
+											<tableView>true</tableView>
+										</multiplicity>
+										<hasMultiplicity>true</hasMultiplicity>
+										<hasCommentField>false</hasCommentField>
+									</fieldSet>
+								</fieldSets>
+								<title>Persistent identifiers</title>
+								<sections/>
+							</section>
+						</sections>
+					</page>
+					<page>
+						<id>d8266202-7645-d9a9-f6ec-59b84b9b869b</id>
+						<ordinal>5</ordinal>
+						<title>Responsibilites and resources</title>
+						<sections>
+							<section>
+								<id>f2415d92-cc0f-d799-fad8-7500c96ba286</id>
+								<ordinal>0</ordinal>
+								<fieldSets>
+									<fieldSet>
+										<id>0d443267-a82f-fde4-8fec-ef9ef06e31e7</id>
+										<ordinal>0</ordinal>
+										<fields>
+											<field>
+												<id>88f0b47b-6e36-1fc6-9b88-9082bff46499</id>
+												<ordinal>0</ordinal>
+												<validations/>
+												<defaultValue/>
+												<visibilityRules/>
+												<labelData>
+													<label>Person/function/entity</label>
+													<fieldType>TEXT_AREA</fieldType>
+												</labelData>
+												<semantics>
+													<semantic>https://w3id.org/dcso/ns/core#hasContributor </semantic>
+													<semantic>http://xmlns.com/foaf/0.1/name</semantic>
+													<semantic>rda.dmp.contributor.name</semantic>
+												</semantics>
+												<includeInExport>true</includeInExport>
+											</field>
+											<field>
+												<id>1916f22d-12f3-c59a-53fa-8677521d100d</id>
+												<ordinal>1</ordinal>
+												<validations/>
+												<defaultValue/>
+												<visibilityRules/>
+												<selectData multipleSelect="true">
+													<label>Role</label>
+													<fieldType>SELECT</fieldType>
+													<options>
+														<options label="Data steward" value="Data steward"/>
+														<options label="Data curator" value="Data curator"/>
+														<options label="Data depositor" value="Data depositor"/>
+														<options label="Other" value="Other"/></options>
+												</selectData>
+												<semantics>
+													<semantic>https://w3id.org/dcso/ns/core#hasContributor</semantic>
+													<semantic>https://w3id.org/dcso/ns/core#role</semantic>
+													<semantic>rda.dmp.contributor.role</semantic>
+												</semantics>
+												<includeInExport>true</includeInExport>
+											</field>
+										</fields>
+										<title>Responsibilities</title>
+										<description>Clearly outline the roles and responsibilities for data management: name responsible individual(s) or entities, list relevant roles, and indicate who is responsible for day-to-day implementation and adjustments to the DMP.</description>
+										<multiplicity min="0" max="20">
+											<placeholder></placeholder>
+											<tableView>true</tableView>
+										</multiplicity>
+										<hasMultiplicity>true</hasMultiplicity>
+										<hasCommentField>false</hasCommentField>
+									</fieldSet>
+									<fieldSet>
+										<id>32591125-f4a0-3c9f-d042-b95b754a08bf</id>
+										<ordinal>1</ordinal>
+										<fields>
+											<field>
+												<id>820a44db-2607-10a3-77fe-db59607638cb</id>
+												<ordinal>0</ordinal>
+												<validations/>
+												<defaultValue/>
+												<visibilityRules/>
+												<labelData>
+													<label>Cost name</label>
+													<fieldType>TEXT_AREA</fieldType>
+												</labelData>
+												<semantics>
+													<semantic>https://w3id.org/dcso/ns/core#hasCost</semantic>
+													<semantic>http://purl.org/dc/terms/title</semantic>
+													<semantic>rda.dmp.cost.title</semantic>
+												</semantics>
+												<includeInExport>true</includeInExport>
+											</field>
+											<field>
+												<id>dcdf53b1-d5b0-ff0f-d1c0-f8060295e165</id>
+												<ordinal>1</ordinal>
+												<validations/>
+												<defaultValue/>
+												<visibilityRules/>
+												<labelData>
+													<label>Description</label>
+													<fieldType>TEXT_AREA</fieldType>
+												</labelData>
+												<semantics>
+													<semantic>https://w3id.org/dcso/ns/core#hasCost</semantic>
+													<semantic>http://purl.org/dc/terms/description</semantic>
+													<semantic>rda.dmp.cost.description</semantic>
+												</semantics>
+												<includeInExport>true</includeInExport>
+											</field>
+											<field>
+												<id>8e48e05c-3e97-8dce-c4c3-27a4d4c6e625</id>
+												<ordinal>2</ordinal>
+												<validations/>
+												<defaultValue/>
+												<visibilityRules/>
+												<labelData>
+													<label>Value</label>
+													<fieldType>TEXT_AREA</fieldType>
+												</labelData>
+												<semantics>
+													<semantic>https://w3id.org/dcso/ns/core#hasCost</semantic>
+													<semantic>https://w3id.org/dcso/ns/core#value</semantic>
+													<semantic>rda.dmp.cost.value</semantic>
+												</semantics>
+												<includeInExport>true</includeInExport>
+											</field>
+											<field>
+												<id>49546d96-ccb5-3338-dc70-366e047c3dde</id>
+												<ordinal>3</ordinal>
+												<validations/>
+												<defaultValue/>
+												<visibilityRules/>
+												<labelData>
+													<label>Unit</label>
+													<fieldType>TEXT_AREA</fieldType>
+												</labelData>
+												<semantics>
+													<semantic>https://w3id.org/dcso/ns/core#hasCost</semantic>
+													<semantic>https://w3id.org/dcso/ns/core#currencyCode</semantic>
+													<semantic>rda.dmp.cost.unit</semantic>
+												</semantics>
+												<includeInExport>true</includeInExport>
+											</field>
+										</fields>
+										<title>Resources</title>
+										<description>Provide estimates of the resources and costs (such as repository charges) that will be dedicated to data management.&amp;#160;</description>
+										<multiplicity min="0" max="21">
+											<placeholder></placeholder>
+											<tableView>true</tableView>
+										</multiplicity>
+										<hasMultiplicity>true</hasMultiplicity>
+										<hasCommentField>false</hasCommentField>
+									</fieldSet>
+								</fieldSets>
+								<description></description>
+								<title>Responsibilities and resources</title>
+								<sections/>
+							</section>
+						</sections>
+					</page>
+				</pages>
+				<pluginConfigurations>
+					<pluginConfiguration pluginCode="docx-file-transformer" pluginType="FileTransformer">
+						<fields>
+							<field code="description-docx-template-id"/>
+						</fields>
+					</pluginConfiguration>
+				</pluginConfigurations>
+			</descriptionTemplate>
+			<references>
+				<reference>
+					<id>56cc9644-5ee6-4870-9d4b-5b33f750c7d7</id>
+					<label>ABCD (Access to Biological Collection Data)</label>
+					<reference>msc:m1</reference>
+					<source>rda-metadata-schemes</source>
+					<fieldId>04d372a9-8bee-e7f6-6561-5b6481704933</fieldId>
+					<ordinal>0</ordinal>
+					<type>
+						<id>2beacaad-3223-43ad-ad99-1e5f21328e7b</id>
+						<name>Registries</name>
+						<code>registries</code>
+					</type>
+					<fields>
+						<field code="referenceType" dataType="Text"/>
+						<field code="url" dataType="Text"/>
+						<field code="key" dataType="Text"/>
+					</fields>
+				</reference>
+				<reference>
+					<id>fe42058a-10ed-4982-a40b-25e6f11e133f</id>
+					<label>Abkhaz</label>
+					<reference>ab</reference>
+					<source>iso-639</source>
+					<fieldId>2360e954-a06c-909b-fc6e-20e9077a22bd</fieldId>
+					<ordinal>0</ordinal>
+					<type>
+						<id>90c9acbd-2d93-4870-bf76-4d9d7c572a55</id>
+						<name>Languages</name>
+						<code>languages</code>
+					</type>
+					<fields>
+						<field code="nativeName" dataType="Text" value="аҧсуа бызшәа, аҧсшәа"/>
+						<field code="639-2" dataType="Text" value="abk"/>
+						<field code="wikiUrl" dataType="Text" value="https://en.wikipedia.org/wiki/Abkhaz_language"/>
+						<field code="referenceType" dataType="Text" value="Languages"/>
+						<field code="family" dataType="Text" value="Northwest Caucasian"/>
+						<field code="key" dataType="Text" value="iso-639"/>
+					</fields>
+				</reference>
+				<reference>
+					<id>ebeaaa04-9129-4a9f-838e-ca6f59b27d89</id>
+					<label>DIF (Directory Interchange Format)</label>
+					<reference>msc:m14</reference>
+					<source>rda-metadata-schemes</source>
+					<fieldId>04d372a9-8bee-e7f6-6561-5b6481704933</fieldId>
+					<ordinal>1</ordinal>
+					<type>
+						<id>2beacaad-3223-43ad-ad99-1e5f21328e7b</id>
+						<name>Registries</name>
+						<code>registries</code>
+					</type>
+					<fields>
+						<field code="referenceType" dataType="Text" value="Registries"/>
+						<field code="url" dataType="Text" value="https://rdamsc.bath.ac.uk/api2/m14"/>
+						<field code="key" dataType="Text" value="rda-metadata-schemes"/>
+					</fields>
+				</reference>
+				<reference>
+					<id>2a7820ad-fd09-434c-b2dc-5391fa8b3f41</id>
+					<label>Icelandic</label>
+					<reference>is</reference>
+					<source>iso-639</source>
+					<fieldId>2360e954-a06c-909b-fc6e-20e9077a22bd</fieldId>
+					<ordinal>1</ordinal>
+					<type>
+						<id>90c9acbd-2d93-4870-bf76-4d9d7c572a55</id>
+						<name>Languages</name>
+						<code>languages</code>
+					</type>
+					<fields>
+						<field code="nativeName" dataType="Text" value="Íslenska"/>
+						<field code="639-2" dataType="Text" value="isl"/>
+						<field code="wikiUrl" dataType="Text" value="https://en.wikipedia.org/wiki/Icelandic_language"/>
+						<field code="referenceType" dataType="Text" value="Languages"/>
+						<field code="family" dataType="Text" value="Indo-European"/>
+						<field code="key" dataType="Text" value="iso-639"/>
+					</fields>
+				</reference>
+				<reference>
+					<id>0c16d36a-bb5d-427c-8b5e-11e2e256cef5</id>
+					<label>Gujarati</label>
+					<reference>gu</reference>
+					<source>iso-639</source>
+					<fieldId>2360e954-a06c-909b-fc6e-20e9077a22bd</fieldId>
+					<ordinal>1</ordinal>
+					<type>
+						<id>90c9acbd-2d93-4870-bf76-4d9d7c572a55</id>
+						<name>Languages</name>
+						<code>languages</code>
+					</type>
+					<fields>
+						<field code="nativeName" dataType="Text" value="ગુજરાતી"/>
+						<field code="639-2" dataType="Text" value="guj"/>
+						<field code="wikiUrl" dataType="Text" value="https://en.wikipedia.org/wiki/Gujarati_language"/>
+						<field code="referenceType" dataType="Text" value="Languages"/>
+						<field code="family" dataType="Text" value="Indo-European"/>
+						<field code="key" dataType="Text" value="iso-639"/>
+					</fields>
+				</reference>
+				<reference>
+					<id>aeb5555b-da12-4fa6-88fb-fcea86dc3a5b</id>
+					<label>Esperanto</label>
+					<reference>eo</reference>
+					<source>iso-639</source>
+					<fieldId>f67c0256-6a08-0c09-c543-bc982f23def5</fieldId>
+					<ordinal>0</ordinal>
+					<type>
+						<id>90c9acbd-2d93-4870-bf76-4d9d7c572a55</id>
+						<name>Languages</name>
+						<code>languages</code>
+					</type>
+					<fields>
+						<field code="nativeName" dataType="Text" value="Esperanto"/>
+						<field code="639-2" dataType="Text" value="epo"/>
+						<field code="wikiUrl" dataType="Text" value="https://en.wikipedia.org/wiki/Esperanto"/>
+						<field code="referenceType" dataType="Text" value="Languages"/>
+						<field code="family" dataType="Text" value="Constructed"/>
+						<field code="key" dataType="Text" value="iso-639"/>
+					</fields>
+				</reference>
+				<reference>
+					<id>aeb5555b-da12-4fa6-88fb-fcea86dc3a5b</id>
+					<label>Esperanto</label>
+					<reference>eo</reference>
+					<source>iso-639</source>
+					<fieldId>f67c0256-6a08-0c09-c543-bc982f23def5</fieldId>
+					<ordinal>0</ordinal>
+					<type>
+						<id>90c9acbd-2d93-4870-bf76-4d9d7c572a55</id>
+						<name>Languages</name>
+						<code>languages</code>
+					</type>
+					<fields>
+						<field code="nativeName" dataType="Text" value="Esperanto"/>
+						<field code="639-2" dataType="Text" value="epo"/>
+						<field code="wikiUrl" dataType="Text" value="https://en.wikipedia.org/wiki/Esperanto"/>
+						<field code="referenceType" dataType="Text" value="Languages"/>
+						<field code="family" dataType="Text" value="Constructed"/>
+						<field code="key" dataType="Text" value="iso-639"/>
+					</fields>
+				</reference>
+				<reference>
+					<id>2ff73a32-a116-4cda-af6b-a0ce1b2df6c8</id>
+					<label>Faroese</label>
+					<reference>fo</reference>
+					<source>iso-639</source>
+					<fieldId>f67c0256-6a08-0c09-c543-bc982f23def5</fieldId>
+					<ordinal>1</ordinal>
+					<type>
+						<id>90c9acbd-2d93-4870-bf76-4d9d7c572a55</id>
+						<name>Languages</name>
+						<code>languages</code>
+					</type>
+					<fields>
+						<field code="nativeName" dataType="Text" value="føroyskt"/>
+						<field code="639-2" dataType="Text" value="fao"/>
+						<field code="wikiUrl" dataType="Text" value="https://en.wikipedia.org/wiki/Faroese_language"/>
+						<field code="referenceType" dataType="Text" value="Languages"/>
+						<field code="family" dataType="Text" value="Indo-European"/>
+						<field code="key" dataType="Text" value="iso-639"/>
+					</fields>
+				</reference>
+				<reference>
+					<id>2ff73a32-a116-4cda-af6b-a0ce1b2df6c8</id>
+					<label>Faroese</label>
+					<reference>fo</reference>
+					<source>iso-639</source>
+					<fieldId>f67c0256-6a08-0c09-c543-bc982f23def5</fieldId>
+					<ordinal>1</ordinal>
+					<type>
+						<id>90c9acbd-2d93-4870-bf76-4d9d7c572a55</id>
+						<name>Languages</name>
+						<code>languages</code>
+					</type>
+					<fields>
+						<field code="nativeName" dataType="Text" value="føroyskt"/>
+						<field code="639-2" dataType="Text" value="fao"/>
+						<field code="wikiUrl" dataType="Text" value="https://en.wikipedia.org/wiki/Faroese_language"/>
+						<field code="referenceType" dataType="Text" value="Languages"/>
+						<field code="family" dataType="Text" value="Indo-European"/>
+						<field code="key" dataType="Text" value="iso-639"/>
+					</fields>
+				</reference>
+				<reference>
+					<id>95897f58-e624-4d2a-b258-263089fe8ee4</id>
+					<label>Against DRM</label>
+					<reference>Against-DRM</reference>
+					<source>opendefinition</source>
+					<fieldId>7cbb820d-c667-c326-264e-8d3fafb92786</fieldId>
+					<ordinal>0</ordinal>
+					<type>
+						<id>2baab1e8-561f-4c15-84c3-571b811c52f6</id>
+						<name>Licenses</name>
+						<code>licenses</code>
+					</type>
+					<fields>
+						<field code="referenceType" dataType="Text"/>
+						<field code="uri" dataType="Text"/>
+						<field code="key" dataType="Text"/>
+					</fields>
+				</reference>
+				<reference>
+					<id>95897f58-e624-4d2a-b258-263089fe8ee4</id>
+					<label>Against DRM</label>
+					<reference>Against-DRM</reference>
+					<source>opendefinition</source>
+					<fieldId>7cbb820d-c667-c326-264e-8d3fafb92786</fieldId>
+					<ordinal>0</ordinal>
+					<type>
+						<id>2baab1e8-561f-4c15-84c3-571b811c52f6</id>
+						<name>Licenses</name>
+						<code>licenses</code>
+					</type>
+					<fields>
+						<field code="referenceType" dataType="Text"/>
+						<field code="uri" dataType="Text"/>
+						<field code="key" dataType="Text"/>
+					</fields>
+				</reference>
+				<reference>
+					<id>f4166938-0596-45bb-b779-fbeeffd79b0a</id>
+					<label>License Not Specified</label>
+					<reference>notspecified</reference>
+					<source>opendefinition</source>
+					<fieldId>7cbb820d-c667-c326-264e-8d3fafb92786</fieldId>
+					<ordinal>1</ordinal>
+					<type>
+						<id>2baab1e8-561f-4c15-84c3-571b811c52f6</id>
+						<name>Licenses</name>
+						<code>licenses</code>
+					</type>
+					<fields>
+						<field code="referenceType" dataType="Text" value="Licenses"/>
+						<field code="uri" dataType="Text" value=""/>
+						<field code="key" dataType="Text" value="opendefinition"/>
+					</fields>
+				</reference>
+				<reference>
+					<id>f4166938-0596-45bb-b779-fbeeffd79b0a</id>
+					<label>License Not Specified</label>
+					<reference>notspecified</reference>
+					<source>opendefinition</source>
+					<fieldId>7cbb820d-c667-c326-264e-8d3fafb92786</fieldId>
+					<ordinal>1</ordinal>
+					<type>
+						<id>2baab1e8-561f-4c15-84c3-571b811c52f6</id>
+						<name>Licenses</name>
+						<code>licenses</code>
+					</type>
+					<fields>
+						<field code="referenceType" dataType="Text" value="Licenses"/>
+						<field code="uri" dataType="Text" value=""/>
+						<field code="key" dataType="Text" value="opendefinition"/>
+					</fields>
+				</reference>
+				<reference>
+					<id>585ad21d-5836-41cb-b9af-e583e5e2f04b</id>
+					<label>Apache Software License 1.1</label>
+					<reference>Apache-1.1</reference>
+					<source>opendefinition</source>
+					<fieldId>293d65c5-b677-9225-1f80-258322fe0816</fieldId>
+					<ordinal>0</ordinal>
+					<type>
+						<id>2baab1e8-561f-4c15-84c3-571b811c52f6</id>
+						<name>Licenses</name>
+						<code>licenses</code>
+					</type>
+					<fields>
+						<field code="referenceType" dataType="Text" value="Licenses"/>
+						<field code="uri" dataType="Text" value="https://opensource.org/licenses/Apache-1.1"/>
+						<field code="key" dataType="Text" value="opendefinition"/>
+					</fields>
+				</reference>
+				<reference>
+					<id>585ad21d-5836-41cb-b9af-e583e5e2f04b</id>
+					<label>Apache Software License 1.1</label>
+					<reference>Apache-1.1</reference>
+					<source>opendefinition</source>
+					<fieldId>293d65c5-b677-9225-1f80-258322fe0816</fieldId>
+					<ordinal>0</ordinal>
+					<type>
+						<id>2baab1e8-561f-4c15-84c3-571b811c52f6</id>
+						<name>Licenses</name>
+						<code>licenses</code>
+					</type>
+					<fields>
+						<field code="referenceType" dataType="Text" value="Licenses"/>
+						<field code="uri" dataType="Text" value="https://opensource.org/licenses/Apache-1.1"/>
+						<field code="key" dataType="Text" value="opendefinition"/>
+					</fields>
+				</reference>
+				<reference>
+					<id>441bc90f-1d44-409e-a408-b7f1df5f1e0d</id>
+					<label>Creative Commons Attribution-NonCommercial 4.0</label>
+					<reference>CC-BY-NC-4.0</reference>
+					<source>opendefinition</source>
+					<fieldId>293d65c5-b677-9225-1f80-258322fe0816</fieldId>
+					<ordinal>1</ordinal>
+					<type>
+						<id>2baab1e8-561f-4c15-84c3-571b811c52f6</id>
+						<name>Licenses</name>
+						<code>licenses</code>
+					</type>
+					<fields>
+						<field code="referenceType" dataType="Text" value="Licenses"/>
+						<field code="uri" dataType="Text" value="https://creativecommons.org/licenses/by-nc/4.0/"/>
+						<field code="key" dataType="Text" value="opendefinition"/>
+					</fields>
+				</reference>
+				<reference>
+					<id>441bc90f-1d44-409e-a408-b7f1df5f1e0d</id>
+					<label>Creative Commons Attribution-NonCommercial 4.0</label>
+					<reference>CC-BY-NC-4.0</reference>
+					<source>opendefinition</source>
+					<fieldId>293d65c5-b677-9225-1f80-258322fe0816</fieldId>
+					<ordinal>1</ordinal>
+					<type>
+						<id>2baab1e8-561f-4c15-84c3-571b811c52f6</id>
+						<name>Licenses</name>
+						<code>licenses</code>
+					</type>
+					<fields>
+						<field code="referenceType" dataType="Text" value="Licenses"/>
+						<field code="uri" dataType="Text" value="https://creativecommons.org/licenses/by-nc/4.0/"/>
+						<field code="key" dataType="Text" value="opendefinition"/>
+					</fields>
+				</reference>
+				<reference>
+					<id>29def7ed-9c7d-47eb-9999-10bb5867d769</id>
+					<label>1.2 Meter CO Survey Dataverse</label>
+					<reference>r3d100011322</reference>
+					<source>re3data</source>
+					<fieldId>32f7cc2f-4f96-7857-a75e-c30b7a12c0ab</fieldId>
+					<ordinal>0</ordinal>
+					<type>
+						<id>21dd4aa3-4d0e-47ea-8bd7-80f5654c3ee0</id>
+						<name>Re3Data Repositories</name>
+						<code>re3data-repositories</code>
+					</type>
+					<fields>
+						<field code="link" dataType="Text" value="/api/v1/repository/r3d100011322"/>
+						<field code="referenceType" dataType="Text" value="Re3Data Repositories"/>
+						<field code="key" dataType="Text" value="re3data"/>
+						<field code="doi" dataType="Text" value="https://doi.org/10.17616/R3KG99"/>
+					</fields>
+				</reference>
+				<reference>
+					<id>29def7ed-9c7d-47eb-9999-10bb5867d769</id>
+					<label>1.2 Meter CO Survey Dataverse</label>
+					<reference>r3d100011322</reference>
+					<source>re3data</source>
+					<fieldId>32f7cc2f-4f96-7857-a75e-c30b7a12c0ab</fieldId>
+					<ordinal>0</ordinal>
+					<type>
+						<id>21dd4aa3-4d0e-47ea-8bd7-80f5654c3ee0</id>
+						<name>Re3Data Repositories</name>
+						<code>re3data-repositories</code>
+					</type>
+					<fields>
+						<field code="link" dataType="Text" value="/api/v1/repository/r3d100011322"/>
+						<field code="referenceType" dataType="Text" value="Re3Data Repositories"/>
+						<field code="key" dataType="Text" value="re3data"/>
+						<field code="doi" dataType="Text" value="https://doi.org/10.17616/R3KG99"/>
+					</fields>
+				</reference>
+				<reference>
+					<id>301ba104-e727-4220-9e16-058fbd621634</id>
+					<label>1000 Genomes</label>
+					<reference>r3d100010180</reference>
+					<source>re3data</source>
+					<fieldId>32f7cc2f-4f96-7857-a75e-c30b7a12c0ab</fieldId>
+					<ordinal>1</ordinal>
+					<type>
+						<id>21dd4aa3-4d0e-47ea-8bd7-80f5654c3ee0</id>
+						<name>Re3Data Repositories</name>
+						<code>re3data-repositories</code>
+					</type>
+					<fields>
+						<field code="link" dataType="Text" value="/api/v1/repository/r3d100010180"/>
+						<field code="referenceType" dataType="Text" value="Re3Data Repositories"/>
+						<field code="key" dataType="Text" value="re3data"/>
+						<field code="doi" dataType="Text" value="https://doi.org/10.17616/R3CP4M"/>
+					</fields>
+				</reference>
+				<reference>
+					<id>301ba104-e727-4220-9e16-058fbd621634</id>
+					<label>1000 Genomes</label>
+					<reference>r3d100010180</reference>
+					<source>re3data</source>
+					<fieldId>32f7cc2f-4f96-7857-a75e-c30b7a12c0ab</fieldId>
+					<ordinal>1</ordinal>
+					<type>
+						<id>21dd4aa3-4d0e-47ea-8bd7-80f5654c3ee0</id>
+						<name>Re3Data Repositories</name>
+						<code>re3data-repositories</code>
+					</type>
+					<fields>
+						<field code="link" dataType="Text" value="/api/v1/repository/r3d100010180"/>
+						<field code="referenceType" dataType="Text" value="Re3Data Repositories"/>
+						<field code="key" dataType="Text" value="re3data"/>
+						<field code="doi" dataType="Text" value="https://doi.org/10.17616/R3CP4M"/>
+					</fields>
+				</reference>
+			</references>
+			<properties>
+				<fieldSets>
+					<fieldSet>
+						<fieldSetId>ddd155cc-75e4-bda4-b8d1-36f21ec6e5ed</fieldSetId>
+						<items>
+							<item>
+								<fields>
+									<field>
+										<fieldId>98e003bc-3f91-dc04-23d6-45751f962ac0</fieldId>
+										<textValue>Aliquam id nisl at ligula viverra gravida. Mauris nisl dui, cursus at lacus nec, pellentesque rhoncus metus. Aenean ligula nisl, porttitor venenatis risus ac, ultrices posuere dui. Ut pellentesque metus sit amet velit finibus suscipit. Vivamus tincidunt accumsan nunc, id porta leo tempus ac. Nulla ut venenatis ipsum. Vivamus rhoncus a lectus ac gravida. Donec aliquam vel velit id facilisis. Maecenas et odio tempus, fringilla nisl sit amet, tempor nibh. Nunc eleifend sapien augue, id aliquam risus vestibulum eu. Ut placerat nisi congue sollicitudin ornare. Nulla vitae libero ac nisi sodales convallis. Duis sit amet justo turpis.</textValue>
+									</field>
+									<field>
+										<fieldId>fd5ad826-b996-1771-de1f-c4bd8928e9f9</fieldId>
+										<textListValues>
+											<textListValue>Yes</textListValue>
+										</textListValues>
+									</field>
+									<field>
+										<fieldId>4339e603-7412-9d24-54e1-a9c610eed2df</fieldId>
+										<textValue>Suspendisse vel malesuada nulla, nec aliquam neque. Sed eget porttitor dolor. Donec congue orci purus, eget mattis arcu maximus ac. Curabitur et arcu et leo cursus consequat. Vestibulum sed varius dui, eget dictum dolor. Suspendisse non facilisis metus. Vivamus consectetur tellus vel velit aliquam viverra. Vestibulum feugiat commodo nulla, a feugiat nisi hendrerit id. Integer id lacus in nulla mollis porta at non neque. Donec lacinia dolor a neque interdum, et vestibulum sapien condimentum. Sed ac dolor eget odio fringilla bibendum.</textValue>
+									</field>
+									<field>
+										<fieldId>c2e85a00-16d9-46db-7625-34d4d5ef5bbe</fieldId>
+										<textValue>Sed commodo at odio sit amet varius. Donec lacinia lacus non lectus porttitor, eu rutrum nunc aliquam. Cras placerat, diam facilisis vulputate cursus, nisl est sodales neque, non ullamcorper massa arcu at augue. Donec cursus, ante at tincidunt euismod, felis turpis faucibus est, quis condimentum velit ante sit amet dolor. Curabitur vitae tempor nisl. Morbi ut nunc et erat efficitur rhoncus. Sed eu condimentum magna, sed sagittis ante. Donec tellus purus, molestie vel eros vel, pretium mattis lorem. Suspendisse lacinia libero a tristique pretium. Aenean scelerisque mauris vitae bibendum sodales. Nulla ornare tristique arcu, eu imperdiet nulla venenatis at. Vestibulum sagittis, dolor id lacinia fermentum, lorem eros consectetur lectus, non venenatis est nibh eu nunc. Sed sed cursus lacus.</textValue>
+									</field>
+								</fields>
+								<ordinal>0</ordinal>
+							</item>
+							<item>
+								<fields>
+									<field>
+										<fieldId>98e003bc-3f91-dc04-23d6-45751f962ac0</fieldId>
+										<textValue>Proin nec lorem sem. Aliquam eu est quis nunc dignissim aliquet a in velit. Fusce ac feugiat sem. In a nibh at eros vestibulum eleifend id consectetur velit. Sed neque sapien, molestie sed gravida ac, iaculis ut nisi. Sed vitae justo metus. Proin tristique, augue vel commodo pellentesque, arcu enim pretium sapien, vel condimentum lacus lectus vitae lacus. Etiam ac est ullamcorper, ultrices lacus quis, aliquet ante. Vivamus eu quam in ex rutrum condimentum eget ac mi. Nunc congue urna in sodales lobortis. Proin porttitor posuere vestibulum. Vivamus porttitor elit orci, sed efficitur ante dignissim vitae.</textValue>
+									</field>
+									<field>
+										<fieldId>fd5ad826-b996-1771-de1f-c4bd8928e9f9</fieldId>
+										<textListValues>
+											<textListValue>No</textListValue>
+										</textListValues>
+									</field>
+									<field>
+										<fieldId>4339e603-7412-9d24-54e1-a9c610eed2df</fieldId>
+										<textValue>Fusce aliquam ligula nec nisi ultrices, in eleifend metus lobortis. Nam feugiat est ut felis finibus, nec congue velit sollicitudin. Proin dictum turpis nec augue aliquet aliquam. Nunc id justo sed libero consectetur efficitur. Aliquam luctus augue at erat bibendum, facilisis consectetur nibh mattis. Quisque faucibus fermentum velit, vitae aliquam odio eleifend eu. Sed molestie id purus vel facilisis. Praesent convallis tellus eget velit maximus, et dictum mauris commodo. Etiam id dui facilisis, suscipit quam ut, accumsan est. Nullam lectus metus, pretium sed tortor vel, ullamcorper sagittis enim.</textValue>
+									</field>
+									<field>
+										<fieldId>c2e85a00-16d9-46db-7625-34d4d5ef5bbe</fieldId>
+										<textValue>Morbi vel erat nisl. Cras massa nisl, bibendum non tristique eget, dignissim et neque. Morbi vel mi libero. Pellentesque justo nisl, luctus sed interdum eu, mattis egestas mauris. Nam iaculis commodo eleifend. Aliquam rutrum nisl non ultricies accumsan. Suspendisse gravida rutrum dui, sit amet molestie tortor maximus ac. Integer aliquet dolor a erat varius condimentum. Aenean consectetur leo non porta vehicula. Praesent non iaculis turpis, ut gravida turpis. Praesent at enim eget justo tincidunt iaculis. Nullam vel odio ut nunc tempus fermentum id non sem. Donec interdum efficitur turpis, consequat vulputate velit.</textValue>
+									</field>
+								</fields>
+								<ordinal>1</ordinal>
+							</item>
+						</items>
+					</fieldSet>
+					<fieldSet>
+						<fieldSetId>a01fdc85-127d-02eb-ea8d-172dfffe0cff</fieldSetId>
+						<items>
+							<item>
+								<fields>
+									<field>
+										<fieldId>cef95df3-09c7-4f23-97d2-c3926f571766</fieldId>
+										<textValue>Aliquam erat volutpat. Nam mollis posuere orci, et volutpat arcu porta at. Vestibulum dapibus ex eget posuere pulvinar. Maecenas vehicula hendrerit nulla. Donec finibus metus sem, sit amet pretium enim luctus posuere. Proin eget rhoncus diam. Sed placerat felis ex, non varius eros placerat non. Nunc sed ipsum in lacus auctor gravida. Nulla a bibendum risus. Curabitur auctor eros nisi, vel molestie massa pulvinar id. Curabitur eu est non arcu luctus viverra. Morbi vitae malesuada ipsum. Proin venenatis nisl ligula, in auctor nibh fermentum nec. Nullam iaculis urna id ante dictum euismod. Aliquam erat volutpat.</textValue>
+									</field>
+								</fields>
+								<ordinal>0</ordinal>
+							</item>
+						</items>
+					</fieldSet>
+					<fieldSet>
+						<fieldSetId>46fed0c5-5be6-f77f-20f7-146c651e2fcd</fieldSetId>
+						<items>
+							<item>
+								<fields>
+									<field>
+										<fieldId>edf1ae83-0bd0-f8a8-708a-e884b877a0c6</fieldId>
+										<textListValues>
+											<textListValue>As soon as data is produced/processed</textListValue>
+										</textListValues>
+									</field>
+									<field>
+										<fieldId>511fd4a5-e037-dfdf-909d-8ffea84d157c</fieldId>
+										<textValue>1 million years</textValue>
+									</field>
+									<field>
+										<fieldId>7666ecbe-c5b4-1ecd-bef9-8950d77046b3</fieldId>
+										<textListValues>
+											<textListValue>Open</textListValue>
+											<textListValue>Shared under conditions</textListValue>
+											<textListValue>Closed</textListValue>
+										</textListValues>
+									</field>
+									<field>
+										<fieldId>fd79463a-31d3-13d3-0ba1-7dc89ca1d1fc</fieldId>
+										<textValue>Nam ipsum est, sagittis volutpat urna vel, faucibus eleifend sem. Mauris neque est, hendrerit sed eros ut, tempor suscipit purus. Pellentesque aliquet vel libero eget ultrices. Nunc eu pellentesque eros, a fringilla massa. Nullam at bibendum ex. Quisque aliquam eleifend ligula, in iaculis purus viverra quis. Vivamus in ex et lectus semper pretium vitae tristique odio. Sed nec porta eros. Vestibulum vehicula sapien vitae odio pulvinar iaculis. Duis egestas feugiat urna a mollis. Sed ut est varius, tincidunt neque maximus, suscipit tellus. Aenean blandit nunc nec mi convallis, eget tempor felis imperdiet. Maecenas rutrum diam quis augue tincidunt, in dictum ligula mollis. Nam aliquet sodales auctor. Quisque at orci tempor, iaculis nunc ut, vehicula augue.</textValue>
+									</field>
+									<field>
+										<fieldId>a2c498cb-e85d-8127-dae6-f27e77e38ac7</fieldId>
+										<textListValues>
+											<textListValue>Discipline specific repository</textListValue>
+										</textListValues>
+									</field>
+									<field>
+										<fieldId>bd8a6d67-01f3-63df-4332-aae912fed971</fieldId>
+										<textValue>Nullam finibus pretium elit. Donec et metus lectus. Suspendisse augue ligula, volutpat quis magna at, eleifend faucibus lectus. Vestibulum eget diam sollicitudin, ultrices felis vel, porta est. Aenean aliquam euismod pretium. Nunc commodo magna non accumsan posuere. Ut est orci, sodales ac est sit amet, tempus vulputate magna. Cras magna nunc, tempor ac ultricies eu, eleifend at nulla. Sed nec nunc nec velit condimentum lobortis. Praesent ac nisi quis enim varius posuere ac non urna. Donec vestibulum diam eget quam convallis, non volutpat dui convallis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam a quam ullamcorper, fermentum elit eu, faucibus quam.</textValue>
+									</field>
+									<field>
+										<fieldId>293d65c5-b677-9225-1f80-258322fe0816</fieldId>
+										<textListValues>
+											<textListValue>585ad21d-5836-41cb-b9af-e583e5e2f04b</textListValue>
+											<textListValue>585ad21d-5836-41cb-b9af-e583e5e2f04b</textListValue>
+										</textListValues>
+									</field>
+								</fields>
+								<ordinal>0</ordinal>
+							</item>
+							<item>
+								<fields>
+									<field>
+										<fieldId>edf1ae83-0bd0-f8a8-708a-e884b877a0c6</fieldId>
+										<textListValues>
+											<textListValue>At the end of project</textListValue>
+										</textListValues>
+									</field>
+									<field>
+										<fieldId>511fd4a5-e037-dfdf-909d-8ffea84d157c</fieldId>
+										<textValue>1 second</textValue>
+									</field>
+									<field>
+										<fieldId>7666ecbe-c5b4-1ecd-bef9-8950d77046b3</fieldId>
+										<textListValues>
+											<textListValue>Shared under conditions</textListValue>
+											<textListValue>Closed</textListValue>
+										</textListValues>
+									</field>
+									<field>
+										<fieldId>fd79463a-31d3-13d3-0ba1-7dc89ca1d1fc</fieldId>
+										<textValue>Nunc blandit, velit a laoreet dictum, felis lectus cursus lectus, a aliquam enim felis vel velit. Mauris et velit arcu. Phasellus pellentesque vehicula egestas. Nunc at elit id ante viverra dapibus eget non arcu. Donec eu enim enim. Curabitur pretium nisl dapibus odio finibus rhoncus. Nunc aliquam velit et fermentum imperdiet. Integer vulputate metus eros, et ultricies risus rhoncus vel. Nulla facilisi. Proin at urna porta, luctus est ut, efficitur arcu. Proin tempor cursus mauris, ac gravida urna fermentum nec.</textValue>
+									</field>
+									<field>
+										<fieldId>a2c498cb-e85d-8127-dae6-f27e77e38ac7</fieldId>
+										<textListValues>
+											<textListValue>Institutional repository</textListValue>
+										</textListValues>
+									</field>
+									<field>
+										<fieldId>bd8a6d67-01f3-63df-4332-aae912fed971</fieldId>
+										<textValue>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Cras sed arcu lobortis, lobortis eros vestibulum, ullamcorper turpis. Vestibulum non viverra risus. Praesent rhoncus ullamcorper quam, id dapibus odio. Aenean lorem quam, lacinia a ante vitae, efficitur consequat felis. Donec consectetur egestas turpis, nec molestie augue luctus ac. Donec scelerisque nisl erat, a porta tellus scelerisque eget. Mauris porttitor turpis vitae est rutrum commodo. Phasellus ut risus quis magna vulputate imperdiet et euismod sapien. Aliquam consequat turpis id facilisis luctus. Morbi ac enim a tellus facilisis volutpat rutrum blandit dolor. Ut lacus nibh, fringilla non quam et, efficitur rutrum diam. Vivamus et lorem vel purus pharetra iaculis. Donec aliquet nisi enim, eu ornare ipsum ornare vel.</textValue>
+									</field>
+									<field>
+										<fieldId>293d65c5-b677-9225-1f80-258322fe0816</fieldId>
+										<textListValues>
+											<textListValue>441bc90f-1d44-409e-a408-b7f1df5f1e0d</textListValue>
+											<textListValue>441bc90f-1d44-409e-a408-b7f1df5f1e0d</textListValue>
+										</textListValues>
+									</field>
+								</fields>
+								<ordinal>1</ordinal>
+							</item>
+						</items>
+					</fieldSet>
+					<fieldSet>
+						<fieldSetId>32591125-f4a0-3c9f-d042-b95b754a08bf</fieldSetId>
+						<items>
+							<item>
+								<fields>
+									<field>
+										<fieldId>49546d96-ccb5-3338-dc70-366e047c3dde</fieldId>
+										<textValue>$</textValue>
+									</field>
+									<field>
+										<fieldId>dcdf53b1-d5b0-ff0f-d1c0-f8060295e165</fieldId>
+										<textValue>Fusce porttitor nunc non interdum pretium. Donec nisl urna, vestibulum id interdum ultricies, consectetur eu orci. Sed viverra sapien orci. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Aenean eu augue nunc. In a odio ut ligula molestie maximus. Nunc ultrices quam non libero lobortis, id sollicitudin ligula dapibus. Cras consectetur ex velit.</textValue>
+									</field>
+									<field>
+										<fieldId>820a44db-2607-10a3-77fe-db59607638cb</fieldId>
+										<textValue>vacation</textValue>
+									</field>
+									<field>
+										<fieldId>8e48e05c-3e97-8dce-c4c3-27a4d4c6e625</fieldId>
+										<textValue>1 bln $</textValue>
+									</field>
+								</fields>
+								<ordinal>0</ordinal>
+							</item>
+							<item>
+								<fields>
+									<field>
+										<fieldId>49546d96-ccb5-3338-dc70-366e047c3dde</fieldId>
+										<textValue>pln</textValue>
+									</field>
+									<field>
+										<fieldId>dcdf53b1-d5b0-ff0f-d1c0-f8060295e165</fieldId>
+										<textValue>with good point</textValue>
+									</field>
+									<field>
+										<fieldId>820a44db-2607-10a3-77fe-db59607638cb</fieldId>
+										<textValue>something</textValue>
+									</field>
+									<field>
+										<fieldId>8e48e05c-3e97-8dce-c4c3-27a4d4c6e625</fieldId>
+										<textValue>a lot of money, can't afford</textValue>
+									</field>
+								</fields>
+								<ordinal>1</ordinal>
+							</item>
+						</items>
+					</fieldSet>
+					<fieldSet>
+						<fieldSetId>f27f77b8-fe3b-4a13-8619-f2073880c582</fieldSetId>
+						<items>
+							<item>
+								<fields>
+									<field>
+										<fieldId>f58b092e-f399-ce4e-f052-8c8a0d91fe4d</fieldId>
+										<textValue>Morbi faucibus ultricies est, quis semper risus scelerisque molestie. Cras bibendum tempus sem vel fringilla. Etiam egestas magna nec elit convallis, quis convallis purus pretium. Sed gravida placerat arcu in iaculis. Phasellus massa ligula, elementum sit amet quam vitae, maximus placerat sapien. Etiam ornare ligula a leo feugiat, id venenatis augue egestas. Cras ut mauris nec purus maximus blandit. Etiam rhoncus odio vel iaculis sollicitudin. Quisque vitae magna lorem. Donec at lacus turpis. Duis vitae ornare dolor. Nulla suscipit euismod purus et pharetra. In et consectetur dui. Sed efficitur aliquet velit, eget porttitor nibh lacinia eget. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</textValue>
+									</field>
+									<field>
+										<fieldId>058f91cb-2dd2-c6cc-2fac-90994f8086d3</fieldId>
+										<textValue>Sed et magna velit. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam ultricies metus commodo suscipit bibendum. Donec luctus ligula id augue vulputate, id sollicitudin nibh suscipit. Fusce facilisis maximus gravida. Nam pretium laoreet felis, in mattis enim interdum non. Pellentesque eget neque laoreet, accumsan quam ut, rhoncus diam. Vivamus sollicitudin nulla ut nibh vulputate, non congue justo vestibulum. Vestibulum nec ullamcorper sapien, eu dignissim massa. Curabitur mauris ligula, dignissim eu dui non, auctor ullamcorper lectus. Aliquam elementum non urna et eleifend. Proin ac maximus dui. Nulla id quam ut neque luctus venenatis ut ac ipsum.</textValue>
+									</field>
+								</fields>
+								<ordinal>0</ordinal>
+							</item>
+						</items>
+					</fieldSet>
+					<fieldSet>
+						<fieldSetId>66aa1013-2ece-40d8-842e-4d8c877d61f2</fieldSetId>
+						<items>
+							<item>
+								<fields>
+									<field>
+										<fieldId>afe3b04a-a160-42e7-8003-f1c04550e41f</fieldId>
+										<textValue>Pellentesque gravida sem mi, quis volutpat tellus malesuada sed. Proin felis turpis, accumsan vitae cursus et, sollicitudin fermentum est. Morbi lobortis dignissim suscipit. Morbi eget interdum mi. Sed euismod, magna at accumsan ultrices, est massa aliquam sem, et mattis felis nisi id lorem. Integer non metus sit amet magna varius consectetur. Curabitur eget nibh ut risus porttitor maximus. Cras interdum pellentesque finibus. Nunc quis lectus laoreet, ultricies leo molestie, feugiat ipsum. Morbi ut congue lacus. Mauris tincidunt urna in risus lacinia consequat. Proin quis porttitor mauris, quis varius dolor. Mauris a diam quis mi vehicula accumsan. Proin blandit pharetra velit at commodo.</textValue>
+									</field>
+								</fields>
+								<ordinal>0</ordinal>
+							</item>
+						</items>
+					</fieldSet>
+					<fieldSet>
+						<fieldSetId>199cbb8a-63b4-721d-2067-6bc2e8eacbb6</fieldSetId>
+						<items>
+							<item>
+								<fields>
+									<field>
+										<fieldId>90faedb2-e1a7-6657-f9ea-1e9a479fa21b</fieldId>
+										<textValue>Praesent ornare auctor justo, id pellentesque neque suscipit sed. Cras ut porttitor turpis. Proin sit amet diam est. Praesent scelerisque mauris a purus eleifend auctor ac id velit. Phasellus non vestibulum augue. Vivamus ornare et tortor congue mollis. Aliquam non elementum leo.</textValue>
+									</field>
+									<field>
+										<fieldId>cfce0c2a-d474-e411-7309-3585b72669d9</fieldId>
+										<textValue>idk, something?</textValue>
+									</field>
+								</fields>
+								<ordinal>0</ordinal>
+							</item>
+							<item>
+								<fields>
+									<field>
+										<fieldId>90faedb2-e1a7-6657-f9ea-1e9a479fa21b</fieldId>
+										<textValue>Integer nec elit tempus, convallis urna nec, suscipit metus. Vestibulum erat ligula, sagittis nec tortor sed, elementum bibendum nulla. Sed auctor vulputate leo, et laoreet turpis eleifend eget. Aliquam sed tellus arcu. Nullam mauris eros, dictum nec maximus non, interdum eu nunc. Donec posuere erat eros, vel viverra quam aliquet non. Vivamus tellus purus, pellentesque ut lorem sit amet, feugiat congue sapien. Aliquam erat volutpat. In eget sollicitudin ipsum. Maecenas dapibus hendrerit velit.</textValue>
+									</field>
+									<field>
+										<fieldId>cfce0c2a-d474-e411-7309-3585b72669d9</fieldId>
+										<textValue>yeah, this is it</textValue>
+									</field>
+								</fields>
+								<ordinal>1</ordinal>
+							</item>
+						</items>
+					</fieldSet>
+					<fieldSet>
+						<fieldSetId>c58ef9a9-9649-e8a8-4f59-99453e2595b1</fieldSetId>
+						<items>
+							<item>
+								<fields>
+									<field>
+										<fieldId>32f7cc2f-4f96-7857-a75e-c30b7a12c0ab</fieldId>
+										<textListValues>
+											<textListValue>29def7ed-9c7d-47eb-9999-10bb5867d769</textListValue>
+											<textListValue>29def7ed-9c7d-47eb-9999-10bb5867d769</textListValue>
+										</textListValues>
+									</field>
+								</fields>
+								<ordinal>0</ordinal>
+							</item>
+							<item>
+								<fields>
+									<field>
+										<fieldId>32f7cc2f-4f96-7857-a75e-c30b7a12c0ab</fieldId>
+										<textListValues>
+											<textListValue>301ba104-e727-4220-9e16-058fbd621634</textListValue>
+											<textListValue>301ba104-e727-4220-9e16-058fbd621634</textListValue>
+										</textListValues>
+									</field>
+								</fields>
+								<ordinal>1</ordinal>
+							</item>
+						</items>
+					</fieldSet>
+					<fieldSet>
+						<fieldSetId>b686eec3-07d4-ea91-a58e-6265766bdc0f</fieldSetId>
+						<items>
+							<item>
+								<fields>
+									<field>
+										<fieldId>306add59-f03b-2931-b5a4-8adf52328a58</fieldId>
+										<booleanValue>true</booleanValue>
+									</field>
+								</fields>
+								<ordinal>0</ordinal>
+							</item>
+						</items>
+					</fieldSet>
+					<fieldSet>
+						<fieldSetId>1d4b832f-c131-4727-e75d-1e8a382f47d6</fieldSetId>
+						<items>
+							<item>
+								<fields>
+									<field>
+										<fieldId>d553763b-6af1-11e6-9a3d-49d9837c817c</fieldId>
+										<textValue>repo</textValue>
+									</field>
+									<field>
+										<fieldId>deba9546-220f-9820-a31d-c8d121841e3f</fieldId>
+										<externalIdentifier>
+											<identifier>GitHub.com</identifier>
+											<type>url</type>
+										</externalIdentifier>
+									</field>
+								</fields>
+								<ordinal>0</ordinal>
+							</item>
+							<item>
+								<fields>
+									<field>
+										<fieldId>d553763b-6af1-11e6-9a3d-49d9837c817c</fieldId>
+										<textValue>this is not a doi, but should work for test purposes</textValue>
+									</field>
+									<field>
+										<fieldId>deba9546-220f-9820-a31d-c8d121841e3f</fieldId>
+										<externalIdentifier>
+											<identifier>zenodo.com</identifier>
+											<type>doi</type>
+										</externalIdentifier>
+									</field>
+								</fields>
+								<ordinal>1</ordinal>
+							</item>
+						</items>
+					</fieldSet>
+					<fieldSet>
+						<fieldSetId>f5ce9e4b-cd0f-bfbe-9c44-c2dd012919bc</fieldSetId>
+						<items>
+							<item>
+								<fields>
+									<field>
+										<fieldId>9366aec8-d1d8-4543-b568-d379553f5c5c</fieldId>
+										<textListValues>
+											<textListValue>Yes, by the repository</textListValue>
+											<textListValue>Yes, in another way</textListValue>
+										</textListValues>
+									</field>
+									<field>
+										<fieldId>1e814219-9e6b-5bb8-2503-b39e47a3d447</fieldId>
+										<textValue>Mauris sed mauris ipsum. Donec nisi lectus, blandit in quam vitae, varius lacinia velit. Proin viverra urna nunc, sed egestas augue auctor id. Sed ut finibus ipsum. Pellentesque eu orci eu nulla condimentum efficitur sed ut odio. Duis ut sem iaculis nulla venenatis tristique. Maecenas at massa iaculis, laoreet nisi et, eleifend dolor.</textValue>
+									</field>
+									<field>
+										<fieldId>7d45495a-2347-e5b0-6270-da2d0f0cd764</fieldId>
+										<textListValues>
+											<textListValue>Handle</textListValue>
+										</textListValues>
+									</field>
+									<field>
+										<fieldId>6f93e9bf-9e2f-b790-1916-549b049ad93a</fieldId>
+										<textValue>all of the data</textValue>
+									</field>
+								</fields>
+								<ordinal>0</ordinal>
+							</item>
+							<item>
+								<fields>
+									<field>
+										<fieldId>9366aec8-d1d8-4543-b568-d379553f5c5c</fieldId>
+										<textListValues>
+											<textListValue>Already assigned PID will be reused</textListValue>
+											<textListValue>No</textListValue>
+										</textListValues>
+									</field>
+									<field>
+										<fieldId>1e814219-9e6b-5bb8-2503-b39e47a3d447</fieldId>
+										<textValue>Fusce turpis nunc, imperdiet ut auctor et, eleifend eu eros. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ullamcorper sit amet ex non cursus. Donec lorem quam, cursus a molestie non, ultrices nec lorem. Nam vestibulum, erat id egestas porttitor, diam leo gravida lorem, vel semper elit nunc finibus arcu. Mauris congue magna ut commodo eleifend. Nunc condimentum varius lacus ut facilisis. Vivamus dapibus augue non purus hendrerit porta. Maecenas sit amet metus erat. Donec eu ex dictum, tincidunt dui id, scelerisque neque. Nunc consectetur ligula non massa sodales blandit. Nunc lobortis aliquet aliquam. Quisque eros neque, consequat id lobortis at, ornare ac tortor. Ut quis enim id nisi pellentesque facilisis. Cras non tincidunt diam, nec sollicitudin turpis. In sit amet accumsan urna.</textValue>
+									</field>
+									<field>
+										<fieldId>7d45495a-2347-e5b0-6270-da2d0f0cd764</fieldId>
+										<textListValues>
+											<textListValue>Arxiv</textListValue>
+										</textListValues>
+									</field>
+									<field>
+										<fieldId>6f93e9bf-9e2f-b790-1916-549b049ad93a</fieldId>
+										<textValue>none of the data</textValue>
+									</field>
+								</fields>
+								<ordinal>1</ordinal>
+							</item>
+						</items>
+					</fieldSet>
+					<fieldSet>
+						<fieldSetId>98634bd9-e0d2-4070-a32a-f197f91e4ae2</fieldSetId>
+						<items>
+							<item>
+								<fields>
+									<field>
+										<fieldId>a2373d72-5f4b-7c22-07e8-e624395a9ce8</fieldId>
+										<textValue>worst data platform!!1!</textValue>
+									</field>
+									<field>
+										<fieldId>a8f007bf-81b8-4630-b5fc-22e34b759705</fieldId>
+										<textValue>GitHub</textValue>
+									</field>
+								</fields>
+								<ordinal>0</ordinal>
+							</item>
+							<item>
+								<fields>
+									<field>
+										<fieldId>a2373d72-5f4b-7c22-07e8-e624395a9ce8</fieldId>
+										<textValue>best data platform@@@@@</textValue>
+									</field>
+									<field>
+										<fieldId>a8f007bf-81b8-4630-b5fc-22e34b759705</fieldId>
+										<textValue>ROHub</textValue>
+									</field>
+								</fields>
+								<ordinal>1</ordinal>
+							</item>
+						</items>
+					</fieldSet>
+					<fieldSet>
+						<fieldSetId>0d443267-a82f-fde4-8fec-ef9ef06e31e7</fieldSetId>
+						<items>
+							<item>
+								<fields>
+									<field>
+										<fieldId>88f0b47b-6e36-1fc6-9b88-9082bff46499</fieldId>
+										<textValue>Everyone</textValue>
+									</field>
+									<field>
+										<fieldId>1916f22d-12f3-c59a-53fa-8677521d100d</fieldId>
+										<textListValues>
+											<textListValue>Data steward</textListValue>
+											<textListValue>Data curator</textListValue>
+										</textListValues>
+									</field>
+								</fields>
+								<ordinal>0</ordinal>
+							</item>
+							<item>
+								<fields>
+									<field>
+										<fieldId>88f0b47b-6e36-1fc6-9b88-9082bff46499</fieldId>
+										<textValue>No One</textValue>
+									</field>
+									<field>
+										<fieldId>1916f22d-12f3-c59a-53fa-8677521d100d</fieldId>
+										<textListValues>
+											<textListValue>Data depositor</textListValue>
+											<textListValue>Other</textListValue>
+										</textListValues>
+									</field>
+								</fields>
+								<ordinal>1</ordinal>
+							</item>
+						</items>
+					</fieldSet>
+					<fieldSet>
+						<fieldSetId>e709e0dd-f00d-86e5-8ef2-2fc4ca91b35d</fieldSetId>
+						<items>
+							<item>
+								<fields>
+									<field>
+										<fieldId>466db583-9925-b1f7-5d88-3b4747998868</fieldId>
+										<textValue>some size</textValue>
+									</field>
+									<field>
+										<fieldId>2fda5971-ebd3-b99d-81ad-4a634b5da7cc</fieldId>
+										<textValue>some type</textValue>
+									</field>
+									<field>
+										<fieldId>17d84e0a-7a67-ed71-f84a-dec73dc28b5e</fieldId>
+										<textValue>some format</textValue>
+									</field>
+								</fields>
+								<ordinal>0</ordinal>
+							</item>
+							<item>
+								<fields>
+									<field>
+										<fieldId>466db583-9925-b1f7-5d88-3b4747998868</fieldId>
+										<textValue>another size</textValue>
+									</field>
+									<field>
+										<fieldId>2fda5971-ebd3-b99d-81ad-4a634b5da7cc</fieldId>
+										<textValue>another type</textValue>
+									</field>
+									<field>
+										<fieldId>17d84e0a-7a67-ed71-f84a-dec73dc28b5e</fieldId>
+										<textValue>another format</textValue>
+									</field>
+								</fields>
+								<ordinal>1</ordinal>
+							</item>
+						</items>
+					</fieldSet>
+					<fieldSet>
+						<fieldSetId>6e66f911-6cbb-4ba5-888d-f53e50d2deff</fieldSetId>
+						<items>
+							<item>
+								<fields>
+									<field>
+										<fieldId>04d372a9-8bee-e7f6-6561-5b6481704933</fieldId>
+										<textListValues>
+											<textListValue>56cc9644-5ee6-4870-9d4b-5b33f750c7d7</textListValue>
+										</textListValues>
+									</field>
+									<field>
+										<fieldId>2360e954-a06c-909b-fc6e-20e9077a22bd</fieldId>
+										<textListValues>
+											<textListValue>fe42058a-10ed-4982-a40b-25e6f11e133f</textListValue>
+										</textListValues>
+									</field>
+									<field>
+										<fieldId>8e684fee-c25a-66d3-3b03-9742a9325701</fieldId>
+										<textValue>Mauris tincidunt a felis quis tempor. Nunc quis elit magna. Pellentesque sed tellus felis. Proin a arcu gravida, luctus metus vel, fermentum leo. Curabitur sed sollicitudin velit. Quisque sed ante sodales, mollis leo vel, blandit leo. Phasellus ullamcorper placerat luctus. Sed tempor, massa eu sodales viverra, lacus quam accumsan nibh, non porttitor nisl turpis ac urna. Maecenas justo lacus, vulputate at enim sit amet, tristique mollis urna. Cras eget vehicula nunc, in dictum justo. Proin nec consectetur tellus. Ut volutpat tristique finibus. Phasellus sit amet suscipit nisl.</textValue>
+									</field>
+								</fields>
+								<ordinal>0</ordinal>
+							</item>
+							<item>
+								<fields>
+									<field>
+										<fieldId>04d372a9-8bee-e7f6-6561-5b6481704933</fieldId>
+										<textListValues>
+											<textListValue>ebeaaa04-9129-4a9f-838e-ca6f59b27d89</textListValue>
+										</textListValues>
+									</field>
+									<field>
+										<fieldId>2360e954-a06c-909b-fc6e-20e9077a22bd</fieldId>
+										<textListValues>
+											<textListValue>2a7820ad-fd09-434c-b2dc-5391fa8b3f41</textListValue>
+											<textListValue>0c16d36a-bb5d-427c-8b5e-11e2e256cef5</textListValue>
+										</textListValues>
+									</field>
+									<field>
+										<fieldId>8e684fee-c25a-66d3-3b03-9742a9325701</fieldId>
+										<textValue>Aliquam nibh mi, dignissim nec nibh ac, ornare dictum nunc. Cras mauris ex, finibus sit amet accumsan at, venenatis quis nibh. In sodales metus volutpat erat blandit facilisis. Aliquam convallis ipsum sed nisl dapibus, ac malesuada metus lacinia. Maecenas ac lectus accumsan, viverra magna sagittis, cursus risus. Proin non rhoncus nibh, vitae rhoncus velit. Aliquam finibus nisl risus, a laoreet ligula vulputate nec. Duis bibendum suscipit hendrerit. Nam auctor sollicitudin elit, ac sagittis nulla commodo nec. Integer nibh dolor, efficitur sed pellentesque vitae, semper id est. Phasellus eu pretium urna, quis hendrerit lectus. Nullam elementum lacus a ipsum tempus, quis mattis ligula euismod. Mauris ante nisl, facilisis et sollicitudin nec, finibus quis diam.</textValue>
+									</field>
+								</fields>
+								<ordinal>1</ordinal>
+							</item>
+						</items>
+					</fieldSet>
+					<fieldSet>
+						<fieldSetId>97a8aeea-4227-2a48-54c5-8bf15f7e46c5</fieldSetId>
+						<items>
+							<item>
+								<fields>
+									<field>
+										<fieldId>e20e44f2-f3c3-9ead-4ff8-d052e4aa7174</fieldId>
+										<textValue>Mauris semper turpis dui. Vivamus a venenatis massa. Phasellus at nulla sit amet justo auctor pellentesque. Mauris vitae enim hendrerit, mattis nulla quis, aliquam enim. Nulla libero ex, volutpat ac odio a, vestibulum rutrum orci. Nunc sit amet ante eget mi feugiat iaculis. In sit amet lacus id nunc placerat sodales. Vestibulum sed ex eu turpis scelerisque efficitur sit amet et ipsum. Pellentesque interdum urna at sapien fermentum sodales. Sed commodo blandit orci, a convallis libero luctus a. Phasellus fermentum ut velit at congue.</textValue>
+									</field>
+								</fields>
+								<ordinal>0</ordinal>
+							</item>
+						</items>
+					</fieldSet>
+					<fieldSet>
+						<fieldSetId>a71c684a-aa8a-4cb2-b51d-c3836c1cff7d</fieldSetId>
+						<items>
+							<item>
+								<fields>
+									<field>
+										<fieldId>a70bf404-0fc8-bf7b-3ab0-21394f873710</fieldId>
+										<textListValues>
+											<textListValue>Automatic</textListValue>
+										</textListValues>
+									</field>
+									<field>
+										<fieldId>b82b5f92-0c10-42da-8af3-dcf1a4a1b421</fieldId>
+										<textValue>idk some type?</textValue>
+									</field>
+									<field>
+										<fieldId>130d6ea8-e4b8-cbb5-108d-4dab8cfc82bf</fieldId>
+										<textListValues>
+											<textListValue>Daily</textListValue>
+										</textListValues>
+									</field>
+									<field>
+										<fieldId>1f0f55cf-0d0d-e613-f03b-4927657b14f7</fieldId>
+										<textListValues>
+											<textListValue>Yes</textListValue>
+										</textListValues>
+									</field>
+								</fields>
+								<ordinal>0</ordinal>
+							</item>
+							<item>
+								<fields>
+									<field>
+										<fieldId>a70bf404-0fc8-bf7b-3ab0-21394f873710</fieldId>
+										<textListValues>
+											<textListValue>Manual</textListValue>
+										</textListValues>
+									</field>
+									<field>
+										<fieldId>b82b5f92-0c10-42da-8af3-dcf1a4a1b421</fieldId>
+										<textValue>storage type$$$$$</textValue>
+									</field>
+									<field>
+										<fieldId>130d6ea8-e4b8-cbb5-108d-4dab8cfc82bf</fieldId>
+										<textListValues>
+											<textListValue>Weekly</textListValue>
+										</textListValues>
+									</field>
+									<field>
+										<fieldId>1f0f55cf-0d0d-e613-f03b-4927657b14f7</fieldId>
+										<textListValues>
+											<textListValue>Unknown</textListValue>
+										</textListValues>
+									</field>
+								</fields>
+								<ordinal>1</ordinal>
+							</item>
+						</items>
+					</fieldSet>
+					<fieldSet>
+						<fieldSetId>7ac1f42b-9aad-4efb-b653-1716b29f1139</fieldSetId>
+						<items>
+							<item>
+								<fields>
+									<field>
+										<fieldId>1639ee74-792a-4fab-9aa0-83cecd5f0dbb</fieldId>
+										<booleanValue>true</booleanValue>
+									</field>
+								</fields>
+								<ordinal>0</ordinal>
+							</item>
+						</items>
+					</fieldSet>
+					<fieldSet>
+						<fieldSetId>62ac50ea-1d96-427f-92a8-80df1f3dfbb9</fieldSetId>
+						<items>
+							<item>
+								<fields>
+									<field>
+										<fieldId>da847fbb-7da8-4fef-afd7-964f8ac18ab5</fieldId>
+										<textValue>1 billion TBs</textValue>
+									</field>
+									<field>
+										<fieldId>3d93fb8d-6162-4125-b8bb-91518e11a616</fieldId>
+										<textValue>PDF</textValue>
+									</field>
+									<field>
+										<fieldId>138bf6f9-e619-4352-b7ec-044a5e30cd07</fieldId>
+										<textValue>Large data</textValue>
+									</field>
+								</fields>
+								<ordinal>0</ordinal>
+							</item>
+							<item>
+								<fields>
+									<field>
+										<fieldId>da847fbb-7da8-4fef-afd7-964f8ac18ab5</fieldId>
+										<textValue>1MB</textValue>
+									</field>
+									<field>
+										<fieldId>3d93fb8d-6162-4125-b8bb-91518e11a616</fieldId>
+										<textValue>JPG</textValue>
+									</field>
+									<field>
+										<fieldId>138bf6f9-e619-4352-b7ec-044a5e30cd07</fieldId>
+										<textValue>Small data</textValue>
+									</field>
+								</fields>
+								<ordinal>1</ordinal>
+							</item>
+						</items>
+					</fieldSet>
+					<fieldSet>
+						<fieldSetId>328d9596-a90a-40c4-bf99-f184b5907233</fieldSetId>
+						<items>
+							<item>
+								<fields>
+									<field>
+										<fieldId>5b7c3861-b137-43a7-99bd-056c4cdf1f1d</fieldId>
+										<booleanValue>true</booleanValue>
+									</field>
+								</fields>
+								<ordinal>0</ordinal>
+							</item>
+						</items>
+					</fieldSet>
+					<fieldSet>
+						<fieldSetId>7b6b9ebd-815b-e346-b27a-d65123e31698</fieldSetId>
+						<items>
+							<item>
+								<fields>
+									<field>
+										<fieldId>1ffd0ef1-4125-06e3-49b6-9933678e5f9f</fieldId>
+										<booleanValue>true</booleanValue>
+									</field>
+								</fields>
+								<ordinal>0</ordinal>
+							</item>
+						</items>
+					</fieldSet>
+					<fieldSet>
+						<fieldSetId>00a92d35-3c6c-4f31-b64f-78e6eaeaf687</fieldSetId>
+						<items>
+							<item>
+								<fields>
+									<field>
+										<fieldId>cb09a30f-d92a-45c2-99a1-459e695f7ec6</fieldId>
+										<booleanValue>true</booleanValue>
+									</field>
+								</fields>
+								<ordinal>0</ordinal>
+							</item>
+						</items>
+					</fieldSet>
+					<fieldSet>
+						<fieldSetId>ff5c9063-84c5-4620-a4b4-23b4bec57a45</fieldSetId>
+						<items>
+							<item>
+								<fields>
+									<field>
+										<fieldId>f9fd5f01-6858-52b6-0c27-e3c073f9c37d</fieldId>
+										<textValue>Praesent condimentum urna erat, sit amet fringilla eros pretium ac. Pellentesque consectetur cursus eros in malesuada. Donec id ultricies eros. Praesent pharetra malesuada massa, vel convallis lorem condimentum non. Phasellus vel commodo dolor, eget euismod lectus. Donec ac blandit lectus. Aliquam erat volutpat. Aenean viverra semper augue ut fermentum.</textValue>
+									</field>
+									<field>
+										<fieldId>13d5f649-9787-4cf9-6d15-0da5af2bd2bc</fieldId>
+										<textValue>1. Ustawa z dnia 10 maja 2018 r. o ochronie danych osobowych; 2. Rozporządzenie Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku z przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/WE (ogólne rozporządzenie o ochronie danych) Ustawa z dnia 10 maja 2018 r. o ochronie danych osobowych </textValue>
+									</field>
+								</fields>
+								<ordinal>0</ordinal>
+							</item>
+						</items>
+					</fieldSet>
+					<fieldSet>
+						<fieldSetId>6f14793f-c964-8c9e-ca38-458902f34fa1</fieldSetId>
+						<items>
+							<item>
+								<fields>
+									<field>
+										<fieldId>9d5b1875-33aa-ef21-f005-388e63a7cb57</fieldId>
+										<booleanValue>true</booleanValue>
+									</field>
+									<field>
+										<fieldId>70d049ab-5891-76a6-fcbe-c9883e3bd704</fieldId>
+										<textValue>Sed risus turpis, efficitur nec pellentesque et, lobortis sit amet ligula. In a lorem ut felis blandit aliquet. Morbi ac aliquam est. Proin non dictum magna. Donec non gravida erat, vel porta urna. Vestibulum id nisi feugiat justo tincidunt lobortis. Nullam nec tempor felis, in convallis diam. Nam consequat, enim quis mollis ultrices, justo metus suscipit mi, nec iaculis orci enim at velit. Quisque ac diam ac metus blandit hendrerit ac id nibh. Sed eget est eget sem malesuada tempor. Pellentesque ultricies ullamcorper lacinia. Pellentesque pretium, est et molestie suscipit, erat arcu accumsan nibh, id finibus nulla mauris ut dolor. Etiam dictum nunc a dui rutrum tincidunt. Phasellus luctus convallis leo, eget viverra libero porta auctor. Vestibulum in lorem lobortis, placerat massa sagittis, rutrum eros.</textValue>
+									</field>
+									<field>
+										<fieldId>cf3d294e-1e35-1c3b-2b54-2c23d652e2d8</fieldId>
+										<textValue>Aenean vel velit libero. Vestibulum sed tristique lorem, eget convallis mi. Etiam laoreet nisi in odio efficitur porta. Integer condimentum semper ante quis sodales. Nulla congue lectus sit amet lacinia elementum. Aliquam erat volutpat. Quisque vel efficitur augue. Aliquam felis sem, hendrerit sed lectus et, placerat vehicula sapien. Curabitur in quam in lectus commodo suscipit nec sit amet nibh. Quisque et dolor velit. Vestibulum sodales, ligula quis rutrum semper, urna nunc gravida magna, eu placerat sem augue in arcu. Sed rutrum nisl erat, at placerat eros rhoncus quis.</textValue>
+									</field>
+									<field>
+										<fieldId>7bef17b4-133b-d173-6aa6-f51380e7e751</fieldId>
+										<textValue>Quisque lacus nisi, varius id odio at, iaculis rutrum eros. Aenean pretium varius odio rhoncus efficitur. In ac rutrum quam. Nunc sodales turpis ac nunc euismod, sed mollis augue viverra. Phasellus ut rutrum augue. Sed vitae lacus luctus, interdum ligula quis, interdum nunc. Vivamus iaculis tellus at justo facilisis mattis. Duis eu ultricies odio. Aenean hendrerit magna lorem, at commodo enim tincidunt sit amet. Nam sodales pharetra pellentesque.</textValue>
+									</field>
+									<field>
+										<fieldId>9d8f8807-7157-0781-7fe3-d161240e2cb5</fieldId>
+										<booleanValue>true</booleanValue>
+									</field>
+									<field>
+										<fieldId>77da10f1-b059-c00c-ebde-8fdbfd9a8b27</fieldId>
+										<booleanValue>true</booleanValue>
+									</field>
+								</fields>
+								<ordinal>0</ordinal>
+							</item>
+						</items>
+					</fieldSet>
+					<fieldSet>
+						<fieldSetId>54bcdd32-05cd-15d7-46b6-abf3659259b9</fieldSetId>
+						<items>
+							<item>
+								<fields>
+									<field>
+										<fieldId>ebb9538a-9626-ea4d-3711-da1671825148</fieldId>
+										<textValue>Facebook</textValue>
+									</field>
+									<field>
+										<fieldId>7cbb820d-c667-c326-264e-8d3fafb92786</fieldId>
+										<textListValues>
+											<textListValue>95897f58-e624-4d2a-b258-263089fe8ee4</textListValue>
+											<textListValue>95897f58-e624-4d2a-b258-263089fe8ee4</textListValue>
+										</textListValues>
+									</field>
+									<field>
+										<fieldId>61bdd7e6-0099-ba2c-f44e-b99f1e858f51</fieldId>
+										<textValue>Pellentesque nibh leo, tempus in ipsum nec, euismod aliquet lorem. Nulla facilisi. Phasellus eget nibh quis purus auctor eleifend id vel diam. Vivamus nec ante lectus. Praesent placerat bibendum aliquam. Curabitur vitae elit dui. Nam scelerisque condimentum dolor, sit amet pellentesque lacus. Vestibulum congue tempus leo, et gravida neque placerat eget. Duis feugiat eget sem semper consequat. Nulla at scelerisque massa, sed maximus dolor. Quisque auctor nisl et leo semper tincidunt. Integer feugiat ultricies commodo. Cras eros mauris, ultricies vel enim ac, porttitor elementum nisl. Suspendisse potenti. Morbi ac tincidunt diam.</textValue>
+									</field>
+								</fields>
+								<ordinal>0</ordinal>
+							</item>
+							<item>
+								<fields>
+									<field>
+										<fieldId>ebb9538a-9626-ea4d-3711-da1671825148</fieldId>
+										<textValue>OpenAI</textValue>
+									</field>
+									<field>
+										<fieldId>7cbb820d-c667-c326-264e-8d3fafb92786</fieldId>
+										<textListValues>
+											<textListValue>f4166938-0596-45bb-b779-fbeeffd79b0a</textListValue>
+											<textListValue>f4166938-0596-45bb-b779-fbeeffd79b0a</textListValue>
+										</textListValues>
+									</field>
+									<field>
+										<fieldId>61bdd7e6-0099-ba2c-f44e-b99f1e858f51</fieldId>
+										<textValue>Mauris congue ipsum erat, non efficitur enim malesuada ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam feugiat vestibulum lorem, vel vehicula tortor blandit id. Sed ac scelerisque sem. Maecenas pretium mi a ultricies pharetra. Nunc sed leo sit amet elit bibendum imperdiet et sit amet mi. Vestibulum tincidunt venenatis lacus in auctor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris porta felis sed massa volutpat egestas. Vestibulum interdum urna odio, ac porta sapien faucibus in. Nulla rutrum sapien justo, a pulvinar massa dapibus a. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris auctor pellentesque nisi, vitae venenatis lacus condimentum eu. Maecenas blandit faucibus massa ut convallis. Ut lectus massa, egestas eget erat et, ornare vestibulum erat. Vestibulum luctus orci laoreet lorem semper dapibus.</textValue>
+									</field>
+								</fields>
+								<ordinal>1</ordinal>
+							</item>
+						</items>
+					</fieldSet>
+					<fieldSet>
+						<fieldSetId>a2368620-fcd8-9bbd-6dbf-46e0536213d7</fieldSetId>
+						<items>
+							<item>
+								<fields>
+									<field>
+										<fieldId>c608799d-07d8-9909-9695-e573adfe5f3d</fieldId>
+										<booleanValue>true</booleanValue>
+									</field>
+								</fields>
+								<ordinal>0</ordinal>
+							</item>
+						</items>
+					</fieldSet>
+					<fieldSet>
+						<fieldSetId>7fc85b40-3efb-4ea6-a3af-70dff80fe6d2</fieldSetId>
+						<items>
+							<item>
+								<fields>
+									<field>
+										<fieldId>515cbb72-ff71-5065-a99f-a3a078e820d7</fieldId>
+										<textValue>Donec mollis scelerisque tempor. Fusce in risus nisl. Fusce laoreet vulputate placerat. Cras sed mollis ex. Cras eget vulputate ligula. Fusce ac libero lacinia, iaculis eros in, fermentum nunc. Maecenas dapibus luctus neque quis mollis. Nullam est urna, sollicitudin vitae hendrerit id, aliquet sed ligula. Maecenas non gravida sem. Nulla facilisi. Pellentesque vel massa et neque lobortis consectetur venenatis quis nisl. Nullam et euismod libero. Mauris scelerisque consectetur nibh, quis bibendum purus faucibus id.</textValue>
+									</field>
+									<field>
+										<fieldId>f0f96ff7-7312-49c1-b2b8-be25bc6f4086</fieldId>
+										<textValue>Aliquam quis porttitor ex, vel placerat purus. Nulla augue urna, sollicitudin vitae facilisis vulputate, varius id augue. Vivamus eleifend ex eget sem vehicula laoreet. Maecenas elit tortor, pellentesque ut laoreet in, eleifend non justo. Phasellus ut luctus ex. Duis tristique velit sit amet ipsum finibus, ut sagittis mauris iaculis. Ut hendrerit sem vel ante finibus ultricies. Integer ornare eu sem sit amet suscipit. Nam ut nisl non elit tincidunt suscipit at vitae purus. Phasellus ultricies ante at nibh bibendum, nec vehicula mauris consectetur. Vestibulum vulputate odio laoreet diam bibendum interdum.</textValue>
+									</field>
+									<field>
+										<fieldId>f67c0256-6a08-0c09-c543-bc982f23def5</fieldId>
+										<textListValues>
+											<textListValue>aeb5555b-da12-4fa6-88fb-fcea86dc3a5b</textListValue>
+											<textListValue>aeb5555b-da12-4fa6-88fb-fcea86dc3a5b</textListValue>
+										</textListValues>
+									</field>
+								</fields>
+								<ordinal>0</ordinal>
+							</item>
+							<item>
+								<fields>
+									<field>
+										<fieldId>515cbb72-ff71-5065-a99f-a3a078e820d7</fieldId>
+										<textValue>Donec nec leo dignissim, ullamcorper lectus eu, iaculis tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas orci lectus, dictum eget semper in, commodo at mi. Vestibulum egestas ligula enim, eget volutpat elit dictum id. Nam vitae tellus augue. Praesent eget ipsum interdum, auctor est in, fermentum eros. Nunc ac elementum quam, vel faucibus velit. Nulla feugiat tincidunt erat sed ultricies. Phasellus eu diam ut nibh fringilla volutpat et ac turpis. Vestibulum quis metus ornare, lobortis ante a, scelerisque metus.</textValue>
+									</field>
+									<field>
+										<fieldId>f0f96ff7-7312-49c1-b2b8-be25bc6f4086</fieldId>
+										<textValue>Vivamus nec arcu non nulla varius bibendum. Mauris a urna efficitur, ullamcorper arcu at, rutrum ligula. Morbi egestas porta risus quis porta. Donec ornare accumsan sagittis. Nulla porttitor ex eget porta tincidunt. Vestibulum faucibus cursus feugiat. Maecenas eget purus ut elit bibendum bibendum. Nulla nec leo nunc. Nam elementum arcu rutrum suscipit porttitor. Vestibulum sollicitudin ultrices pretium. Morbi eu erat tortor. Integer sed vulputate eros. Vestibulum sodales finibus hendrerit. Phasellus pellentesque ex vel risus tempus, id placerat nibh accumsan.</textValue>
+									</field>
+									<field>
+										<fieldId>f67c0256-6a08-0c09-c543-bc982f23def5</fieldId>
+										<textListValues>
+											<textListValue>2ff73a32-a116-4cda-af6b-a0ce1b2df6c8</textListValue>
+											<textListValue>2ff73a32-a116-4cda-af6b-a0ce1b2df6c8</textListValue>
+										</textListValues>
+									</field>
+								</fields>
+								<ordinal>1</ordinal>
+							</item>
+						</items>
+					</fieldSet>
+					<fieldSet>
+						<fieldSetId>2ced82d1-cf03-e32a-6333-ae08d71e2b1f</fieldSetId>
+						<items>
+							<item>
+								<fields>
+									<field>
+										<fieldId>0526c739-8e18-9b34-11c0-c3307669c73b</fieldId>
+										<textValue>Proin condimentum ac augue in fringilla. Suspendisse et iaculis urna. Duis augue mauris, malesuada ut eros vel, gravida blandit mi. Integer nec lectus mollis, ultrices tellus ut, placerat ipsum. Nulla congue feugiat ex id maximus. Vivamus congue libero lectus, et pharetra nibh varius at. Sed commodo sapien in felis tempor placerat et ac justo. Nullam consectetur metus at euismod dignissim. Morbi eget urna sed turpis vehicula lobortis. Nullam iaculis consectetur magna. Fusce vel malesuada metus. Sed mollis tellus vel vestibulum iaculis. Praesent tempor lacus eros, at tristique sapien commodo ac. Phasellus ut enim et ligula interdum semper ut ut tellus.</textValue>
+									</field>
+									<field>
+										<fieldId>4470dbaa-0fd6-2183-e2c3-5a1a5575f5cd</fieldId>
+										<textValue>Quisque tellus urna, ultrices et dolor non, ultrices luctus sapien. Morbi lobortis blandit cursus. Aliquam dictum dolor ex, eu posuere mauris condimentum quis. Curabitur placerat tellus non arcu ornare, id bibendum erat porttitor. Maecenas in egestas sem. Ut iaculis dolor at vulputate elementum. In elementum massa finibus quam tempor sagittis. Quisque volutpat nisi a lobortis blandit. Aenean fringilla id enim ac pellentesque. Nulla interdum nibh non nunc pharetra, ac tempus tortor suscipit.</textValue>
+									</field>
+									<field>
+										<fieldId>15829e90-ef1f-4e5d-4d05-84c3ecddfa52</fieldId>
+										<textValue>Pellentesque scelerisque felis at tincidunt aliquet. Sed vitae ultricies enim, vitae consectetur erat. In gravida ex eu molestie eleifend. Duis quis diam sed metus ultrices tempor. Aenean bibendum tellus at rhoncus tincidunt. Ut id ullamcorper felis. Vivamus leo nisl, condimentum in imperdiet eget, tincidunt ac diam. Nullam mollis eu augue vel feugiat. Praesent tellus ligula, gravida vestibulum venenatis quis, placerat porta dolor. Nam ultricies iaculis turpis, sed consequat orci hendrerit et.</textValue>
+									</field>
+									<field>
+										<fieldId>81fb1e57-d8fb-b112-dca6-c40cce2f519c</fieldId>
+										<textValue>Cras imperdiet elementum dolor et dapibus. Sed et libero pharetra, scelerisque ante ac, semper ex. Integer tristique viverra nulla at hendrerit. Donec feugiat lacus augue, ut pharetra nibh faucibus at. Nunc odio tellus, sollicitudin sed scelerisque sit amet, viverra et nisl. Aliquam convallis elementum consectetur. Praesent tincidunt, massa sit amet auctor efficitur, ipsum felis auctor ligula, ac congue orci velit ut dolor. Nunc facilisis odio sed lectus maximus, eget accumsan ante laoreet. Nunc in massa consequat, fringilla ante vitae, lacinia ante. Ut sit amet posuere sem. Sed vel diam et nisl blandit vulputate et id ex. Pellentesque at metus consequat, varius justo ac, hendrerit elit. Praesent hendrerit nibh a magna rutrum, eu luctus justo consequat. Maecenas scelerisque venenatis sapien ut ultrices. Pellentesque at erat sit amet dolor tempus finibus sed ac mauris.</textValue>
+									</field>
+								</fields>
+								<ordinal>0</ordinal>
+							</item>
+						</items>
+					</fieldSet>
+				</fieldSets>
+			</properties>
+		</description>
+	</descriptions>
+</plan>
