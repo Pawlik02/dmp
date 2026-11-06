@@ -42,154 +42,367 @@
 			<sections>
 				<section hasTemplates="false" prefillingSourcesEnabled="false">
 					<id>c75d8d5c-df93-46d0-971b-92ed737c31ab</id>
-					<label>Main Info</label>
-					<description></description>
 					<ordinal>1</ordinal>
-					<systemFields>
-						<systemField ordinal="1" required="true">
-							<id>bd9d175c-061b-4acf-ae51-e609667b6add</id>
-							<type>Title</type>
-							<label>Title of DMP</label>
-							<placeholder>Title of DMP</placeholder>
+					<fieldSets>
+						<fieldSet>
+							<id>cf0afb05-2263-4a47-b403-0f9757f99c82</id>
+							<ordinal>1</ordinal>
+							<fields>
+								<field>
+									<id>bd9d175c-061b-4acf-ae51-e609667b6add</id>
+									<ordinal>0</ordinal>
+									<validations>
+										<validation>Required</validation>
+									</validations>
+									<defaultValue/>
+									<visibilityRules/>
+									<systemData>
+										<label>Title of DMP</label>
+										<fieldType>SYSTEM</fieldType>
+										<type>PlanTitle</type>
+									</systemData>
+									<semantics>
+										<semantic>rda.dmp.title</semantic>
+									</semantics>
+									<includeInExport>true</includeInExport>
+								</field>
+							</fields>
+							<title>Title of DMP</title>
 							<description></description>
-							<semantics>rda.dmp.title</semantics>
-						</systemField>
-						<systemField ordinal="2" required="true">
-							<id>b51b6924-691e-4fb3-9a10-81d3cfe30d5a</id>
-							<type>Description</type>
-							<label>Description</label>
-							<placeholder>Fill with description</placeholder>
+							<hasMultiplicity>false</hasMultiplicity>
+							<hasCommentField>false</hasCommentField>
+						</fieldSet>
+						<fieldSet>
+							<id>ca494216-e98f-4ae1-8971-c3521f82120b</id>
+							<ordinal>2</ordinal>
+							<fields>
+								<field>
+									<id>b51b6924-691e-4fb3-9a10-81d3cfe30d5a</id>
+									<ordinal>0</ordinal>
+									<validations>
+										<validation>Required</validation>
+									</validations>
+									<defaultValue/>
+									<visibilityRules/>
+									<systemData>
+										<label>Fill with description</label>
+										<fieldType>SYSTEM</fieldType>
+										<type>PlanDescription</type>
+									</systemData>
+									<semantics>
+										<semantic>rda.dmp.description</semantic>
+									</semantics>
+									<includeInExport>true</includeInExport>
+								</field>
+							</fields>
+							<title>Description</title>
 							<description>Briefly describe the context and purpose of the DMP</description>
-							<semantics>rda.dmp.description</semantics>
-						</systemField>
-						<systemField ordinal="4" required="true">
-							<id>0d295c9d-b9e1-4a80-81dc-57d70228a2de</id>
-							<type>Language</type>
-							<label>Language</label>
-							<placeholder>Language</placeholder>
-							<description>Select the language of your DMP</description>
-							<semantics>rda.dmp.language</semantics>
-						</systemField>
-						<systemField ordinal="5" required="true">
-							<id>2e97fa40-45e4-4d1b-9c65-eca5f54a80ab</id>
-							<type>Contact</type>
-							<label>Contact</label>
-							<placeholder>Contact</placeholder>
-							<description></description>
-							<semantics>rda.dmp.contact</semantics>
-						</systemField>
-					</systemFields>
-					<extraFields/>
-					<referenceFields>
-						<referenceField ordinal="3" required="false">
-							<id>93b52c1a-93fa-4c6d-8cf5-43410a834272</id>
-							<referenceTypeId>5a2112e7-ea99-4cfe-98a1-68665e26726e</referenceTypeId>
-							<referenceTypeCode>researchers</referenceTypeCode>
-							<label>Researchers</label>
-							<placeholder>Select researchers</placeholder>
+							<hasMultiplicity>false</hasMultiplicity>
+							<hasCommentField>false</hasCommentField>
+						</fieldSet>
+						<fieldSet>
+							<id>a08b9fb3-0e12-4b43-a0e4-b689a6a2d4b6</id>
+							<ordinal>3</ordinal>
+							<fields>
+								<field>
+									<id>93b52c1a-93fa-4c6d-8cf5-43410a834272</id>
+									<ordinal>0</ordinal>
+									<defaultValue/>
+									<visibilityRules/>
+									<referenceTypeData multipleSelect="true">
+										<label>Select researchers</label>
+										<fieldType>REFERENCE_TYPES</fieldType>
+										<referenceTypeId>5a2112e7-ea99-4cfe-98a1-68665e26726e</referenceTypeId>
+										<referenceTypeName>Researchers</referenceTypeName>
+										<referenceTypeCode>researchers</referenceTypeCode>
+									</referenceTypeData>
+									<semantics>
+										<semantic>rda.dataset.creator</semantic>
+									</semantics>
+									<includeInExport>true</includeInExport>
+								</field>
+							</fields>
+							<title>Researchers</title>
 							<description>Add here the names of people that have produced, processed, analysed the data described in the DMP.</description>
-							<semantics>rda.dataset.creator</semantics>
-							<multipleSelect>true</multipleSelect>
-						</referenceField>
-						<referenceField ordinal="6" required="true">
-							<id>7a7a006c-b2e0-6a72-5cc4-efca3c835d0f</id>
-							<referenceTypeId>1429ea6e-ffaf-479c-8a33-8076abf1ce01</referenceTypeId>
-							<referenceTypeCode>dmp-status</referenceTypeCode>
-							<label>DMP status</label>
-							<semantics>rda.dmp.version</semantics>
-							<multipleSelect>false</multipleSelect>
-						</referenceField>
-					</referenceFields>
-					<uploadFields/>
+							<hasMultiplicity>false</hasMultiplicity>
+							<hasCommentField>false</hasCommentField>
+						</fieldSet>
+						<fieldSet>
+							<id>c135f9cf-3229-401d-ab6b-5c4c7265babb</id>
+							<ordinal>4</ordinal>
+							<fields>
+								<field>
+									<id>0d295c9d-b9e1-4a80-81dc-57d70228a2de</id>
+									<ordinal>0</ordinal>
+									<validations>
+										<validation>Required</validation>
+									</validations>
+									<defaultValue/>
+									<visibilityRules/>
+									<systemData>
+										<label>Language</label>
+										<fieldType>SYSTEM</fieldType>
+										<type>PlanLanguage</type>
+									</systemData>
+									<semantics>
+										<semantic>rda.dmp.language</semantic>
+									</semantics>
+									<includeInExport>true</includeInExport>
+								</field>
+							</fields>
+							<title>Language</title>
+							<description>Select the language of your DMP</description>
+							<hasMultiplicity>false</hasMultiplicity>
+							<hasCommentField>false</hasCommentField>
+						</fieldSet>
+						<fieldSet>
+							<id>8fce0118-a1f7-4871-8a72-3eb87aae8a1c</id>
+							<ordinal>5</ordinal>
+							<fields>
+								<field>
+									<id>2e97fa40-45e4-4d1b-9c65-eca5f54a80ab</id>
+									<ordinal>0</ordinal>
+									<validations>
+										<validation>Required</validation>
+									</validations>
+									<defaultValue/>
+									<visibilityRules/>
+									<systemData>
+										<label>Contact</label>
+										<fieldType>SYSTEM</fieldType>
+										<type>PlanContact</type>
+									</systemData>
+									<semantics>
+										<semantic>rda.dmp.contact</semantic>
+									</semantics>
+									<includeInExport>true</includeInExport>
+								</field>
+							</fields>
+							<title>Contact</title>
+							<description></description>
+							<hasMultiplicity>false</hasMultiplicity>
+							<hasCommentField>false</hasCommentField>
+						</fieldSet>
+						<fieldSet>
+							<id>0e7700e1-7a01-4f0c-aad2-929ea3f4e96a</id>
+							<ordinal>6</ordinal>
+							<fields>
+								<field>
+									<id>7a7a006c-b2e0-6a72-5cc4-efca3c835d0f</id>
+									<ordinal>0</ordinal>
+									<validations>
+										<validation>Required</validation>
+									</validations>
+									<defaultValue/>
+									<visibilityRules/>
+									<referenceTypeData multipleSelect="false">
+										<fieldType>REFERENCE_TYPES</fieldType>
+										<referenceTypeId>1429ea6e-ffaf-479c-8a33-8076abf1ce01</referenceTypeId>
+										<referenceTypeName>DMP phase</referenceTypeName>
+										<referenceTypeCode>dmp-phase</referenceTypeCode>
+									</referenceTypeData>
+									<semantics>
+										<semantic>rda.dmp.version</semantic>
+									</semantics>
+									<includeInExport>true</includeInExport>
+								</field>
+							</fields>
+							<title>DMP status</title>
+							<hasMultiplicity>false</hasMultiplicity>
+							<hasCommentField>false</hasCommentField>
+						</fieldSet>
+					</fieldSets>
+					<description></description>
+					<title>Main Info</title>
+					<sections/>
 					<descriptionTemplates/>
 					<prefillingSources/>
 				</section>
 				<section hasTemplates="false" prefillingSourcesEnabled="false">
 					<id>d0894385-f5aa-4db1-a794-4ce2b3b67121</id>
-					<label>Funding</label>
-					<description></description>
 					<ordinal>2</ordinal>
-					<systemFields/>
-					<extraFields>
-						<extraField ordinal="2" required="false">
-							<id>a0dbf076-684c-e780-90c8-457edd02fcdb</id>
-							<type>Number</type>
-							<label>Project number</label>
-							<placeholder></placeholder>
-							<semantics>rda.dmp.project.funding.grant_id</semantics>
-						</extraField>
-						<extraField ordinal="3" required="false">
-							<id>d1a3914d-0706-d3c2-5057-627c14bc0210</id>
-							<type>Text</type>
-							<label>Funding program</label>
-							<placeholder>e.g. OPUS, PRELUDIUM</placeholder>
-							<semantics>rda.dmp.project.funding</semantics>
-						</extraField>
-					</extraFields>
-					<referenceFields>
-						<referenceField ordinal="1" required="true">
-							<id>acb74bdf-3b94-4042-bab8-c37b0f4e5a44</id>
-							<referenceTypeId>538928bb-c7c6-452e-b66d-08e539f5f082</referenceTypeId>
-							<referenceTypeCode>funders</referenceTypeCode>
-							<label>Funding organizations</label>
-							<placeholder>Funder</placeholder>
+					<fieldSets>
+						<fieldSet>
+							<id>604006b2-a851-409d-b6b0-1fdce0ad8c50</id>
+							<ordinal>1</ordinal>
+							<fields>
+								<field>
+									<id>acb74bdf-3b94-4042-bab8-c37b0f4e5a44</id>
+									<ordinal>0</ordinal>
+									<validations>
+										<validation>Required</validation>
+									</validations>
+									<defaultValue/>
+									<visibilityRules/>
+									<referenceTypeData multipleSelect="false">
+										<label>Funder</label>
+										<fieldType>REFERENCE_TYPES</fieldType>
+										<referenceTypeId>538928bb-c7c6-452e-b66d-08e539f5f082</referenceTypeId>
+										<referenceTypeName>Funders</referenceTypeName>
+										<referenceTypeCode>funders</referenceTypeCode>
+									</referenceTypeData>
+									<semantics>
+										<semantic>rda.dmp.project.funding</semantic>
+									</semantics>
+									<includeInExport>true</includeInExport>
+								</field>
+							</fields>
+							<title>Funding organizations</title>
 							<description>Select a funder of your research or add new</description>
-							<semantics>rda.dmp.project.funding</semantics>
-							<multipleSelect>false</multipleSelect>
-						</referenceField>
-						<referenceField ordinal="4" required="true">
-							<id>33f061f9-a6fc-af89-8c22-11e86fb66d1c</id>
-							<referenceTypeId>29f5f7a2-8d97-441f-a7db-b6cc5dee7d2b</referenceTypeId>
-							<referenceTypeCode>funding-status</referenceTypeCode>
-							<label>Funding status</label>
-							<semantics>rda.dmp.project.funding.funding_status</semantics>
-							<multipleSelect>false</multipleSelect>
-						</referenceField>
-					</referenceFields>
-					<uploadFields/>
+							<hasMultiplicity>false</hasMultiplicity>
+							<hasCommentField>false</hasCommentField>
+						</fieldSet>
+						<fieldSet>
+							<id>dccb6985-c7b2-42b4-a21f-1756ac9d5acc</id>
+							<ordinal>2</ordinal>
+							<fields>
+								<field>
+									<id>a0dbf076-684c-e780-90c8-457edd02fcdb</id>
+									<ordinal>0</ordinal>
+									<defaultValue/>
+									<visibilityRules/>
+									<numberData>
+										<label></label>
+										<fieldType>NUMBER</fieldType>
+									</numberData>
+									<semantics>
+										<semantic>rda.dmp.project.funding.grant_id</semantic>
+									</semantics>
+									<includeInExport>true</includeInExport>
+								</field>
+							</fields>
+							<title>Project number</title>
+							<hasMultiplicity>false</hasMultiplicity>
+							<hasCommentField>false</hasCommentField>
+						</fieldSet>
+						<fieldSet>
+							<id>0be3455d-6fc6-4da8-9cc6-65d9e55fb2c4</id>
+							<ordinal>3</ordinal>
+							<fields>
+								<field>
+									<id>d1a3914d-0706-d3c2-5057-627c14bc0210</id>
+									<ordinal>0</ordinal>
+									<defaultValue/>
+									<visibilityRules/>
+									<labelData>
+										<label>e.g. OPUS, PRELUDIUM</label>
+										<fieldType>FREE_TEXT</fieldType>
+									</labelData>
+									<semantics>
+										<semantic>rda.dmp.project.funding</semantic>
+									</semantics>
+									<includeInExport>true</includeInExport>
+								</field>
+							</fields>
+							<title>Funding program</title>
+							<hasMultiplicity>false</hasMultiplicity>
+							<hasCommentField>false</hasCommentField>
+						</fieldSet>
+						<fieldSet>
+							<id>d22fe469-a6e2-4387-93fb-ce81899dfeb2</id>
+							<ordinal>4</ordinal>
+							<fields>
+								<field>
+									<id>33f061f9-a6fc-af89-8c22-11e86fb66d1c</id>
+									<ordinal>0</ordinal>
+									<validations>
+										<validation>Required</validation>
+									</validations>
+									<defaultValue/>
+									<visibilityRules/>
+									<referenceTypeData multipleSelect="false">
+										<fieldType>REFERENCE_TYPES</fieldType>
+										<referenceTypeId>29f5f7a2-8d97-441f-a7db-b6cc5dee7d2b</referenceTypeId>
+										<referenceTypeName>Funding status</referenceTypeName>
+										<referenceTypeCode>funding-status</referenceTypeCode>
+									</referenceTypeData>
+									<semantics>
+										<semantic>rda.dmp.project.funding.funding_status</semantic>
+									</semantics>
+									<includeInExport>true</includeInExport>
+								</field>
+							</fields>
+							<title>Funding status</title>
+							<hasMultiplicity>false</hasMultiplicity>
+							<hasCommentField>false</hasCommentField>
+						</fieldSet>
+					</fieldSets>
+					<description></description>
+					<title>Funding</title>
+					<sections/>
 					<descriptionTemplates/>
 					<prefillingSources/>
 				</section>
 				<section hasTemplates="false" prefillingSourcesEnabled="false">
 					<id>dd17a2d9-351a-47c4-9e77-4927d3e04120</id>
-					<label>License</label>
-					<description></description>
 					<ordinal>3</ordinal>
-					<systemFields>
-						<systemField ordinal="2" required="true">
-							<id>17f304f4-f6be-4ca7-b49e-7d8324b8d069</id>
-							<type>AccessRights</type>
-							<label>Access Rights</label>
-							<placeholder>Access Rights</placeholder>
-							<description>Choose how the DMP is displayed after is published on Zenodo. By choosing Open Access, the DMP will be open on Zenodo after the Publication Date. By choosing Restricted Access, the DMP will be restricted after the publication is made.</description>
-						</systemField>
-					</systemFields>
-					<extraFields/>
-					<referenceFields>
-						<referenceField ordinal="1" required="false">
-							<id>fa89f220-22cc-424b-ba60-f3e19b0ada34</id>
-							<referenceTypeId>2baab1e8-561f-4c15-84c3-571b811c52f6</referenceTypeId>
-							<referenceTypeCode>licenses</referenceTypeCode>
-							<label>License</label>
-							<placeholder>License</placeholder>
+					<fieldSets>
+						<fieldSet>
+							<id>958f726e-e3fa-4606-ad0d-7c2c32469e2a</id>
+							<ordinal>1</ordinal>
+							<fields>
+								<field>
+									<id>fa89f220-22cc-424b-ba60-f3e19b0ada34</id>
+									<ordinal>0</ordinal>
+									<defaultValue/>
+									<visibilityRules/>
+									<referenceTypeData multipleSelect="true">
+										<label>License</label>
+										<fieldType>REFERENCE_TYPES</fieldType>
+										<referenceTypeId>2baab1e8-561f-4c15-84c3-571b811c52f6</referenceTypeId>
+										<referenceTypeName>Licenses</referenceTypeName>
+										<referenceTypeCode>licenses</referenceTypeCode>
+									</referenceTypeData>
+									<semantics>
+										<semantic>rda.dataset.distribution.license</semantic>
+									</semantics>
+									<includeInExport>true</includeInExport>
+								</field>
+							</fields>
+							<title>License</title>
 							<description>Assign a license to your DMP by selecting the most appropriate from the list.</description>
-							<semantics>rda.dataset.distribution.license</semantics>
-							<multipleSelect>true</multipleSelect>
-						</referenceField>
-					</referenceFields>
-					<uploadFields/>
+							<hasMultiplicity>false</hasMultiplicity>
+							<hasCommentField>false</hasCommentField>
+						</fieldSet>
+						<fieldSet>
+							<id>1470ac6a-5b8a-43f5-b887-86d37dc4c056</id>
+							<ordinal>2</ordinal>
+							<fields>
+								<field>
+									<id>17f304f4-f6be-4ca7-b49e-7d8324b8d069</id>
+									<ordinal>0</ordinal>
+									<validations>
+										<validation>Required</validation>
+									</validations>
+									<defaultValue/>
+									<visibilityRules/>
+									<systemData>
+										<label>Access Rights</label>
+										<fieldType>SYSTEM</fieldType>
+										<type>PlanAccessRights</type>
+									</systemData>
+									<includeInExport>true</includeInExport>
+								</field>
+							</fields>
+							<title>Access Rights</title>
+							<description>Choose how the DMP is displayed after is published on Zenodo. By choosing Open Access, the DMP will be open on Zenodo after the Publication Date. By choosing Restricted Access, the DMP will be restricted after the publication is made.</description>
+							<hasMultiplicity>false</hasMultiplicity>
+							<hasCommentField>false</hasCommentField>
+						</fieldSet>
+					</fieldSets>
+					<description></description>
+					<title>License</title>
+					<sections/>
 					<descriptionTemplates/>
 					<prefillingSources/>
 				</section>
 				<section hasTemplates="true" prefillingSourcesEnabled="true" canEditDescriptionTemplates="true">
 					<id>cfc0e16b-edc4-4ed8-a894-b2f5560bc0f1</id>
-					<label>Templates</label>
-					<description></description>
 					<ordinal>4</ordinal>
-					<systemFields/>
-					<extraFields/>
-					<referenceFields/>
-					<uploadFields/>
+					<fieldSets/>
+					<description></description>
+					<title>Templates</title>
+					<sections/>
 					<descriptionTemplates/>
 					<prefillingSources/>
 				</section>
@@ -208,16 +421,120 @@
 		<type/>
 		<groupId>467295f2-0f6d-440e-afab-bb47cfbfe6df</groupId>
 	</blueprint>
-	<blueprintValues>
-		<blueprintValue>
-			<fieldId>a0dbf076-684c-e780-90c8-457edd02fcdb</fieldId>
-			<numberValue>9.08108283848498E14</numberValue>
-		</blueprintValue>
-		<blueprintValue>
-			<fieldId>d1a3914d-0706-d3c2-5057-627c14bc0210</fieldId>
-			<value>OPUS</value>
-		</blueprintValue>
-	</blueprintValues>
+	<properties>
+		<fieldSets>
+			<fieldSet>
+				<fieldSetId>604006b2-a851-409d-b6b0-1fdce0ad8c50</fieldSetId>
+				<items>
+					<item>
+						<fields>
+							<field>
+								<fieldId>acb74bdf-3b94-4042-bab8-c37b0f4e5a44</fieldId>
+								<textListValues>
+									<textListValue>fb6147df-c0d8-4fdc-a378-031e0f2c8a6f</textListValue>
+								</textListValues>
+							</field>
+						</fields>
+						<ordinal>0</ordinal>
+					</item>
+				</items>
+			</fieldSet>
+			<fieldSet>
+				<fieldSetId>958f726e-e3fa-4606-ad0d-7c2c32469e2a</fieldSetId>
+				<items>
+					<item>
+						<fields>
+							<field>
+								<fieldId>fa89f220-22cc-424b-ba60-f3e19b0ada34</fieldId>
+								<textListValues>
+									<textListValue>aa0e950d-ec07-4bb0-88e4-bbc1a0a8c2da</textListValue>
+								</textListValues>
+							</field>
+						</fields>
+						<ordinal>0</ordinal>
+					</item>
+				</items>
+			</fieldSet>
+			<fieldSet>
+				<fieldSetId>d22fe469-a6e2-4387-93fb-ce81899dfeb2</fieldSetId>
+				<items>
+					<item>
+						<fields>
+							<field>
+								<fieldId>33f061f9-a6fc-af89-8c22-11e86fb66d1c</fieldId>
+								<textListValues>
+									<textListValue>564292f9-dd62-48b2-8178-69367f59d032</textListValue>
+								</textListValues>
+							</field>
+						</fields>
+						<ordinal>0</ordinal>
+					</item>
+				</items>
+			</fieldSet>
+			<fieldSet>
+				<fieldSetId>dccb6985-c7b2-42b4-a21f-1756ac9d5acc</fieldSetId>
+				<items>
+					<item>
+						<fields>
+							<field>
+								<fieldId>a0dbf076-684c-e780-90c8-457edd02fcdb</fieldId>
+								<numberValue>9.08108283848498E14</numberValue>
+							</field>
+						</fields>
+						<ordinal>0</ordinal>
+					</item>
+				</items>
+			</fieldSet>
+			<fieldSet>
+				<fieldSetId>0e7700e1-7a01-4f0c-aad2-929ea3f4e96a</fieldSetId>
+				<items>
+					<item>
+						<fields>
+							<field>
+								<fieldId>7a7a006c-b2e0-6a72-5cc4-efca3c835d0f</fieldId>
+								<textListValues>
+									<textListValue>6e3f598a-a956-4e1e-bfda-511818f572f4</textListValue>
+								</textListValues>
+							</field>
+						</fields>
+						<ordinal>0</ordinal>
+					</item>
+				</items>
+			</fieldSet>
+			<fieldSet>
+				<fieldSetId>0be3455d-6fc6-4da8-9cc6-65d9e55fb2c4</fieldSetId>
+				<items>
+					<item>
+						<fields>
+							<field>
+								<fieldId>d1a3914d-0706-d3c2-5057-627c14bc0210</fieldId>
+								<textValue>OPUS</textValue>
+							</field>
+						</fields>
+						<ordinal>0</ordinal>
+					</item>
+				</items>
+			</fieldSet>
+			<fieldSet>
+				<fieldSetId>a08b9fb3-0e12-4b43-a0e4-b689a6a2d4b6</fieldSetId>
+				<items>
+					<item>
+						<fields>
+							<field>
+								<fieldId>93b52c1a-93fa-4c6d-8cf5-43410a834272</fieldId>
+								<textListValues>
+									<textListValue>321b9ef8-02ba-475c-9bed-3d422e8ae91c</textListValue>
+									<textListValue>190da1b6-b951-481a-93cb-78e5283bbfe8</textListValue>
+									<textListValue>99157e6c-a669-48c1-9755-9ec671821efa</textListValue>
+								</textListValues>
+							</field>
+						</fields>
+						<ordinal>0</ordinal>
+					</item>
+				</items>
+			</fieldSet>
+		</fieldSets>
+	</properties>
 	<descriptionTemplates>
 		<descriptionTemplate>
 			<descriptionTemplateGroupId>f1c2d7dc-ca3c-41da-a2ea-3b4913a1c1b5</descriptionTemplateGroupId>
@@ -230,14 +547,15 @@
 			<id>321b9ef8-02ba-475c-9bed-3d422e8ae91c</id>
 			<label>Ruchika Bajpai (0000-0003-4610-094X)</label>
 			<reference>0000-0003-4610-094X</reference>
+			<source>orcid</source>
+			<sourceType>External</sourceType>
 			<fieldId>93b52c1a-93fa-4c6d-8cf5-43410a834272</fieldId>
+			<ordinal>0</ordinal>
 			<type>
 				<id>5a2112e7-ea99-4cfe-98a1-68665e26726e</id>
 				<name>Researchers</name>
 				<code>researchers</code>
 			</type>
-			<source>orcid</source>
-			<sourceType>External</sourceType>
 			<fields>
 				<field code="firstName" dataType="Text" value="Ruchika"/>
 				<field code="lastName" dataType="Text" value="Bajpai"/>
@@ -249,40 +567,43 @@
 			<id>190da1b6-b951-481a-93cb-78e5283bbfe8</id>
 			<label>ALFREDO POZO (0000-0001-6590-3794)</label>
 			<reference>org.opencdmp.filetransformer.rda.model.rda.ContributorId@1ad92872</reference>
+			<source>internal</source>
+			<sourceType>Internal</sourceType>
 			<fieldId>93b52c1a-93fa-4c6d-8cf5-43410a834272</fieldId>
+			<ordinal>0</ordinal>
 			<type>
 				<id>5a2112e7-ea99-4cfe-98a1-68665e26726e</id>
 				<name>Researchers</name>
 				<code>researchers</code>
 			</type>
-			<source>internal</source>
-			<sourceType>Internal</sourceType>
 		</reference>
 		<reference>
 			<id>99157e6c-a669-48c1-9755-9ec671821efa</id>
 			<label>Dimi Apostolopoulos (0000-0003-1269-7653)</label>
 			<reference>org.opencdmp.filetransformer.rda.model.rda.ContributorId@3a4357c9</reference>
+			<source>internal</source>
+			<sourceType>Internal</sourceType>
 			<fieldId>93b52c1a-93fa-4c6d-8cf5-43410a834272</fieldId>
+			<ordinal>0</ordinal>
 			<type>
 				<id>5a2112e7-ea99-4cfe-98a1-68665e26726e</id>
 				<name>Researchers</name>
 				<code>researchers</code>
 			</type>
-			<source>internal</source>
-			<sourceType>Internal</sourceType>
 		</reference>
 		<reference>
 			<id>6e3f598a-a956-4e1e-bfda-511818f572f4</id>
 			<label>Initial</label>
 			<reference>Initial</reference>
-			<fieldId>7a7a006c-b2e0-6a72-5cc4-efca3c835d0f</fieldId>
-			<type>
-				<id>1429ea6e-ffaf-479c-8a33-8076abf1ce01</id>
-				<name>DMP status</name>
-				<code>dmp-status</code>
-			</type>
 			<source>Status</source>
 			<sourceType>External</sourceType>
+			<fieldId>7a7a006c-b2e0-6a72-5cc4-efca3c835d0f</fieldId>
+			<ordinal>0</ordinal>
+			<type>
+				<id>1429ea6e-ffaf-479c-8a33-8076abf1ce01</id>
+				<name>DMP phase</name>
+				<code>dmp-phase</code>
+			</type>
 			<fields>
 				<field code="dmp-status" dataType="Text" value="Initial"/>
 				<field code="referenceType" dataType="Text" value="DMP status"/>
@@ -293,14 +614,15 @@
 			<id>fb6147df-c0d8-4fdc-a378-031e0f2c8a6f</id>
 			<label>ADAPT - Centre for Digital Content Technology</label>
 			<reference>501100014826::501100014826||ADAPT - Centre for Digital Content Technology</reference>
+			<source>openaire</source>
+			<sourceType>External</sourceType>
 			<fieldId>acb74bdf-3b94-4042-bab8-c37b0f4e5a44</fieldId>
+			<ordinal>0</ordinal>
 			<type>
 				<id>538928bb-c7c6-452e-b66d-08e539f5f082</id>
 				<name>Funders</name>
 				<code>funders</code>
 			</type>
-			<source>openaire</source>
-			<sourceType>External</sourceType>
 			<fields>
 				<field code="referenceType" dataType="Text" value="Funders"/>
 				<field code="key" dataType="Text" value="openaire"/>
@@ -310,14 +632,15 @@
 			<id>564292f9-dd62-48b2-8178-69367f59d032</id>
 			<label>Granted</label>
 			<reference>Granted</reference>
+			<source>Funding status</source>
+			<sourceType>External</sourceType>
 			<fieldId>33f061f9-a6fc-af89-8c22-11e86fb66d1c</fieldId>
+			<ordinal>0</ordinal>
 			<type>
 				<id>29f5f7a2-8d97-441f-a7db-b6cc5dee7d2b</id>
 				<name>Funding status</name>
 				<code>funding-status</code>
 			</type>
-			<source>Funding status</source>
-			<sourceType>External</sourceType>
 			<fields>
 				<field code="referenceType" dataType="Text" value="Funding status"/>
 				<field code="key" dataType="Text" value="Funding status"/>
@@ -327,14 +650,15 @@
 			<id>aa0e950d-ec07-4bb0-88e4-bbc1a0a8c2da</id>
 			<label>Academic Free License 3.0</label>
 			<reference>AFL-3.0</reference>
+			<source>opendefinition</source>
+			<sourceType>External</sourceType>
 			<fieldId>fa89f220-22cc-424b-ba60-f3e19b0ada34</fieldId>
+			<ordinal>0</ordinal>
 			<type>
 				<id>2baab1e8-561f-4c15-84c3-571b811c52f6</id>
 				<name>Licenses</name>
 				<code>licenses</code>
 			</type>
-			<source>opendefinition</source>
-			<sourceType>External</sourceType>
 			<fields>
 				<field code="referenceType" dataType="Text"/>
 				<field code="uri" dataType="Text"/>
@@ -370,10 +694,11 @@
 				</type>
 				<version>6</version>
 				<groupId>f1c2d7dc-ca3c-41da-a2ea-3b4913a1c1b5</groupId>
-				<pages>
-					<page>
+				<sections>
+					<section>
 						<id>fccc5fb6-2fb5-47be-9fe4-f9d9179784dd</id>
 						<ordinal>0</ordinal>
+						<fieldSets/>
 						<title>Data description and collection or re-use of existing data </title>
 						<sections>
 							<section>
@@ -492,6 +817,7 @@
 										<multiplicity min="0" max="20">
 											<placeholder></placeholder>
 											<tableView>true</tableView>
+											<transposedTableView>false</transposedTableView>
 										</multiplicity>
 										<hasMultiplicity>true</hasMultiplicity>
 										<hasCommentField>false</hasCommentField>
@@ -557,6 +883,7 @@
 										<multiplicity min="0" max="25">
 											<placeholder></placeholder>
 											<tableView>true</tableView>
+											<transposedTableView>false</transposedTableView>
 										</multiplicity>
 										<hasMultiplicity>true</hasMultiplicity>
 										<hasCommentField>false</hasCommentField>
@@ -660,6 +987,7 @@
 										<multiplicity min="0" max="20">
 											<placeholder></placeholder>
 											<tableView>true</tableView>
+											<transposedTableView>false</transposedTableView>
 										</multiplicity>
 										<hasMultiplicity>true</hasMultiplicity>
 										<hasCommentField>false</hasCommentField>
@@ -705,6 +1033,7 @@
 										<multiplicity min="0" max="20">
 											<placeholder></placeholder>
 											<tableView>true</tableView>
+											<transposedTableView>false</transposedTableView>
 										</multiplicity>
 										<hasMultiplicity>true</hasMultiplicity>
 										<hasCommentField>false</hasCommentField>
@@ -770,6 +1099,7 @@
 										<multiplicity min="0" max="25">
 											<placeholder></placeholder>
 											<tableView>true</tableView>
+											<transposedTableView>false</transposedTableView>
 										</multiplicity>
 										<hasMultiplicity>true</hasMultiplicity>
 										<hasCommentField>false</hasCommentField>
@@ -779,10 +1109,11 @@
 								<sections/>
 							</section>
 						</sections>
-					</page>
-					<page>
+					</section>
+					<section>
 						<id>6b13a467-2b9a-472f-a0f1-1fd68a4f1a15</id>
 						<ordinal>1</ordinal>
+						<fieldSets/>
 						<title>Documentation and data quality</title>
 						<sections>
 							<section>
@@ -857,6 +1188,7 @@
 										<multiplicity min="0" max="20">
 											<placeholder></placeholder>
 											<tableView>true</tableView>
+											<transposedTableView>false</transposedTableView>
 										</multiplicity>
 										<hasMultiplicity>true</hasMultiplicity>
 										<hasCommentField>false</hasCommentField>
@@ -925,6 +1257,7 @@
 										<multiplicity min="0" max="20">
 											<placeholder></placeholder>
 											<tableView>true</tableView>
+											<transposedTableView>false</transposedTableView>
 										</multiplicity>
 										<hasMultiplicity>true</hasMultiplicity>
 										<hasCommentField>false</hasCommentField>
@@ -1015,10 +1348,11 @@
 								<sections/>
 							</section>
 						</sections>
-					</page>
-					<page>
+					</section>
+					<section>
 						<id>ab2154ed-8ef9-425d-b7ff-11acbae29d57</id>
 						<ordinal>2</ordinal>
+						<fieldSets/>
 						<title>Storage and backup during the research process</title>
 						<sections>
 							<section>
@@ -1056,8 +1390,8 @@
 													<label>Backup method</label>
 													<fieldType>SELECT</fieldType>
 													<options>
-														<options label="Automatic" value="Automatic"/>
-														<options label="Manual" value="Manual"/></options>
+														<options label="Automatic" value="Automatic" exportsNothing="false"/>
+														<options label="Manual" value="Manual" exportsNothing="false"/></options>
 												</selectData>
 												<semantics>
 													<semantic>https://w3id.org/dcso/ns/core#hasHost</semantic>
@@ -1076,9 +1410,9 @@
 													<label>Backup frequency</label>
 													<fieldType>SELECT</fieldType>
 													<options>
-														<options label="Daily" value="Daily"/>
-														<options label="Weekly" value="Weekly"/>
-														<options label="On demand" value="On demand"/></options>
+														<options label="Daily" value="Daily" exportsNothing="false"/>
+														<options label="Weekly" value="Weekly" exportsNothing="false"/>
+														<options label="On demand" value="On demand" exportsNothing="false"/></options>
 												</selectData>
 												<semantics>
 													<semantic>https://w3id.org/dcso/ns/core#hasHost</semantic>
@@ -1097,9 +1431,9 @@
 													<label>Supports versioning</label>
 													<fieldType>SELECT</fieldType>
 													<options>
-														<options label="Yes" value="Yes"/>
-														<options label="No" value="No"/>
-														<options label="Unknown" value="Unknown"/></options>
+														<options label="Yes" value="Yes" exportsNothing="false"/>
+														<options label="No" value="No" exportsNothing="false"/>
+														<options label="Unknown" value="Unknown" exportsNothing="false"/></options>
 												</selectData>
 												<semantics>
 													<semantic>https://w3id.org/dcso/ns/core#hasHost</semantic>
@@ -1114,6 +1448,7 @@
 										<multiplicity min="0" max="25">
 											<placeholder></placeholder>
 											<tableView>true</tableView>
+											<transposedTableView>false</transposedTableView>
 										</multiplicity>
 										<hasMultiplicity>true</hasMultiplicity>
 										<hasCommentField>false</hasCommentField>
@@ -1201,10 +1536,11 @@
 								<sections/>
 							</section>
 						</sections>
-					</page>
-					<page>
+					</section>
+					<section>
 						<id>3c006c12-a962-4ae3-b148-6ff07b047e88</id>
 						<ordinal>3</ordinal>
+						<fieldSets/>
 						<title>Legal and ethical requirements</title>
 						<sections>
 							<section>
@@ -1563,6 +1899,7 @@
 										<multiplicity min="0" max="20">
 											<placeholder></placeholder>
 											<tableView>true</tableView>
+											<transposedTableView>false</transposedTableView>
 										</multiplicity>
 										<hasMultiplicity>true</hasMultiplicity>
 										<hasCommentField>false</hasCommentField>
@@ -1573,10 +1910,11 @@
 								<sections/>
 							</section>
 						</sections>
-					</page>
-					<page>
+					</section>
+					<section>
 						<id>5bf1de1a-ec91-4833-89a1-7f25604657b0</id>
 						<ordinal>4</ordinal>
+						<fieldSets/>
 						<title>Data sharing and long-term preservation </title>
 						<sections>
 							<section>
@@ -1614,11 +1952,11 @@
 													<label>Type of service</label>
 													<fieldType>SELECT</fieldType>
 													<options>
-														<options label="Discipline specific repository" value="Discipline specific repository"/>
-														<options label="Institutional repository" value="Institutional repository"/>
-														<options label="Generalist repository" value="Generalist repository"/>
-														<options label="Long-term institutional storage" value="Long-term institutional storage"/>
-														<options label="Other" value="Other"/></options>
+														<options label="Discipline specific repository" value="Discipline specific repository" exportsNothing="false"/>
+														<options label="Institutional repository" value="Institutional repository" exportsNothing="false"/>
+														<options label="Generalist repository" value="Generalist repository" exportsNothing="false"/>
+														<options label="Long-term institutional storage" value="Long-term institutional storage" exportsNothing="false"/>
+														<options label="Other" value="Other" exportsNothing="false"/></options>
 												</selectData>
 												<semantics>
 													<semantic>hasPreservation</semantic>
@@ -1637,10 +1975,10 @@
 													<label>Time of sharing</label>
 													<fieldType>SELECT</fieldType>
 													<options>
-														<options label="As soon as data is produced/processed" value="As soon as data is produced/processed"/>
-														<options label="With related publication " value="With related publication "/>
-														<options label="At the end of project" value="At the end of project"/>
-														<options label="As soon as intellectual property rights are secured" value="As soon as intellectual property rights are secured"/></options>
+														<options label="As soon as data is produced/processed" value="As soon as data is produced/processed" exportsNothing="false"/>
+														<options label="With related publication " value="With related publication " exportsNothing="false"/>
+														<options label="At the end of project" value="At the end of project" exportsNothing="false"/>
+														<options label="As soon as intellectual property rights are secured" value="As soon as intellectual property rights are secured" exportsNothing="false"/></options>
 												</selectData>
 												<semantics>
 													<semantic>hasPreservation</semantic>
@@ -1699,9 +2037,9 @@
 													<label>Access</label>
 													<fieldType>SELECT</fieldType>
 													<options>
-														<options label="Open" value="Open"/>
-														<options label="Restricted" value="Shared under conditions"/>
-														<options label="Closed" value="Closed"/></options>
+														<options label="Open" value="Open" exportsNothing="false"/>
+														<options label="Restricted" value="Shared under conditions" exportsNothing="false"/>
+														<options label="Closed" value="Closed" exportsNothing="false"/></options>
 												</selectData>
 												<semantics>
 													<semantic>hasPreservation</semantic>
@@ -1733,6 +2071,7 @@
 										<multiplicity min="0" max="20">
 											<placeholder></placeholder>
 											<tableView>true</tableView>
+											<transposedTableView>false</transposedTableView>
 										</multiplicity>
 										<hasMultiplicity>true</hasMultiplicity>
 										<hasCommentField>false</hasCommentField>
@@ -1807,6 +2146,7 @@
 										<multiplicity min="0" max="20">
 											<placeholder></placeholder>
 											<tableView>false</tableView>
+											<transposedTableView>false</transposedTableView>
 										</multiplicity>
 										<hasMultiplicity>true</hasMultiplicity>
 										<hasCommentField>false</hasCommentField>
@@ -1850,8 +2190,8 @@
 													<label>Conversion to open format needed</label>
 													<fieldType>SELECT</fieldType>
 													<options>
-														<options label="Yes" value="Yes"/>
-														<options label="No" value="No"/></options>
+														<options label="Yes" value="Yes" exportsNothing="false"/>
+														<options label="No" value="No" exportsNothing="false"/></options>
 												</selectData>
 												<semantics>
 													<semantic>https://w3id.org/dcso/ns/core#hasTechnicalResource</semantic>
@@ -1900,6 +2240,7 @@
 										<multiplicity min="0" max="20">
 											<placeholder></placeholder>
 											<tableView>true</tableView>
+											<transposedTableView>false</transposedTableView>
 										</multiplicity>
 										<hasMultiplicity>true</hasMultiplicity>
 										<hasCommentField>false</hasCommentField>
@@ -1945,10 +2286,10 @@
 													<label>PID assigned</label>
 													<fieldType>SELECT</fieldType>
 													<options>
-														<options label="Yes, will be assigend by the repository" value="Yes, by the repository"/>
-														<options label="Yes, will be assigend in another way" value="Yes, in another way"/>
-														<options label="Already assigned PID will be reused" value="Already assigned PID will be reused"/>
-														<options label="No" value="No"/></options>
+														<options label="Yes, will be assigend by the repository" value="Yes, by the repository" exportsNothing="false"/>
+														<options label="Yes, will be assigend in another way" value="Yes, in another way" exportsNothing="false"/>
+														<options label="Already assigned PID will be reused" value="Already assigned PID will be reused" exportsNothing="false"/>
+														<options label="No" value="No" exportsNothing="false"/></options>
 												</selectData>
 												<semantics>
 													<semantic>hasPidStrategy</semantic>
@@ -1969,25 +2310,25 @@
 													<label>PID system</label>
 													<fieldType>SELECT</fieldType>
 													<options>
-														<options label="DOI" value="DOI"/>
-														<options label="Handle" value="Handle"/>
-														<options label="Ark" value="Ark"/>
-														<options label="Arxiv" value="Arxiv"/>
-														<options label="Bibcode" value="Bibcode"/>
-														<options label="Ean13" value="Ean13"/>
-														<options label="Eissn" value="Eissn"/>
-														<options label="Igsn" value="Igsn"/>
-														<options label="Isbn" value="Isbn"/>
-														<options label="Issn" value="Issn"/>
-														<options label="Lstc" value="Lstc"/>
-														<options label="Lissn" value="Lissn"/>
-														<options label="Sid" value="Sid"/>
-														<options label="Pmid" value="Pmid"/>
-														<options label="Purl" value="Purl"/>
-														<options label="Upc" value="Upc"/>
-														<options label="Url" value="Url"/>
-														<options label="Urn" value="Urn"/>
-														<options label="Other" value="Other"/></options>
+														<options label="DOI" value="DOI" exportsNothing="false"/>
+														<options label="Handle" value="Handle" exportsNothing="false"/>
+														<options label="Ark" value="Ark" exportsNothing="false"/>
+														<options label="Arxiv" value="Arxiv" exportsNothing="false"/>
+														<options label="Bibcode" value="Bibcode" exportsNothing="false"/>
+														<options label="Ean13" value="Ean13" exportsNothing="false"/>
+														<options label="Eissn" value="Eissn" exportsNothing="false"/>
+														<options label="Igsn" value="Igsn" exportsNothing="false"/>
+														<options label="Isbn" value="Isbn" exportsNothing="false"/>
+														<options label="Issn" value="Issn" exportsNothing="false"/>
+														<options label="Lstc" value="Lstc" exportsNothing="false"/>
+														<options label="Lissn" value="Lissn" exportsNothing="false"/>
+														<options label="Sid" value="Sid" exportsNothing="false"/>
+														<options label="Pmid" value="Pmid" exportsNothing="false"/>
+														<options label="Purl" value="Purl" exportsNothing="false"/>
+														<options label="Upc" value="Upc" exportsNothing="false"/>
+														<options label="Url" value="Url" exportsNothing="false"/>
+														<options label="Urn" value="Urn" exportsNothing="false"/>
+														<options label="Other" value="Other" exportsNothing="false"/></options>
 												</selectData>
 												<semantics>
 													<semantic>hasPidStrategy</semantic>
@@ -2020,6 +2361,7 @@
 										<multiplicity min="0" max="20">
 											<placeholder></placeholder>
 											<tableView>true</tableView>
+											<transposedTableView>false</transposedTableView>
 										</multiplicity>
 										<hasMultiplicity>true</hasMultiplicity>
 										<hasCommentField>false</hasCommentField>
@@ -2029,10 +2371,11 @@
 								<sections/>
 							</section>
 						</sections>
-					</page>
-					<page>
+					</section>
+					<section>
 						<id>d8266202-7645-d9a9-f6ec-59b84b9b869b</id>
 						<ordinal>5</ordinal>
+						<fieldSets/>
 						<title>Responsibilites and resources</title>
 						<sections>
 							<section>
@@ -2070,10 +2413,10 @@
 													<label>Role</label>
 													<fieldType>SELECT</fieldType>
 													<options>
-														<options label="Data steward" value="Data steward"/>
-														<options label="Data curator" value="Data curator"/>
-														<options label="Data depositor" value="Data depositor"/>
-														<options label="Other" value="Other"/></options>
+														<options label="Data steward" value="Data steward" exportsNothing="false"/>
+														<options label="Data curator" value="Data curator" exportsNothing="false"/>
+														<options label="Data depositor" value="Data depositor" exportsNothing="false"/>
+														<options label="Other" value="Other" exportsNothing="false"/></options>
 												</selectData>
 												<semantics>
 													<semantic>https://w3id.org/dcso/ns/core#hasContributor</semantic>
@@ -2088,6 +2431,7 @@
 										<multiplicity min="0" max="20">
 											<placeholder></placeholder>
 											<tableView>true</tableView>
+											<transposedTableView>false</transposedTableView>
 										</multiplicity>
 										<hasMultiplicity>true</hasMultiplicity>
 										<hasCommentField>false</hasCommentField>
@@ -2170,6 +2514,7 @@
 										<multiplicity min="0" max="21">
 											<placeholder></placeholder>
 											<tableView>true</tableView>
+											<transposedTableView>false</transposedTableView>
 										</multiplicity>
 										<hasMultiplicity>true</hasMultiplicity>
 										<hasCommentField>false</hasCommentField>
@@ -2180,8 +2525,8 @@
 								<sections/>
 							</section>
 						</sections>
-					</page>
-				</pages>
+					</section>
+				</sections>
 				<pluginConfigurations>
 					<pluginConfiguration pluginCode="docx-file-transformer" pluginType="FileTransformer">
 						<fields>
@@ -2196,6 +2541,7 @@
 					<label>ABCD (Access to Biological Collection Data)</label>
 					<reference>msc:m1</reference>
 					<source>rda-metadata-schemes</source>
+					<sourceType>External</sourceType>
 					<fieldId>04d372a9-8bee-e7f6-6561-5b6481704933</fieldId>
 					<ordinal>0</ordinal>
 					<type>
@@ -2214,6 +2560,7 @@
 					<label>Abkhaz</label>
 					<reference>ab</reference>
 					<source>iso-639</source>
+					<sourceType>External</sourceType>
 					<fieldId>2360e954-a06c-909b-fc6e-20e9077a22bd</fieldId>
 					<ordinal>0</ordinal>
 					<type>
@@ -2235,6 +2582,7 @@
 					<label>DIF (Directory Interchange Format)</label>
 					<reference>msc:m14</reference>
 					<source>rda-metadata-schemes</source>
+					<sourceType>External</sourceType>
 					<fieldId>04d372a9-8bee-e7f6-6561-5b6481704933</fieldId>
 					<ordinal>1</ordinal>
 					<type>
@@ -2253,6 +2601,7 @@
 					<label>Icelandic</label>
 					<reference>is</reference>
 					<source>iso-639</source>
+					<sourceType>External</sourceType>
 					<fieldId>2360e954-a06c-909b-fc6e-20e9077a22bd</fieldId>
 					<ordinal>1</ordinal>
 					<type>
@@ -2274,6 +2623,7 @@
 					<label>Gujarati</label>
 					<reference>gu</reference>
 					<source>iso-639</source>
+					<sourceType>External</sourceType>
 					<fieldId>2360e954-a06c-909b-fc6e-20e9077a22bd</fieldId>
 					<ordinal>1</ordinal>
 					<type>
@@ -2295,6 +2645,7 @@
 					<label>Esperanto</label>
 					<reference>eo</reference>
 					<source>iso-639</source>
+					<sourceType>External</sourceType>
 					<fieldId>f67c0256-6a08-0c09-c543-bc982f23def5</fieldId>
 					<ordinal>0</ordinal>
 					<type>
@@ -2316,6 +2667,7 @@
 					<label>Esperanto</label>
 					<reference>eo</reference>
 					<source>iso-639</source>
+					<sourceType>External</sourceType>
 					<fieldId>f67c0256-6a08-0c09-c543-bc982f23def5</fieldId>
 					<ordinal>0</ordinal>
 					<type>
@@ -2337,6 +2689,7 @@
 					<label>Faroese</label>
 					<reference>fo</reference>
 					<source>iso-639</source>
+					<sourceType>External</sourceType>
 					<fieldId>f67c0256-6a08-0c09-c543-bc982f23def5</fieldId>
 					<ordinal>1</ordinal>
 					<type>
@@ -2358,6 +2711,7 @@
 					<label>Faroese</label>
 					<reference>fo</reference>
 					<source>iso-639</source>
+					<sourceType>External</sourceType>
 					<fieldId>f67c0256-6a08-0c09-c543-bc982f23def5</fieldId>
 					<ordinal>1</ordinal>
 					<type>
@@ -2379,6 +2733,7 @@
 					<label>Against DRM</label>
 					<reference>Against-DRM</reference>
 					<source>opendefinition</source>
+					<sourceType>External</sourceType>
 					<fieldId>7cbb820d-c667-c326-264e-8d3fafb92786</fieldId>
 					<ordinal>0</ordinal>
 					<type>
@@ -2397,6 +2752,7 @@
 					<label>Against DRM</label>
 					<reference>Against-DRM</reference>
 					<source>opendefinition</source>
+					<sourceType>External</sourceType>
 					<fieldId>7cbb820d-c667-c326-264e-8d3fafb92786</fieldId>
 					<ordinal>0</ordinal>
 					<type>
@@ -2415,6 +2771,7 @@
 					<label>License Not Specified</label>
 					<reference>notspecified</reference>
 					<source>opendefinition</source>
+					<sourceType>External</sourceType>
 					<fieldId>7cbb820d-c667-c326-264e-8d3fafb92786</fieldId>
 					<ordinal>1</ordinal>
 					<type>
@@ -2433,6 +2790,7 @@
 					<label>License Not Specified</label>
 					<reference>notspecified</reference>
 					<source>opendefinition</source>
+					<sourceType>External</sourceType>
 					<fieldId>7cbb820d-c667-c326-264e-8d3fafb92786</fieldId>
 					<ordinal>1</ordinal>
 					<type>
@@ -2451,6 +2809,7 @@
 					<label>Apache Software License 1.1</label>
 					<reference>Apache-1.1</reference>
 					<source>opendefinition</source>
+					<sourceType>External</sourceType>
 					<fieldId>293d65c5-b677-9225-1f80-258322fe0816</fieldId>
 					<ordinal>0</ordinal>
 					<type>
@@ -2469,6 +2828,7 @@
 					<label>Apache Software License 1.1</label>
 					<reference>Apache-1.1</reference>
 					<source>opendefinition</source>
+					<sourceType>External</sourceType>
 					<fieldId>293d65c5-b677-9225-1f80-258322fe0816</fieldId>
 					<ordinal>0</ordinal>
 					<type>
@@ -2487,6 +2847,7 @@
 					<label>Creative Commons Attribution-NonCommercial 4.0</label>
 					<reference>CC-BY-NC-4.0</reference>
 					<source>opendefinition</source>
+					<sourceType>External</sourceType>
 					<fieldId>293d65c5-b677-9225-1f80-258322fe0816</fieldId>
 					<ordinal>1</ordinal>
 					<type>
@@ -2505,6 +2866,7 @@
 					<label>Creative Commons Attribution-NonCommercial 4.0</label>
 					<reference>CC-BY-NC-4.0</reference>
 					<source>opendefinition</source>
+					<sourceType>External</sourceType>
 					<fieldId>293d65c5-b677-9225-1f80-258322fe0816</fieldId>
 					<ordinal>1</ordinal>
 					<type>
@@ -2523,6 +2885,7 @@
 					<label>1.2 Meter CO Survey Dataverse</label>
 					<reference>r3d100011322</reference>
 					<source>re3data</source>
+					<sourceType>External</sourceType>
 					<fieldId>32f7cc2f-4f96-7857-a75e-c30b7a12c0ab</fieldId>
 					<ordinal>0</ordinal>
 					<type>
@@ -2542,6 +2905,7 @@
 					<label>1.2 Meter CO Survey Dataverse</label>
 					<reference>r3d100011322</reference>
 					<source>re3data</source>
+					<sourceType>External</sourceType>
 					<fieldId>32f7cc2f-4f96-7857-a75e-c30b7a12c0ab</fieldId>
 					<ordinal>0</ordinal>
 					<type>
@@ -2561,6 +2925,7 @@
 					<label>1000 Genomes</label>
 					<reference>r3d100010180</reference>
 					<source>re3data</source>
+					<sourceType>External</sourceType>
 					<fieldId>32f7cc2f-4f96-7857-a75e-c30b7a12c0ab</fieldId>
 					<ordinal>1</ordinal>
 					<type>
@@ -2580,6 +2945,7 @@
 					<label>1000 Genomes</label>
 					<reference>r3d100010180</reference>
 					<source>re3data</source>
+					<sourceType>External</sourceType>
 					<fieldId>32f7cc2f-4f96-7857-a75e-c30b7a12c0ab</fieldId>
 					<ordinal>1</ordinal>
 					<type>
